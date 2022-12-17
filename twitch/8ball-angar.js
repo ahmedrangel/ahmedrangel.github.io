@@ -13,3 +13,5 @@ if (q) {
 } else {
     `Escribe una pregunta. angarMad `;
 }
+
+// !addcom !8ball /me $(user), $(eval q = `$(query)`; $(urlfetch https://ahmedrangel.github.io/twitch/8ball-angar.js)) || By Ahmed_R
