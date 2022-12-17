@@ -1,9 +1,10 @@
-(async () => {
-    if (q) {
-        const response = await fetch(`https://twitch.bayzamusic.com/suerte/${touser}`);
+
+if (q) {
+    fetch(`https://twitch.bayzamusic.com/suerte/${touser}`).then(async (response) => {
         await response.json();
-    } else {
-        const response = await fetch(`https://twitch.bayzamusic.com/suerte/${user}`);
+    });
+} else {
+    fetch(`https://twitch.bayzamusic.com/suerte/${user}`).then(async (response) => {
         await response.json();
-    }
-})
+    });
+}
