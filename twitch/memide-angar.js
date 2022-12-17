@@ -5,3 +5,5 @@ if(x<=9) {
 } else {
     `A ${u} le mide ${x} cms. angarGasm `;
 }
+
+// !addcom !memide /me $(eval u = `$(user)`; x = Math.floor((Math.random() * 33) + 1); $(urlfetch json https://ahmedrangel.github.io/twitch/memide-og.js))
