@@ -6,8 +6,8 @@ arr_respuestas = [
     `No entendí, vuelve a preguntar. angarG `,
     `Es muy probable. angarMonkas `,
     `Es poco probable. angarW `,
-    `No lo sé. angarSad` ,
-    `Tal vez Angar sepa. angarL ` ,
+    `No lo sé. angarSad `,
+    `Tal vez Angar sepa. angarL `,
     `Tal vez Tiqui sepa. angarJu`
 ];
 
