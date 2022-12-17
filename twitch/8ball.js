@@ -7,4 +7,8 @@ arr_respuestas = [
     `Es poco probable angarW `
 ];
 
-respuesta = arr_respuestas[Math.floor(Math.random()*arr_respuestas.length)];
+if (q) {
+    respuesta = arr_respuestas[Math.floor(Math.random()*arr_respuestas.length)];
+} else {
+    `Porfavor escribe una pregunta angarMad `;
+}
