@@ -9,7 +9,8 @@ arr_respuestas = [
     `No lo sé. angarSad `,
     `Tal vez Angar sepa. angarL `,
     `Tal vez Tiqui sepa. angarJu`
-]
+];
+
 if (q) {
     respuesta = arr_respuestas[Math.floor(Math.random()*arr_respuestas.length)];
 } else {
