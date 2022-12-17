@@ -4,4 +4,4 @@ if(x<=10) {
         `A $(user) le mide ${x} cms. PogChamp `
 } else {
     `A $(user) le mide ${x} cms. Kreygasm `
-} 
+}
