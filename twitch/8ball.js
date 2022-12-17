@@ -8,7 +8,7 @@ arr_respuestas = [
 ];
 
 if (q) {
-    respuesta = arr_respuestas[Math.round(Math.random()*arr_respuestas.length)];
+    respuesta = arr_respuestas[Math.floor(Math.random()*arr_respuestas.length)];
 } else {
     `Porfavor escribe una pregunta angarMad `;
 }
