@@ -7,6 +7,4 @@ var arr_respuestas = [
     `Es poco probable angarW `
 ] 
 
-var respuesta = arr_respuestas[Math.floor(Math.random()*arr_respuestas.length)];
-
-respuesta;
+respuesta = arr_respuestas[Math.floor(Math.random()*arr_respuestas.length)];
