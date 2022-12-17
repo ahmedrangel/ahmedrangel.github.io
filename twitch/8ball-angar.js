@@ -1,4 +1,4 @@
-let arr_respuestas = [
+arr_respuestas = [
     `Es cierto. angarSi `,
     `Por supuesto! angarP `,
     `Puede ser. angarMmm `,
