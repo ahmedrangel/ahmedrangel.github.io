@@ -8,7 +8,7 @@ arr_respuestas = [
     `Es poco probable. angarW `,
     `No lo sé. angarSad `,
     `Tal vez Angar sepa. angarL `,
-    `Tal vez Tiqui sepa. angarJu`
+    `Tal vez Tiqui tenga la respuesta. angarJu`
 ];
 
 if (q) {
