@@ -1,6 +1,6 @@
 arr_respuestas = [
     `Es cierto. angarSi `,
-    `Por supuesto! angarP `,
+    `Por supuesto angarP `,
     `Puede ser. angarMmm `,
     `Claro que no. angarNo `,
     `No entendí, vuelve a preguntar. angarG `,
