@@ -10,5 +10,5 @@ arr_respuestas = [
 if (q) {
     respuesta = arr_respuestas[Math.floor(Math.random()*arr_respuestas.length)];
 } else {
-    `Porfavor escribe una pregunta. angarMad `;
+    `Escribe una pregunta. angarMad `;
 }
