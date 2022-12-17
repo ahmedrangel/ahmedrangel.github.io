@@ -7,7 +7,6 @@ arr_respuestas = [
     `Es muy probable. angarMonkas `,
     `Es poco probable. angarW `,
     `No lo sé. angarSad `,
-    `Tal vez Angar sepa. angarL `
 ]
 
 if (q) {
