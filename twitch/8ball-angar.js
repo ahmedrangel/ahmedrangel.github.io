@@ -1,10 +1,11 @@
 arr_respuestas = [
     `Es cierto. angarSi `,
-    `Tal vez. angarMmm `,
+    `Puede ser. angarMmm `,
     `Claro que no. angarNo `,
     `No entendí, vuelve a preguntar. angarG `,
     `Es muy probable. angarMonkas `,
-    `Es poco probable. angarW `
+    `Es poco probable. angarW `,
+    `Tal vez angar sepa. angarL `
 ];
 
 if (q) {
