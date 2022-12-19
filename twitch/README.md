@@ -12,7 +12,7 @@ En el campo para escribir mensajes en un canal de twitch, siendo streamer o mode
 
 ### Comentario:
 
-El contenido del comando puede incluir más [variables propias del Nightbot](https://docs.nightbot.tv/commands/variableslist) o declaradas por uno mismo que necesitarían ser utilzados dentro de un script para poder funcionar.
+El contenido del comando puede incluir más [variables propias del Nightbot](https://docs.nightbot.tv/commands/variableslist) o declaradas por uno mismo que necesitarían ser por un script para poder funcionar.
 
 # Ejemplo de Comando
 
