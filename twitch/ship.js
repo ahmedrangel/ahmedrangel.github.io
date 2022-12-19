@@ -15,8 +15,6 @@ if (porcentaje >= 90){
 }
 
 if (q) {
-    user = u;
-    touser = t;
     query = q;
     query = query.replace(/@/g, '');
     espacios = query.split(" ").length - 1;
@@ -33,20 +31,20 @@ if (q) {
         mensaje;
     } else if (espacios >= 2) {
         emote_adpt = `angarG `;
-        mensaje = `${user}, No tengo la capacidad de calcular la compatibilidad con más de 2 personas. ${emote_adpt}`;
-    } else if (user.toLowerCase() == touser.toLowerCase()) {
+        mensaje = `${u}, No tengo la capacidad de calcular la compatibilidad con más de 2 personas. ${emote_adpt}`;
+    } else if (u.toLowerCase() == t.toLowerCase()) {
         emote_adpt = `angarMonkas `;
-        mensaje = `${user}, Acaso estas tratando de ver si eres compatible contigo mismo? ${emote_adpt}`;
+        mensaje = `${u}, Acaso estas tratando de ver si eres compatible contigo mismo? ${emote_adpt}`;
     } else {
-        ship = `${user} y ${touser}`;
-        letras_nombre1 = user.substring(0, 3);
-        letras_nombre2 = touser.substring(touser.length - 2);
+        ship = `${u} y ${t}`;
+        letras_nombre1 = u.substring(0, 3);
+        letras_nombre2 = t.substring(t.length - 2);
         nombre_ship = `${letras_nombre1}${letras_nombre2}`;
         mensaje = `❤️ ${ship} son ${porcentaje}% compatibles. El nombre del ship es: ${nombre_ship}. ${emote_adpt}`;
         mensaje;
     }
 } else {
     emote_adpt = `angarJu `;
-    mensaje = `${user}, Menciona a alguien para descubrir tu compatibilidad o otras dos personas para saber la de ellos. ${emote_adpt}`;
+    mensaje = `${u}, Menciona a alguien para descubrir tu compatibilidad o otras dos personas para saber la de ellos. ${emote_adpt}`;
     mensaje;
 }
