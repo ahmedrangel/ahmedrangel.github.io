@@ -4,7 +4,7 @@
 
 # Uso
 
-En el campo para escribir un mensaje en un canal de twitch añadimos un comando con `!addcom`, luego el nombre del comando `!addcom !NOMBRE` y luego el contenido del comando. En este caso se utiliza la variable `$(urlfetch URL)` para llamar a un URL que recupera y muestra una respuesta.
+En el campo para escribir mensajes en un canal de twitch, siendo streamer o moderador del chat, añadimos un comando con `!addcom`, luego el nombre del comando `!addcom !NOMBRE` y luego el contenido del comando. En este caso se utiliza la variable `$(urlfetch URL)` para llamar a un URL que recupera y muestra una respuesta.
 
 #### El campo se vería así:
 
