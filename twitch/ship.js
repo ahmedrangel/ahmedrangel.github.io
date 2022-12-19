@@ -1,6 +1,4 @@
 query = q;
-user = u
-touser = t;
 query = query.replace(/@/g, '');
 espacios = query.indexOf(' ');
 porcentaje = Math.round(Math.random()*100);
@@ -15,9 +13,9 @@ if (espacios >= 0) {
     }
     mensaje;
 } else {
-    ship = `${user} y ${touser}`;
-    letras_nombre1 = user.substring(0, 3);
-    letras_nombre2 = touser.substring(touser.length - 2);
+    ship = `${u} y ${t}`;
+    letras_nombre1 = u.substring(0, 3);
+    letras_nombre2 = t.substring(t.length - 2);
     nombre_ship = `${letras_nombre1}${letras_nombre2}`;
     mensaje = `${ship} son ${porcentaje}% compatibles. ❤️ El nombre del ship es: ${nombre_ship}. `;
     mensaje;
