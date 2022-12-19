@@ -3,10 +3,10 @@ if (q) {
     touser = t;
     query = q;
     query = query.replace(/@/g, '');
-    espacios = query.indexOf(' ');
+    espacios = query.split(" ").length - 1;
     porcentaje = Math.round(Math.random()*100);
     mensaje = null;
-    if (espacios >= 0) {
+    if (espacios > 0 && espacios <= 1) {
         split = query.split(" ");
         ship = `${split[0]} y ${split[1]}`;
         letras_nombre1 = split[0].substring(0, 3);
