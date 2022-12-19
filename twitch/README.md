@@ -19,4 +19,4 @@ El contenido del comando puede incluir más [variables propias del Nightbot](htt
 ```!addcom !ship $(eval q = `$(query)`; u = `$(user)`; t = `$(touser)`; $(urlfetch json https://ahmedrangel.github.io/twitch/ship.js))```
 
 - Esto agrega el comando que llamará al archivo `ship.js` cada vez que el comando `!ship` sea disparado.
-- Además de la variable `$(urlfetch URL)`, primero declara dentro de `$(eval)` otras variables como la Query ```q = `$(query)`;```, el User ```u = `$(usuario)`;``` y el ToUser ```t = `$(touser)`;```,
+- Además de la variable `$(urlfetch URL)`, primero declara dentro de `$(eval)` otras variables como la Query ```q = `$(query)`;```, el User ```u = `$(user)`;``` y el ToUser ```t = `$(touser)`;```,
