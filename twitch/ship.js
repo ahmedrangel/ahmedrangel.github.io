@@ -1,4 +1,5 @@
 query = q;
+query = query.replace(/@/g, '');
 split = query.split(" ");
 ship = `${split[0]} y ${split[1]}`;
 letras_nombre1 = split[0].substring(0, 3);
