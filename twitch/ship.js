@@ -45,6 +45,6 @@ if (q) {
     }
 } else {
     emote_adpt = `angarJu `;
-    mensaje = `${u}, Menciona a alguien para descubrir tu compatibilidad o otras dos personas para saber la de ellos. ${emote_adpt}`;
+    mensaje = `${u}, Menciona a alguien para descubrir tu compatibilidad o a otras dos personas para saber la de ellos. ${emote_adpt}`;
     mensaje;
 }
