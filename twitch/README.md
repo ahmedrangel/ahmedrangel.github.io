@@ -1,6 +1,6 @@
 # Twitch
 
-#### Scripts para comandos usados como customapis con la variable UrlFetch de Nightbot.
+#### Scripts para comandos usados como customapis con la variable [UrlFetch de Nightbot](https://docs.nightbot.tv/variables/urlfetch).
 
 # Uso
 
