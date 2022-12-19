@@ -10,7 +10,7 @@ En el campo para escribir un mensaje en un canal de twitch añadimos un comando 
 
 - `!addcom !NOMBRE $(urlfetch URL)`
 
-## Comentario:
+### Comentario:
 
 El contenido del comando puede necesitar más [variables propias del Nightbot](https://docs.nightbot.tv/commands/variableslist) o declaradas por uno mismo para luego estas ser utilizados dentro de un script.
 
