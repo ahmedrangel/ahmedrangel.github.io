@@ -1,3 +1,5 @@
+user = u;
+touser = t;
 query = q;
 query = query.replace(/@/g, '');
 espacios = query.indexOf(' ');
