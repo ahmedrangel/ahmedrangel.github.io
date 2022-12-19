@@ -18,6 +18,8 @@ if (q) {
         mensaje;
     } else if (espacios >= 2) {
         mensaje = `${u}, No tengo la capacidad de calcular la compatibilidad con más de 2 personas. angarG `;
+    } else if (user.toLowerCase() == touser.toLowerCase()) {
+        mensaje = `${u}, Acaso estas tratando de ver si eres compatible contigo mismo? angarMonkas`;
     } else {
         ship = `${u} y ${t}`;
         letras_nombre1 = u.substring(0, 3);
