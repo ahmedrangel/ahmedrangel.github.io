@@ -13,7 +13,7 @@ if (q) {
         letras_nombre2 = split[1].substring(split[1].length - 2);
         nombre_ship = `${letras_nombre1}${letras_nombre2}`;
         if (split.length == 2) {
-            mensaje = `${ship} son ${porcentaje}% compatibles. ❤️ El nombre del ship es: ${nombre_ship}. angarH `;
+            mensaje = `${u}, ${ship} son ${porcentaje}% compatibles. ❤️ El nombre del ship es: ${nombre_ship}. angarH `;
         }
         mensaje;
     } else if (espacios >= 2) {
@@ -29,6 +29,6 @@ if (q) {
         mensaje;
     }
 } else {
-    mensaje = `Menciona a alguien para descubrir tu compatibilidad o otras dos personas para saber la de ellos. angarJu `;
+    mensaje = `${u}, Menciona a alguien para descubrir tu compatibilidad o otras dos personas para saber la de ellos. angarJu `;
     mensaje;
 }
