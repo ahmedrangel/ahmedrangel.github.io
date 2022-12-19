@@ -5,6 +5,7 @@ if (q) {
     query = query.replace(/@/g, '');
     espacios = query.indexOf(' ');
     porcentaje = Math.round(Math.random()*100);
+    mensaje = null;
     if (espacios >= 0) {
         split = query.split(" ");
         ship = `${split[0]} y ${split[1]}`;
@@ -12,15 +13,17 @@ if (q) {
         letras_nombre2 = split[1].substring(split[1].length - 2);
         nombre_ship = `${letras_nombre1}${letras_nombre2}`;
         if (split.length == 2) {
-            mensaje = `${ship} son ${porcentaje}% compatibles. ❤️ El nombre del ship es: ${nombre_ship}. `;
+            mensaje = `${ship} son ${porcentaje}% compatibles. ❤️ El nombre del ship es: ${nombre_ship}. angarH `;
         }
         mensaje;
+    } else if (espacios >= 2) {
+        mensaje = `${u}, No tengo la capacidad de calcular la compatibilidad con más de 2 personas. angarG `;
     } else {
         ship = `${u} y ${t}`;
         letras_nombre1 = u.substring(0, 3);
         letras_nombre2 = t.substring(t.length - 2);
         nombre_ship = `${letras_nombre1}${letras_nombre2}`;
-        mensaje = `${ship} son ${porcentaje}% compatibles. ❤️ El nombre del ship es: ${nombre_ship}. `;
+        mensaje = `${ship} son ${porcentaje}% compatibles. ❤️ El nombre del ship es: ${nombre_ship}. angarH `;
         mensaje;
     }
 } else {
