@@ -24,6 +24,6 @@ if (q) {
         mensaje;
     }
 } else {
-    mensaje = `Menciona a alguien para descubrir tu compatibilidad. angarJu `;
+    mensaje = `Menciona a alguien para descubrir tu compatibilidad o otras dos personas para saber la de ellos. angarJu `;
     mensaje;
 }
