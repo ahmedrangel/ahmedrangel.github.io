@@ -7,6 +7,5 @@ letras_nombre2 = split[1].substring(split[1].length - 2);
 nombre_ship = `${letras_nombre1}${letras_nombre2}`;
 porcentaje = Math.round(Math.random()*100);
 if (split.length == 2) {
-	mensaje = `${ship} tienen una compatibilidad de ${porcentaje}%. El nombre del ship es: ${nombre_ship}`;
-    mensaje;
+	mensaje = `${ship} son ${porcentaje}% compatibles. El nombre del ship es: ${nombre_ship}. `;
 }
