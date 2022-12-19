@@ -28,7 +28,7 @@ if (q) {
         letras_nombre2 = split[1].substring(split[1].length - 2);
         nombre_ship = `${letras_nombre1}${letras_nombre2}`;
         if (split.length == 2) {
-            mensaje = `${ship} son ${porcentaje}% compatibles. ❤️ El nombre del ship es: ${nombre_ship}. ${emote_adpt}`;
+            mensaje = `❤️ ${ship} son ${porcentaje}% compatibles. El nombre del ship es: ${nombre_ship}. ${emote_adpt}`;
         }
         mensaje;
     } else if (espacios >= 2) {
@@ -42,7 +42,7 @@ if (q) {
         letras_nombre1 = u.substring(0, 3);
         letras_nombre2 = t.substring(t.length - 2);
         nombre_ship = `${letras_nombre1}${letras_nombre2}`;
-        mensaje = `${ship} son ${porcentaje}% compatibles. ❤️ El nombre del ship es: ${nombre_ship}. ${emote_adpt}`;
+        mensaje = `❤️ ${ship} son ${porcentaje}% compatibles. El nombre del ship es: ${nombre_ship}. ${emote_adpt}`;
         mensaje;
     }
 } else {
