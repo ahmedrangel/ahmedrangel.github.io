@@ -20,3 +20,4 @@ El contenido del comando puede incluir más [variables propias del Nightbot](htt
 
 - Esto agrega el comando que llamará al archivo `ship.js` cada vez que el comando `!ship` sea disparado.
 - Además de la variable `$(urlfetch URL)`, primero declara dentro de `$(eval)` otras variables como la Query ```q = `$(query)`;```, el User ```u = `$(user)`;``` y el ToUser ```t = `$(touser)`;```,
+- Si el comando ya existe, en lugar de `!addcom` se debe utilizar `!editcom` para editarlo.
