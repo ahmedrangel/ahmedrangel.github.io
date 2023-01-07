@@ -3,9 +3,12 @@
     <div id="kiss">
     </div>
     <script>
-      const kiss_fetch = await fetch("https://twitch.ahmedr.workers.dev/top_users/KISS");
-      const kiss = await kiss_fetch.json();
-      document.querySelector("#kiss").innerHTML = kiss;
+      async function getTOPKISS() {
+        const kiss_fetch = await fetch("https://twitch.ahmedr.workers.dev/top_users/KISS");
+        const kiss = await kiss_fetch.text();
+        document.querySelector("#kiss").innerHTML = kiss;
+      }
+      window.addEventListener('load', getContent);
     </script>
   </body>
 </html>
