@@ -5,7 +5,7 @@
     <script>
       async function getTOPKISS() {
         const kiss_fetch = await fetch("https://twitch.ahmedr.workers.dev/top_users/KISS");
-        const kiss = await kiss_fetch.text();
+        const kiss = await kiss_fetch.json();
         document.querySelector("#kiss").innerHTML = kiss;
       }
       window.addEventListener('load', getTOPKISS);
