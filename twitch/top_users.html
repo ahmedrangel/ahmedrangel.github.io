@@ -6,7 +6,7 @@
       async function getTOPKISS() {
         const kiss_fetch = await fetch("https://twitch.bayzamusic.com/top_users/KISS");
         const kiss = await kiss_fetch.text();
-        const kiss_arr = kiss.split(',');
+        const kiss_arr = kiss.split('.');
         console.log(kiss_arr);
         document.querySelector("#kiss").innerHTML = kiss_arr.map(item => `<p>${item}.</p>`).join('');
       }
