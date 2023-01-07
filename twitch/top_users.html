@@ -8,7 +8,7 @@
         const kiss = await kiss_fetch.text();
         const kiss_arr = kiss.split(',');
         console.log(kiss_arr);
-        document.querySelector("#kiss").innerHTML = kiss_arr.map(item => `<p>${item}</p>`).join('.');
+        document.querySelector("#kiss").innerHTML = kiss_arr.map(item => `<p>${item}.</p>`).join('');
       }
       window.addEventListener('load', getTOPKISS);
     </script>
