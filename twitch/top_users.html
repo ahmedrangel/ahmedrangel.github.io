@@ -1,14 +1,20 @@
 <html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">
+  </head>
   <body>
-    <div id="kiss">
-    </div>
+    <div id="kiss"></div>
     <script>
       async function getTOPKISS() {
-        const kiss_fetch = await fetch("https://twitch.bayzamusic.com/top_users/spank");
-        const kiss_json = await JSON.parse(kiss_fetch);
-        log = kiss_json[0].usuario;
-        console.log(log);
-        /*document.querySelector("#kiss").innerHTML = kiss_arr.map(item => `<p>${item}</p>`).join('');*/
+        const kiss_fetch = await fetch("https://twitch.bayzamusic.com/top_users/kiss");
+        const kiss_json = await kiss_fetch.json();
+        let resultados = [];
+        for (let i = 0; i < kiss_json.length; i++) {
+          resultados.push(`<b>${kiss_json[i].usuario}</b> ha recibido <b>${kiss_json[i].valor}</b> ${kiss_json[i].tipo} en el canal <b>${kiss_json[i].canal}</b>`);
+        }
+        document.querySelector("#kiss").innerHTML = `<ol class="list-disc">${resultados.map(item => `<li><p>${item}</p></li>`).join('')}</ol>`;
       }
       window.addEventListener('load', getTOPKISS);
     </script>
