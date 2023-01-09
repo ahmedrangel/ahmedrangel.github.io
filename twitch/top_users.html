@@ -5,7 +5,8 @@
     <script>
       async function getTOPKISS() {
         const kiss_fetch = await fetch("https://twitch.bayzamusic.com/top_users/spank");
-        log = kiss_fetch[0].usuario;
+        const kiss_json = JSON.parse(kiss_fetch);
+        log = kiss_json[0].usuario;
         console.log(log);
         /*document.querySelector("#kiss").innerHTML = kiss_arr.map(item => `<p>${item}</p>`).join('');*/
       }
