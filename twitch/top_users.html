@@ -5,10 +5,9 @@
     <script>
       async function getTOPKISS() {
         const kiss_fetch = await fetch("https://twitch.bayzamusic.com/top_users/spank");
-        const kiss = await kiss_fetch.text();
-        const kiss_arr = kiss.split('},');
-        console.log(kiss_arr);
-        document.querySelector("#kiss").innerHTML = kiss_arr.map(item => `<p>${item}},</p>`).join('');
+        log = kiss_fetch[0].usuario;
+        console.log(log);
+        /*document.querySelector("#kiss").innerHTML = kiss_arr.map(item => `<p>${item}</p>`).join('');*/
       }
       window.addEventListener('load', getTOPKISS);
     </script>
