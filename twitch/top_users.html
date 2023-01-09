@@ -14,7 +14,7 @@
         for (let i = 0; i < kiss_json.length; i++) {
           resultados.push(`<b>${kiss_json[i].usuario}</b> ha recibido <b>${kiss_json[i].valor}</b> ${kiss_json[i].tipo} en el canal <b>${kiss_json[i].canal}</b>`);
         }
-        document.querySelector("#kiss").innerHTML = `<ol class="list-disc">${resultados.map(item => `<li><p>${item}</p></li>`).join('')}</ol>`;
+        document.querySelector("#kiss").innerHTML = `<ul class="list-disc">${resultados.map(item => `<li><p>${item}</p></li>`).join('')}</ul>`;
       }
       window.addEventListener('load', getTOPKISS);
     </script>
