@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">
+  </head>
+  <body class="bg-gray-800 text-white">
+    <div class="container mx-auto my-5">
+      <div class="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+        <div class="my-2 mx-2">
+          <div class="text-3xl mb-2">
+            <p><b>Top 10 HUG</b></p>
+          </div>
+          <div id="hug" class="text-sm text-slate-300"></div>
+        </div>
+        <div class="my-2 mx-2">
+          <div class="text-3xl mb-2">
+            <p><b>Top 10 KISS</b></p>
+          </div>
+          <div id="kiss" class="text-sm text-slate-300"></div>
+        </div>
+        <div class="my-2 mx-2">
+          <div class="text-3xl mb-2">
+            <p><b>Top 10 CUM</b></p>
+          </div>
+          <div id="cum" class="text-sm text-slate-300"></div>
+        </div>
+        <div class="my-2 mx-2">
+          <div class="text-3xl mb-2">
+            <p><b>Top 10 FUCK</b></p>
+          </div>
+          <div id="fuck" class="text-sm text-slate-300"></div>
+        </div>
+        <div class="my-2 mx-2">
+          <div class="text-3xl mb-2">
+            <p><b>Top 10 SPANK</b></p>
+          </div>
+          <div id="spank" class="text-sm text-slate-300"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      async function getTOPKISS() {
+        const tipo = "kiss";
+        const json_fetch = await fetch(`https://twitch.bayzamusic.com/top_users/angar/${tipo}`);
+        const json = await json_fetch.json();
+        let resultados = [];
+        for (let i = 0; i < json.length; i++) {
+          resultados.push(`
+          <b><a class="no-underline hover:underline text-white hover:text-slate-300" href="http://twitch.com/${json[i].usuario}" target="_blank">${json[i].usuario}</a></b> 
+          ha recibido <b class="text-white">${json[i].valor}</b> besos en el canal 
+          <b><a class="no-underline hover:underline text-white hover:text-slate-300" href="http://twitch.com/${json[i].canal}" target="_blank">${json[i].canal}</a></b>.
+          `);
+        }
+        document.querySelector(`#${tipo}`).innerHTML = `<ol class="list-decimal">${resultados.map(item => `<li class="mb-2 ml-4"><p>${item}</p></li>`).join('')}</ol>`;
+      }
+
+      async function getTOPHUG() {
+        const tipo = "hug";
+        const json_fetch = await fetch(`https://twitch.bayzamusic.com/top_users/angar/${tipo}`);
+        const json = await json_fetch.json();
+        let resultados = [];
+        for (let i = 0; i < json.length; i++) {
+          resultados.push(`
+          <b><a class="no-underline hover:underline text-white hover:text-slate-300" href="http://twitch.com/${json[i].usuario}" target="_blank">${json[i].usuario}</a></b> 
+          ha recibido <b class="text-white">${json[i].valor}</b> abrazos en el canal 
+          <b><a class="no-underline hover:underline text-white hover:text-slate-300" href="http://twitch.com/${json[i].canal}" target="_blank">${json[i].canal}</a></b>.
+          `);
+        }
+        document.querySelector(`#${tipo}`).innerHTML = `<ol class="list-decimal">${resultados.map(item => `<li class="mb-2 ml-4"><p>${item}</p></li>`).join('')}</ol>`;
+      }
+
+      async function getTOPCUM() {
+        const tipo = "cum";
+        const json_fetch = await fetch(`https://twitch.bayzamusic.com/top_users/angar/${tipo}`);
+        const json = await json_fetch.json();
+        let resultados = [];
+        for (let i = 0; i < json.length; i++) {
+          resultados.push(`
+          <b><a class="no-underline hover:underline text-white hover:text-slate-300" href="http://twitch.com/${json[i].usuario}" target="_blank">${json[i].usuario}</a></b> 
+          ha recibido <b class="text-white">${json[i].valor}</b> cumeadas en el canal 
+          <b><a class="no-underline hover:underline text-white hover:text-slate-300" href="http://twitch.com/${json[i].canal}" target="_blank">${json[i].canal}</a></b>.
+          `);
+        }
+        document.querySelector(`#${tipo}`).innerHTML = `<ol class="list-decimal">${resultados.map(item => `<li class="mb-2 ml-4"><p>${item}</p></li>`).join('')}</ol>`;
+      }
+
+      async function getTOPFUCK() {
+        const tipo = "fuck";
+        const json_fetch = await fetch(`https://twitch.bayzamusic.com/top_users/angar/${tipo}`);
+        const json = await json_fetch.json();
+        let resultados = [];
+        for (let i = 0; i < json.length; i++) {
+          resultados.push(`
+          <b><a class="no-underline hover:underline text-white hover:text-slate-300" href="http://twitch.com/${json[i].usuario}" target="_blank">${json[i].usuario}</a></b> 
+          ha recibido <b class="text-white">${json[i].valor}</b> folladas en el canal 
+          <b><a class="no-underline hover:underline text-white hover:text-slate-300" href="http://twitch.com/${json[i].canal}" target="_blank">${json[i].canal}</a></b>.
+          `);
+        }
+        document.querySelector(`#${tipo}`).innerHTML = `<ol class="list-decimal">${resultados.map(item => `<li class="mb-2 ml-4"><p>${item}</p></li>`).join('')}</ol>`;
+      }
+
+      async function getTOPSPANK() {
+        const tipo = "spank";
+        const json_fetch = await fetch(`https://twitch.bayzamusic.com/top_users/angar/${tipo}`);
+        const json = await json_fetch.json();
+        let resultados = [];
+        for (let i = 0; i < json.length; i++) {
+          resultados.push(`
+          <b><a class="no-underline hover:underline text-white hover:text-slate-300" href="http://twitch.com/${json[i].usuario}" target="_blank">${json[i].usuario}</a></b> 
+          ha recibido <b class="text-white">${json[i].valor}</b> nalgadas en el canal 
+          <b><a class="no-underline hover:underline text-white hover:text-slate-300" href="http://twitch.com/${json[i].canal}" target="_blank">${json[i].canal}</a></b>.
+          `);
+        }
+        document.querySelector(`#${tipo}`).innerHTML = `<ol class="list-decimal">${resultados.map(item => `<li class="mb-2 ml-4"><p>${item}</p></li>`).join('')}</ol>`;
+      }
+
+      window.addEventListener('load', getTOPKISS);
+      window.addEventListener('load', getTOPHUG);
+      window.addEventListener('load', getTOPCUM);
+      window.addEventListener('load', getTOPFUCK);
+      window.addEventListener('load', getTOPSPANK);
+    </script>
+  </body>
+</html>
