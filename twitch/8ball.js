@@ -15,5 +15,5 @@ arr_respuestas = [
 if (q) {
     respuesta = arr_respuestas[Math.floor(Math.random()*arr_respuestas.length)];
 } else {
-    `Escribe una pregunta. angarMad Las respuestas de este comando mayormente son para afirmar o negar una pregunta. PotFriend`;
+    `Escribe una pregunta. Las respuestas de este comando mayormente son para afirmar o negar una pregunta. PotFriend`;
 }
