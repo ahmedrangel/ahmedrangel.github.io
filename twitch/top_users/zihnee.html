@@ -71,8 +71,7 @@
           for (let i = 0; i < json.length; i++) {
             resultados.push(`
             <b><a class="no-underline hover:underline text-white hover:text-slate-300" href="http://twitch.com/${json[i].usuario}" target="_blank">${json[i].usuario}</a></b> 
-            ha recibido <b class="text-white">${json[i].valor}</b> besos en el canal 
-            <b><a class="no-underline hover:underline text-white hover:text-slate-300" href="http://twitch.com/${json[i].canal}" target="_blank">${json[i].canal}</a></b>.
+            ha recibido <b class="text-white">${json[i].valor}</b> besos${json[i].canal}</a></b>.
             `);
           }
           document.querySelector(`#${tipo}`).innerHTML = `<ol class="list-decimal">${resultados.map(item => `<li class="mb-2 ml-4"><p>${item}</p></li>`).join('')}</ol>`;
@@ -91,8 +90,7 @@
           for (let i = 0; i < json.length; i++) {
             resultados.push(`
             <b><a class="no-underline hover:underline text-white hover:text-slate-300" href="http://twitch.com/${json[i].usuario}" target="_blank">${json[i].usuario}</a></b> 
-            ha recibido <b class="text-white">${json[i].valor}</b> abrazos en el canal 
-            <b><a class="no-underline hover:underline text-white hover:text-slate-300" href="http://twitch.com/${json[i].canal}" target="_blank">${json[i].canal}</a></b>.
+            ha recibido <b class="text-white">${json[i].valor}</b> abrazos${json[i].canal}</a></b>.
             `);
           }
           document.querySelector(`#${tipo}`).innerHTML = `<ol class="list-decimal">${resultados.map(item => `<li class="mb-2 ml-4"><p>${item}</p></li>`).join('')}</ol>`;
@@ -110,8 +108,7 @@
           for (let i = 0; i < json.length; i++) {
             resultados.push(`
             <b><a class="no-underline hover:underline text-white hover:text-slate-300" href="http://twitch.com/${json[i].usuario}" target="_blank">${json[i].usuario}</a></b> 
-            ha recibido <b class="text-white">${json[i].valor}</b> cumeadas en el canal 
-            <b><a class="no-underline hover:underline text-white hover:text-slate-300" href="http://twitch.com/${json[i].canal}" target="_blank">${json[i].canal}</a></b>.
+            ha recibido <b class="text-white">${json[i].valor}</b> cumeadas${json[i].canal}</a></b>.
             `);
           }
           document.querySelector(`#${tipo}`).innerHTML = `<ol class="list-decimal">${resultados.map(item => `<li class="mb-2 ml-4"><p>${item}</p></li>`).join('')}</ol>`;
@@ -129,8 +126,7 @@
           for (let i = 0; i < json.length; i++) {
             resultados.push(`
             <b><a class="no-underline hover:underline text-white hover:text-slate-300" href="http://twitch.com/${json[i].usuario}" target="_blank">${json[i].usuario}</a></b> 
-            ha recibido <b class="text-white">${json[i].valor}</b> folladas en el canal 
-            <b><a class="no-underline hover:underline text-white hover:text-slate-300" href="http://twitch.com/${json[i].canal}" target="_blank">${json[i].canal}</a></b>.
+            ha recibido <b class="text-white">${json[i].valor}</b> folladas${json[i].canal}</a></b>.
             `);
           }
           document.querySelector(`#${tipo}`).innerHTML = `<ol class="list-decimal">${resultados.map(item => `<li class="mb-2 ml-4"><p>${item}</p></li>`).join('')}</ol>`;
@@ -148,8 +144,7 @@
           for (let i = 0; i < json.length; i++) {
             resultados.push(`
             <b><a class="no-underline hover:underline text-white hover:text-slate-300" href="http://twitch.com/${json[i].usuario}" target="_blank">${json[i].usuario}</a></b> 
-            ha recibido <b class="text-white">${json[i].valor}</b> nalgadas en el canal 
-            <b><a class="no-underline hover:underline text-white hover:text-slate-300" href="http://twitch.com/${json[i].canal}" target="_blank">${json[i].canal}</a></b>.
+            ha recibido <b class="text-white">${json[i].valor}</b> nalgadas${json[i].canal}</a></b>.
             `);
           }
           document.querySelector(`#${tipo}`).innerHTML = `<ol class="list-decimal">${resultados.map(item => `<li class="mb-2 ml-4"><p>${item}</p></li>`).join('')}</ol>`;
