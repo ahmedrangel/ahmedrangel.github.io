@@ -1,0 +1,15 @@
+<script>
+(async() => {
+  const r = await fetch("https://kick.com/api/v2/channels/zihnee/livestream");
+  const d = await r.json();
+  console.log(d);
+  let check;
+  if (d.data == null) {
+  check = 0;
+  } else {
+  check = 1;
+  }
+  console.log(check);
+  const a = await fetch(`https://dev.ahmedrangel.com/dc/kick-live?channel=zihnee&check=${check}`);
+})();
+</script>
