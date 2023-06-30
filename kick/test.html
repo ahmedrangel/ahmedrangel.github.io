@@ -29,6 +29,8 @@
   const response = await a.json();
   document.body.innerHTML = JSON.stringify({
     is_live: check,
+    user: user,
+    profile_pic: profile_pic,
     notify: response.notificar,
     title: title,
     category: category,
