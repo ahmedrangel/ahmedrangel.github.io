@@ -8,15 +8,18 @@
 (async() => {
   const r = await fetch("https://kick.com/api/v1/channels/zihnee");
   const d = await r.json();
-  console.log(d);
-  let check, title, category, thumbnail;
+  let check, title, category, thumbnail, user, profile_pic;
   if (d.livestream == null) {
     check = 0;
+    user = d.user.username;
+    profile_pic = d.user.profile_pic;
     title = "";
     category = "";
     thumbnail = "";
   } else {
     check = 1;
+    user = d.user.username;
+    profile_pic = d.user.profile_pic;
     title = d.livestream.session_title;
     category = d.livestream.categories[0].name;
     thumbnail = d.livestream.thumbnail.url;
