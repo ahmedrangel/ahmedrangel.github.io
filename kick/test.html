@@ -26,7 +26,10 @@
   const response = await a.json();
   document.body.innerHTML = JSON.stringify({
     is_live: check,
-    notificar: response.notificar,
+    notify: response.notificar,
+    title: title,
+    category: category,
+    thumbnail: thumbnail
   });
 })();
 </script>
