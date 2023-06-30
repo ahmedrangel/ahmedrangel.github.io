@@ -20,7 +20,7 @@
   const a = await fetch(`https://dev.ahmedrangel.com/dc/kick-live?channel=zihnee&check=${check}`);
   const response = await a.json();
   document.querySelector(".notificar").innerHTML = response.notificar;
-  innerHTML = JSON.stringify({
+  document.body.innerHTML = JSON.stringify({
     is_live: check,
     notificar: response.notificar,
   });
