@@ -1,8 +1,0 @@
-<div id="test"></div>
-<script>
-(async() => {
-  const kickFetch = await fetch(`https://kick.com/api/v1/channels/zihnee`);
-  const kickData = await kickFetch.text();
-  document.getElementById("test").innerHTML = kickData;
-})();
-</script>
