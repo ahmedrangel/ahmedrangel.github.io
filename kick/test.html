@@ -6,14 +6,20 @@
 </html>
 <script>
 (async() => {
-  const r = await fetch("https://kick.com/api/v2/channels/zihnee/livestream");
+  const r = await fetch("https://kick.com/api/v2/channels/zihnee");
   const d = await r.json();
   console.log(d);
-  let check;
-  if (d.data == null) {
-  check = 0;
+  let check, title, category, thumbnail;
+  if (d.livestream == null) {
+    check = 0;
+    title = "";
+    category = "";
+    thumbnail = "";
   } else {
-  check = 1;
+    check = 1;
+    title = d.livestream.session_title;
+    category = d.livestream.categories[0].name;
+    thumbnail = d.livestream.thumbnail.url;
   }
   console.log(check);
   const a = await fetch(`https://dev.ahmedrangel.com/dc/kick-live?channel=zihnee&check=${check}`);
