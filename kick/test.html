@@ -1,6 +1,7 @@
 <html>
     <body>
         <div class="is_live"></div>
+        <div class="notificar"></div>
     </body>
 </html>
 <script>
@@ -15,9 +16,10 @@
   check = 1;
   }
   console.log(check);
+  document.querySelector(".is_live").innerHTML = check;
   const a = await fetch(`https://dev.ahmedrangel.com/dc/kick-live?channel=zihnee&check=${check}`);
   const response = await a.json();
-  document.querySelector(".is_live").innerHTML = response.notificar;
+  document.querySelector(".notificar").innerHTML = response.notificar;
 
 })();
 </script>
