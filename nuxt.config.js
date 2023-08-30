@@ -24,5 +24,8 @@ export default defineNuxtConfig({
   },
   modules: [
     "nuxt-icon"
-  ]
+  ],
+  experimental: {
+    inlineSSRStyles: false
+  }
 });
