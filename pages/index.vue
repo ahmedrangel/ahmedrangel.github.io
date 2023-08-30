@@ -12,7 +12,9 @@
       <div id="collapsibleNavbar" ref="nav" class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <NuxtLink class="nav-link py-0" to="/" @click="toggleTheme()">Home</NuxtLink>
+            <div class="btn py-0 d-flex justify-content-center align-items-center pe-auto" @click="toggleTheme()">
+              <Icon class="iconify" :name="dark ? `ph:moon-stars-duotone` : `ph:sun-duotone`" />
+            </div>
           </li>
         </ul>
       </div>
