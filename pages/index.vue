@@ -101,7 +101,7 @@ export default {
   data () {
     return {
       dark: true,
-      lang: "es"
+      lang: "en"
     };
   },
   mounted () {
