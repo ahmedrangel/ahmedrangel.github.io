@@ -12,8 +12,9 @@
       <div id="collapsibleNavbar" ref="nav" class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <div class="btn py-0 d-flex justify-content-center align-items-center pe-auto" @click="toggleTheme()">
-              <Icon class="iconify" :name="dark ? `ph:moon-stars-duotone` : `ph:sun-duotone`" />
+            <div class="form-check form-switch d-flex justify-content-center align-items-center pe-auto p-0">
+              <input id="flexSwitchCheckChecked" class="form-check-input p-0 m-0" type="checkbox" :style="`--bs-form-switch-bg: url(${MoonSun(dark)})`" checked @click="toggleTheme()">
+              <label class="form-check-label" for="flexSwitchCheckChecked" />
             </div>
           </li>
         </ul>
@@ -102,7 +103,7 @@ export default {
   data () {
     return {
       dark: true,
-      lang: "en"
+      lang: "en",
     };
   },
   mounted () {
@@ -136,6 +137,7 @@ export default {
   methods: {
     toggleTheme () {
       this.dark = !this.dark;
+      this.textColor = "#12151c";
       useHead({
         bodyAttrs: { "data-bs-theme": this.dark ? "dark" : "light" }
       });
