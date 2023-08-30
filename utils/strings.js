@@ -10,14 +10,14 @@ class Locale {
   get (key) {
     return locales[this.code][key] || locales.en[key] || key;
   }
-  setLanguage (code = "es") {
+  setLanguage (code = "en") {
     this.code = String(code).toLowerCase();
   }
   getLanguage () {
     return this.code;
   }
 }
-export const locale = new Locale("es");
+export const locale = new Locale("en");
 
 export const t = (key) => {
   return locale.get(key);

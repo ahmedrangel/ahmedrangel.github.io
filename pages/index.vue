@@ -1,5 +1,4 @@
 <script setup>
-definePageMeta({ layout: "site" });
 </script>
 <template>
   <main class="mt-5 pt-4 container-lg">
