@@ -8,7 +8,7 @@ class Locale {
     this.code = String(code).toLowerCase();
   }
   get (key) {
-    return locales[this.code][key] || locales.en[key] || key;
+    return locales[this.code][key] || locales.es[key] || key;
   }
   setLanguage (code = "en") {
     this.code = String(code).toLowerCase();

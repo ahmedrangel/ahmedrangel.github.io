@@ -2,17 +2,24 @@
 </script>
 <template>
   <main class="mt-5 pt-4 container-lg">
-    <nav id="navbar" class="navbar navbar-expand-md px-4 py-3 fixed-top smart-scroll">
+    <nav id="navbar" ref="nav" class="navbar navbar-expand-md px-4 py-3 fixed-top smart-scroll text-color">
       <NuxtLink class="navbar-brand py-0" to="/">
         <h5 class="m-0 text-primary fw-bold">{{ t("name_abreviated") }}</h5>
       </NuxtLink>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon" />
       </button>
-      <div id="collapsibleNavbar" ref="nav" class="collapse navbar-collapse">
+      <div id="collapsibleNavbar"  class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <div class="form-check form-switch d-flex justify-content-center align-items-center pe-auto p-0">
+          <li class="nav-item dropdown mx-2">
+            <span id="navbardrop" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">{{ lang.toUpperCase() }}</span>
+            <div class="dropdown-menu">
+              <span class="dropdown-item" @click="setLang(`en`)">EN</span>
+              <span class="dropdown-item" @click="setLang(`es`)">ES</span>
+            </div>
+          </li>
+          <li class="nav-item align-self-center">
+            <div class="form-check form-switch d-flex justify-content-center align-items-center pe-auto p-0 m-0">
               <input id="flexSwitchCheckChecked" class="form-check-input p-0 m-0" type="checkbox" :style="`--bs-form-switch-bg: url(${MoonSun(dark)})`" checked @click="toggleTheme()">
               <label class="form-check-label" for="flexSwitchCheckChecked" />
             </div>
@@ -104,7 +111,13 @@ export default {
     return {
       dark: true,
       lang: "en",
+      scrolledDown: false
     };
+  },
+  watch: {
+    lang (val) {
+      locale.setLanguage(val);
+    }
   },
   mounted () {
     if (document.querySelectorAll(".smart-scroll").length > 0) {
@@ -123,13 +136,16 @@ export default {
     }
     const scrollFunction = () => {
       if ((document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) || (window.innerWidth < 767)) {
-        document.querySelector("#navbar").style.background = "#121212";
+        this.scrolledDown = true;
+        document.querySelector("#navbar").classList.add(this.dark ? "nav-bg-dark" : "nav-bg-light");
+        document.querySelector("#navbar").classList.remove(!this.dark ? "nav-bg-dark" : "nav-bg-light");
         document.querySelector("#navbar").style.fontSize = "1rem";
-        document.querySelector("#navbar img").style.width = 100;
-      }else {
+      } else {
+        this.scrolledDown = false;
+        document.querySelector("#navbar").classList.remove("nav-bg-dark");
+        document.querySelector("#navbar").classList.remove("nav-bg-light");
         document.querySelector("#navbar").style.background = "transparent";
         document.querySelector("#navbar").style.fontSize = "1.3rem";
-        document.querySelector("#navbar img").style.width = 130;
       }
     };
     window.onscroll = () => {scrollFunction();};
@@ -138,9 +154,14 @@ export default {
     toggleTheme () {
       this.dark = !this.dark;
       this.textColor = "#12151c";
+      this.$refs.nav.classList.add(this.dark && this.scrolledDown ? "nav-bg-dark" : "nav-bg-light");
+      this.$refs.nav.classList.remove(!this.dark && this.scrolledDown ? "nav-bg-dark" : "nav-bg-light");
       useHead({
         bodyAttrs: { "data-bs-theme": this.dark ? "dark" : "light" }
       });
+    },
+    setLang (lang) {
+      this.lang = lang;
     },
     collapseNav () {
       const nav = this.$refs.nav;

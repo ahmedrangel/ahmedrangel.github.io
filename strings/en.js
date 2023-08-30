@@ -3,7 +3,7 @@ export default {
   name: "Eliezer Ahmed Rangel Baysa",
   name_abreviated: "Eliezer A. Rangel B.",
   about_me: "About Me",
-  bio: "Actualmente, me destaco como un desarrollador entusiasta que ha acumulado experiencia a lo largo de los años en varios tipos de tecnologías y frameworks, tanto en el ámbito frontend como en el backend, para la creación de aplicaciones web altamente eficientes y funcionales. Mi pasión desde pequeño por el mundo de las computadoras y las tecnologías emergentes impulsa constantemente mi crecimiento personal y profesional. Cuento con habilidades significativas en el desarrollo de aplicaciones web, automatización de sistemas, administración de bases de datos y la implementación de interfaces de programación de aplicaciones.",
+  bio: "Currently, I stand out as an enthusiastic developer who has gathered experience over the years in various types of technologies and frameworks, both on the frontend and backend sides, for creating highly efficient and functional web applications. My lifelong passion for the world of computing and emerging technologies continually drives my personal and professional growth. I possess substantial skills in web application development, system automation, database management, and the implementation of application programming interfaces.",
   degree: "Computer and Systems Engineering",
   bachelor: "High School Diploma, Science",
   years_old: "years old",
