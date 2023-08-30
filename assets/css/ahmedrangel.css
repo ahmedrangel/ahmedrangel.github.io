@@ -1,0 +1,48 @@
+:root {
+  --white: #f9fafe;
+  --dark: #12151c;
+}
+
+:root [data-bs-theme=light] {
+  --bs-border-color: var(--dark);
+  --bs-body-bg: var(--white);
+  --bs-link-color: var(--dark);
+  --bs-link-color-rgb: var(--dark);
+  --primary: #d80b30;
+  --muted-bg: #c4c4c4;
+}
+
+:root [data-bs-theme=dark] {
+  --bs-border-color: var(--white);
+  --bs-body-bg: var(--dark);
+  --bs-link-color: var(--white);
+  --bs-link-color-rgb: var(--white);
+  --primary: #ff728c;
+  --muted-bg: #323439;
+}
+
+body, html {
+  font-family: Zen Kaku Gothic New;
+  font-size: 18px;
+}
+.profile-image {
+  bottom: -15px;
+  right: -15px;
+  z-index: -1;
+  border-width: 8px!important;
+}
+
+.text-primary {
+  color: var(--primary)!important;
+}
+
+#about .iconify {
+  font-size: 30px;
+  min-width: fit-content;
+  color: var(--primary);
+}
+
+.progress {
+  --bs-progress-bar-bg: var(--primary);
+  background-color: var(--muted-bg);
+}

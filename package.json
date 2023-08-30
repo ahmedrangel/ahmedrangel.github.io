@@ -1,5 +1,22 @@
 {
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint --ext .ts,.js,.vue --fix --ignore-path .gitignore ."
+  },
   "devDependencies": {
-    "tailwindcss": "^3.2.4"
+    "@nuxt/devtools": "latest",
+    "nuxt": "^3.7.0"
+  },
+  "dependencies": {
+    "@nuxt/eslint-config": "^0.2.0",
+    "bootstrap": "^5.3.1",
+    "eslint": "^8.48.0",
+    "nuxt-icon": "^0.5.0"
   }
 }
