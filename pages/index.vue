@@ -217,9 +217,9 @@ export default {
   },
   mounted () {
     this.nav = this.$refs.nav;
-    if (this.nav.length > 0) {
+    if (this.nav) {
       let last_scroll_top = 0;
-      window.addEventListener("scroll", function() {
+      window.addEventListener("scroll", () => {
         const scroll_top = window.pageYOffset || document.documentElement.scrollTop;
         if (scroll_top < last_scroll_top) {
           this.nav.classList.remove("scrolled-down");
@@ -232,7 +232,7 @@ export default {
       });
     }
     const scrollFunction = () => {
-      if ((document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) || (window.innerWidth < 767)) {
+      if ((document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) || (window.innerWidth < 767)) {
         this.scrolledDown = true;
         this.nav.classList.add(this.dark ? "nav-bg-dark" : "nav-bg-light");
         this.nav.classList.remove(!this.dark ? "nav-bg-dark" : "nav-bg-light");
