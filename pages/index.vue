@@ -113,7 +113,7 @@
         </div>
       </div>
     </div>
-    <hr class="my-4">
+    <hr class="mt-0 mb-4">
   </main>
 </template>
 <script>
