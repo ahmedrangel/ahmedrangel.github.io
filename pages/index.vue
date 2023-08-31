@@ -25,15 +25,16 @@
           </li>
           <li class="nav-item align-self-center">
             <div class="form-check form-switch d-flex justify-content-center align-items-center pe-auto p-0 m-0">
-              <input id="flexSwitchCheckChecked" class="form-check-input p-0 m-0" type="checkbox" :style="`--bs-form-switch-bg: url(${MoonSun(dark)})`" checked @click="toggleTheme()">
+              <input id="flexSwitchCheckChecked" class="form-check-input p-0 m-0" type="checkbox" role="switch" :style="`--bs-form-switch-bg: url(${MoonSun(dark)})`" checked @click="toggleTheme()">
+              <span class="slider" />
               <label class="form-check-label" for="flexSwitchCheckChecked" />
             </div>
           </li>
         </ul>
       </div>
     </nav>
-    <div id="about" class="pt-4">
-      <h3 class="fw-bold">{{ t("about_me") }}</h3>
+    <div id="about" class="pt-5">
+      <h3 class="fw-bold mb-3">{{ t("about_me") }}</h3>
       <div class="row justify-content-center g-4">
         <div class="col-12 col-md-3 pb-3">
           <div class="ps-0 pe-3">
@@ -80,24 +81,28 @@
     <hr class="my-4">
     <div id="education" class="row">
       <div class="col-12 col-lg-8 mb-4">
-        <h3 class="fw-bold">{{ t("education") }}</h3>
-        <div class="h5 mb-0">
-          <span class="text-primary fw-bold me-2">{{ t("degree") }}</span>
-          <span class="me-2">{{ t("at") }}</span>
-          <span class="text-primary fw-bold">{{ t("utp") }}</span>
+        <h3 class="fw-bold mb-3">{{ t("education") }}</h3>
+        <div class="mb-2">
+          <div class="h5 mb-0">
+            <span class="text-primary fw-bold me-2">{{ t("degree") }}</span>
+            <span class="me-2">{{ t("at") }}</span>
+            <span class="text-primary fw-bold">{{ t("utp") }}</span>
+          </div>
+          <p class="m-0">{{ t("panama_city") }}, {{ t("panama") }}</p>
+          <p class="m-0">{{ t("months")[1 - 1] }} 2016 — {{ t("months")[5 - 1] }} 2022</p>
         </div>
-        <p class="m-0">{{ t("panama_city") }}, {{ t("panama") }}</p>
-        <p class="m-0">{{ t("months")[1 - 1] }} 2016 — {{ t("months")[5 - 1] }} 2022</p>
-        <div class="h5 mb-0">
-          <span class="text-primary fw-bold me-2">{{ t("bachelor") }}</span>
-          <span class="me-2">{{ t("at") }}</span>
-          <span class="text-primary fw-bold">{{ t("pps") }}</span>
+        <div class="mb-2">
+          <div class="h5 mb-0">
+            <span class="text-primary fw-bold me-2">{{ t("bachelor") }}</span>
+            <span class="me-2">{{ t("at") }}</span>
+            <span class="text-primary fw-bold">{{ t("pps") }}</span>
+          </div>
+          <p class="m-0">{{ t("la_chorrera") }}, {{ t("panama") }}</p>
+          <p class="m-0">{{ t("months")[2 - 1] }} 2010 — {{ t("months")[12 - 1] }} 2015</p>
         </div>
-        <p class="m-0">{{ t("la_chorrera") }}, {{ t("panama") }}</p>
-        <p class="m-0">{{ t("months")[2 - 1] }} 2010 — {{ t("months")[12 - 1] }} 2015</p>
       </div>
       <div class="col-12 col-lg-4 mb-4">
-        <h4 class="fw-bold">{{ t("languages") }}</h4>
+        <h4 class="fw-bold mb-3">{{ t("languages") }}</h4>
         <p class="mb-1"><b>{{ t("spanish") }}:</b> {{ t("native") }}</p>
         <div class="progress mb-3">
           <div class="progress-bar w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" />
@@ -148,7 +153,6 @@ export default {
         this.scrolledDown = false;
         document.querySelector("#navbar").classList.remove("nav-bg-dark");
         document.querySelector("#navbar").classList.remove("nav-bg-light");
-        document.querySelector("#navbar").style.background = "transparent";
       }
     };
     window.onscroll = () => {scrollFunction();};

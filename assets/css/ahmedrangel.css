@@ -1,6 +1,8 @@
 :root {
   --white: #f9fafe;
   --dark: #12151c;
+  --dark2: #0f0f10;
+  --white2: #ffe8ec;
 }
 
 :root [data-bs-theme=light] {
@@ -11,6 +13,7 @@
   --primary: #d80b30;
   --muted-bg: #c4c4c4;
   --text-color: var(--dark);
+  --navbar-bg: var(--white2);
 }
 
 :root [data-bs-theme=dark] {
@@ -21,6 +24,7 @@
   --primary: #ff728c;
   --muted-bg: #323439;
   --text-color: var(--white);
+  --navbar-bg: var(--dark2);
 }
 
 .navbar {
@@ -59,29 +63,47 @@ body, html {
 
 @media only screen and (max-width: 767px) {
   #navbar {
-    background: var(--dark);
+    background: var(--navbar-bg)!important;
     font-size: 1rem;
   }
   .nav-item {
     margin-top: 1rem;
   }
+  .form-check-input:checked {
+    background-color: var(--dark)!important;
+  }
+  .form-check-input {
+    background-color: var(--white)!important;
+  }
+}
+
+#navbar {
+  background: transparent;
 }
 
 .form-check-input:checked {
-  background-color: #2c3167;
-  border-color: var(--text-color);
+  background-color: var(--dark2);
+  border-color: var(--primary)
 }
 
 .form-check-input:focus {
-  border-color: var(--text-color);
+  border-color: var(--primary);
   outline: 0;
-  box-shadow: 0 0 0 0 rgba(255,255,255,0);
+  box-shadow: 0 0 0 0 transparent;
 }
 
 .form-check-input {
-  background-color: #fff3b4;
-  border: 2px solid var(--text-color);
+  background-color: var(--white2);
+  border: 2px solid var(--primary);
   font-size: 32px;
+}
+
+.nav-bg-dark .form-check-input {
+  background-color: var(--dark);
+}
+
+.nav-bg-light .form-check-input {
+  background-color: var(--white);
 }
 
 .dropdown:hover .dropdown-menu {
@@ -98,11 +120,11 @@ body, html {
 }
 
 .nav-bg-light {
-  background: #ffe8ec!important;
+  background: var(--white2)!important;
 }
 
 .nav-bg-dark {
-  background: #0f0f10!important;
+  background: var(--dark2)!important;
 }
 
 .nav-item *:hover, #navbardrop:hover, .dropdown {
