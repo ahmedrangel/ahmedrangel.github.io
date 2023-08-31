@@ -42,8 +42,13 @@ body, html {
   right: -15px;
   z-index: -1;
   border-width: 8px!important;
+  background: var(--primary);
+  border-radius: 4px;
 }
 
+#about img {
+  border-radius: 4px;
+}
 .text-primary {
   color: var(--primary)!important;
 }
