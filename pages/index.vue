@@ -2,6 +2,7 @@
 </script>
 <template>
   <main class="mt-5 container-lg">
+    <!-- Navbar -->
     <nav id="navbar" ref="nav" class="navbar navbar-expand-md px-4 py-3 fixed-top smart-scroll text-color fw-bold">
       <NuxtLink class="navbar-brand py-0" to="/" :lang="lang">
         <span class="m-0 text-primary">{{ t("name_abreviated") }}</span>
@@ -33,6 +34,7 @@
         </ul>
       </div>
     </nav>
+    <!-- About -->
     <div id="about" class="pt-5">
       <h3 class="fw-bold mb-3">{{ t("about_me") }}</h3>
       <div class="row justify-content-center g-4">
@@ -79,6 +81,7 @@
       </div>
     </div>
     <hr class="my-4">
+    <!-- Education -->
     <div id="education" class="row">
       <div class="col-12 col-lg-8 mb-4">
         <h3 class="fw-bold mb-3">{{ t("education") }}</h3>
@@ -101,6 +104,7 @@
           <p class="m-0">{{ t("months")[2 - 1] }} 2010 — {{ t("months")[12 - 1] }} 2015</p>
         </div>
       </div>
+      <!-- Languages -->
       <div class="col-12 col-lg-4 mb-4">
         <h3 class="fw-bold mb-3">{{ t("languages") }}</h3>
         <p class="mb-1"><b>{{ t("spanish") }}:</b> {{ t("native") }}</p>
@@ -114,6 +118,7 @@
       </div>
     </div>
     <hr class="mt-0 mb-4">
+    <!-- Skills -->
     <div id="skills">
       <h3 class="fw-bold mb-3">{{ t("main_skills") }}</h3>
       <table class="table table-borderless m-0 align-middle">
@@ -227,7 +232,7 @@ export default {
       });
     }
     const scrollFunction = () => {
-      if ((document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) || (window.innerWidth < 767)) {
+      if ((document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) || (window.innerWidth < 767)) {
         this.scrolledDown = true;
         this.nav.classList.add(this.dark ? "nav-bg-dark" : "nav-bg-light");
         this.nav.classList.remove(!this.dark ? "nav-bg-dark" : "nav-bg-light");
