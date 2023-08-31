@@ -5,16 +5,16 @@ const locales = { es, en };
 
 class Locale {
   constructor (code) {
-    this.code = String(code).toLowerCase();
+    this.code = ref(String(code).toLowerCase());
   }
   get (key) {
-    return locales[this.code][key] || locales.es[key] || key;
+    return locales[this.code.value][key] || locales.es[key] || key;
   }
   setLanguage (code = "en") {
-    this.code = String(code).toLowerCase();
+    this.code.value = String(code).toLowerCase();
   }
   getLanguage () {
-    return this.code;
+    return this.code.value;
   }
 }
 export const locale = new Locale("en");
