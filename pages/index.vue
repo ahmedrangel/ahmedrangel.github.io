@@ -102,7 +102,7 @@
         </div>
       </div>
       <div class="col-12 col-lg-4 mb-4">
-        <h4 class="fw-bold mb-3">{{ t("languages") }}</h4>
+        <h3 class="fw-bold mb-3">{{ t("languages") }}</h3>
         <p class="mb-1"><b>{{ t("spanish") }}:</b> {{ t("native") }}</p>
         <div class="progress mb-3">
           <div class="progress-bar w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" />
@@ -114,6 +114,85 @@
       </div>
     </div>
     <hr class="mt-0 mb-4">
+    <div id="skills">
+      <h3 class="fw-bold mb-3">{{ t("main_skills") }}</h3>
+      <table class="table table-borderless m-0 align-middle">
+        <tbody>
+          <tr>
+            <td class="col-3 text-center bg-primary m-2">
+              <span class="fw-bold mb-0 text-color-inverted">Web Development</span>
+            </td>
+            <td>
+              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:javascript" />JavaScript</span>
+              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:html5" />HTML5</span>
+              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:css3" />CSS3</span>
+              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:php" />PHP</span>
+              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:bootstrap" />Bootstrap 5</span>
+              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:tailwindcss" />TailwindCSS</span>
+              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:cloudflare" />Cloudflare Pages</span>
+              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:github" />GitHub Pages</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="col-3 text-center bg-primary m-2">
+              <span class="fw-bold mb-0 text-color-inverted">JavaScript</span>
+            </td>
+            <td>
+              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:javascript" />ES6+</span>
+              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:nodedotjs" />Node.js</span>
+              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:nuxtdotjs" />Nuxt</span>
+              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:vuedotjs" />Vue.js</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="col-3 text-center bg-primary m-2">
+              <span class="fw-bold mb-0 text-color-inverted">Databases</span>
+            </td>
+            <td>
+              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:mysql" />MySQL</span>
+              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:postgresql" />PostgreSQL</span>
+              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:sqlite" />SQLite</span>
+              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:cloudflare" />Cloudflare D1</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="col-3 text-center bg-primary m-2">
+              <span class="fw-bold mb-0 text-color-inverted">Serverless</span>
+            </td>
+            <td>
+              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:cloudflare" />Cloudflare Workers</span>
+              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:vercel" />Vercel</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="col-3 text-center bg-primary m-2">
+              <span class="fw-bold mb-0 text-color-inverted">Software & Tools</span>
+            </td>
+            <td>
+              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:github" />GitHub</span>
+              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:visualstudiocode" />VSCode</span>
+              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:cloudflare" />Cloudflare</span>
+              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:amazonaws" />AWS</span>
+              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:wordpress" />WordPress</span>
+              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:git" />Git</span>
+              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:pnpm" />PNPM</span>
+              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:eslint" />ESLint</span>
+              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:postman" />Postman</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="col-3 text-center bg-primary m-2">
+              <span class="fw-bold mb-0 text-color-inverted">Operating Systems</span>
+            </td>
+            <td>
+              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:windows" />Windows</span>
+              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:linux" />Linux</span>
+              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:ubuntu" />Ubuntu</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </main>
 </template>
 <script>

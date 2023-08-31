@@ -27,4 +27,5 @@ export default {
   native: "Nativo",
   intermediate: "Intermedio",
   advanced: "Avanzado",
+  main_skills: "Habilidades principales",
 };

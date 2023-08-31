@@ -2,7 +2,7 @@
   --white: #f9fafe;
   --dark: #12151c;
   --dark2: #0f0f10;
-  --white2: #ffe8ec;
+  --white2: #ffeef1;
 }
 
 :root [data-bs-theme=light] {
@@ -10,10 +10,11 @@
   --bs-body-bg: var(--white);
   --bs-link-color: var(--dark);
   --bs-link-color-rgb: var(--dark);
-  --primary: #d80b30;
+  --primary: #b42942;
   --muted-bg: #c4c4c4;
   --text-color: var(--dark);
   --navbar-bg: var(--white2);
+  --text-color-inverted: var(--white);
 }
 
 :root [data-bs-theme=dark] {
@@ -24,6 +25,7 @@
   --primary: #ff728c;
   --muted-bg: #323439;
   --text-color: var(--white);
+  --text-color-inverted: var(--dark);
   --navbar-bg: var(--dark2);
 }
 
@@ -44,6 +46,14 @@ body, html {
 
 .text-primary {
   color: var(--primary)!important;
+}
+
+.bg-primary {
+  background-color: var(--primary)!important;
+}
+
+.text-color-inverted {
+  color: var(--text-color-inverted)!important;
 }
 
 #about .iconify {
@@ -149,4 +159,16 @@ body, html {
 
 .scrolled-up{
   transform:translateY(0); transition: all 0.3s ease-in-out;
+}
+
+.sk {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--muted-bg);
+  border-radius: 2px;
+}
+
+#skills tr {
+  border-color: var(--bs-body-bg);
+  border-width: 4px;
 }
