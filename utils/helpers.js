@@ -28,7 +28,7 @@ export const INFO = {
       icon: "simple-icons:discord",
       url: "https://discord.com/users/341828695612456960"
     }
-  }
+  },
 };
 
 export const MoonSun = (dark) => {
