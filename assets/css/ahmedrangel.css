@@ -10,7 +10,7 @@
   --bs-body-bg: var(--white);
   --bs-link-color: var(--dark);
   --bs-link-color-rgb: var(--dark);
-  --primary: #b42942;
+  --primary: #a5233b;
   --muted-bg: #c4c4c4;
   --text-color: var(--dark);
   --navbar-bg: var(--white2);
@@ -170,5 +170,9 @@ body, html {
 
 #skills tr {
   border-color: var(--bs-body-bg);
-  border-width: 4px;
+  border-bottom-width: 6px;
+}
+
+#skills td {
+  border-radius: 4px;
 }
