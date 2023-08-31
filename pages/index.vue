@@ -113,15 +113,17 @@
         </div>
       </div>
     </div>
+    <hr class="my-4">
   </main>
 </template>
 <script>
 export default {
   data () {
     return {
-      dark: true,
+      dark: INFO.dark,
       lang: "en",
-      scrolledDown: false
+      scrolledDown: false,
+      nav: "",
     };
   },
   watch: {
@@ -130,16 +132,17 @@ export default {
     }
   },
   mounted () {
-    if (document.querySelectorAll(".smart-scroll").length > 0) {
+    this.nav = this.$refs.nav;
+    if (this.nav.length > 0) {
       let last_scroll_top = 0;
       window.addEventListener("scroll", function() {
         const scroll_top = window.pageYOffset || document.documentElement.scrollTop;
         if (scroll_top < last_scroll_top) {
-          document.querySelector(".smart-scroll").classList.remove("scrolled-down");
-          document.querySelector(".smart-scroll").classList.add("scrolled-up");
+          this.nav.classList.remove("scrolled-down");
+          this.nav.classList.add("scrolled-up");
         } else {
-          document.querySelector(".smart-scroll").classList.remove("scrolled-up");
-          document.querySelector(".smart-scroll").classList.add("scrolled-down");
+          this.nav.classList.remove("scrolled-up");
+          this.nav.classList.add("scrolled-down");
         }
         last_scroll_top = scroll_top;
       });
@@ -147,12 +150,12 @@ export default {
     const scrollFunction = () => {
       if ((document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) || (window.innerWidth < 767)) {
         this.scrolledDown = true;
-        document.querySelector("#navbar").classList.add(this.dark ? "nav-bg-dark" : "nav-bg-light");
-        document.querySelector("#navbar").classList.remove(!this.dark ? "nav-bg-dark" : "nav-bg-light");
+        this.nav.classList.add(this.dark ? "nav-bg-dark" : "nav-bg-light");
+        this.nav.classList.remove(!this.dark ? "nav-bg-dark" : "nav-bg-light");
       } else {
         this.scrolledDown = false;
-        document.querySelector("#navbar").classList.remove("nav-bg-dark");
-        document.querySelector("#navbar").classList.remove("nav-bg-light");
+        this.nav.classList.remove("nav-bg-dark");
+        this.nav.classList.remove("nav-bg-light");
       }
     };
     window.onscroll = () => {scrollFunction();};
@@ -161,15 +164,14 @@ export default {
     toggleTheme () {
       this.dark = !this.dark;
       this.textColor = "#12151c";
-      this.$refs.nav.classList.add(this.dark && this.scrolledDown ? "nav-bg-dark" : "nav-bg-light");
-      this.$refs.nav.classList.remove(!this.dark && this.scrolledDown ? "nav-bg-dark" : "nav-bg-light");
+      this.nav.classList.add(this.dark && this.scrolledDown ? "nav-bg-dark" : "nav-bg-light");
+      this.nav.classList.remove(!this.dark && this.scrolledDown ? "nav-bg-dark" : "nav-bg-light");
       useHead({
         bodyAttrs: { "data-bs-theme": this.dark ? "dark" : "light" }
       });
     },
     collapseNav () {
-      const nav = this.$refs.nav;
-      if (nav.classList.contains("show")) {
+      if (this.nav.classList.contains("show")) {
         this.$nuxt.$bootstrap.toogleCollapse(nav);
       }
     }

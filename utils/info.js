@@ -3,6 +3,7 @@ export const INFO = {
   phone: "+507 68279308",
   birthday: "1998-06-15",
   email: "ahmedrangel@outlook.com",
+  dark: "true",
   socials: {
     github: {
       icon: "simple-icons:github",
