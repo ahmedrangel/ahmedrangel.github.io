@@ -1,0 +1,1 @@
+import{_ as t,c as o,K as s,o as a}from"./entry.43f0b392.js";const n={name:"SiteLayout"};function r(e,c,l,p,_,d){return a(),o("div",null,[s(e.$slots,"default")])}const i=t(n,[["render",r]]);export{i as default};
