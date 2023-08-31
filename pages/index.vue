@@ -198,6 +198,7 @@
         </tbody>
       </table>
     </div>
+    <hr class="my-4">
   </main>
 </template>
 <script>
