@@ -1,21 +1,26 @@
 <script setup>
 </script>
 <template>
-  <main class="mt-5 pt-4 container-lg">
-    <nav id="navbar" ref="nav" class="navbar navbar-expand-md px-4 py-3 fixed-top smart-scroll text-color">
+  <main class="mt-5 container-lg">
+    <nav id="navbar" ref="nav" class="navbar navbar-expand-md px-4 py-3 fixed-top smart-scroll text-color fw-bold">
       <NuxtLink class="navbar-brand py-0" to="/">
-        <h5 class="m-0 text-primary fw-bold">{{ t("name_abreviated") }}</h5>
+        <span class="m-0 text-primary">{{ t("name_abreviated") }}</span>
       </NuxtLink>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon" />
       </button>
-      <div id="collapsibleNavbar"  class="collapse navbar-collapse">
+      <div id="collapsibleNavbar" class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto">
+          <li class="nav-item align-self-center">
+            <NuxtLink to="/#about">
+              <span class="m-0 text-primary">{{ t("about") }}</span>
+            </NuxtLink>
+          </li>
           <li class="nav-item dropdown mx-2">
             <span id="navbardrop" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">{{ lang.toUpperCase() }}</span>
             <div class="dropdown-menu">
-              <span class="dropdown-item" @click="setLang(`en`)">EN</span>
-              <span class="dropdown-item" @click="setLang(`es`)">ES</span>
+              <span class="dropdown-item" @click="lang = 'en'">EN</span>
+              <span class="dropdown-item" @click="lang = 'es'">ES</span>
             </div>
           </li>
           <li class="nav-item align-self-center">
@@ -27,7 +32,7 @@
         </ul>
       </div>
     </nav>
-    <div id="about">
+    <div id="about" class="pt-4">
       <h3 class="fw-bold">{{ t("about_me") }}</h3>
       <div class="row justify-content-center g-4">
         <div class="col-12 col-md-3 pb-3">
@@ -135,17 +140,15 @@ export default {
       });
     }
     const scrollFunction = () => {
-      if ((document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) || (window.innerWidth < 767)) {
+      if ((document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) || (window.innerWidth < 767)) {
         this.scrolledDown = true;
         document.querySelector("#navbar").classList.add(this.dark ? "nav-bg-dark" : "nav-bg-light");
         document.querySelector("#navbar").classList.remove(!this.dark ? "nav-bg-dark" : "nav-bg-light");
-        document.querySelector("#navbar").style.fontSize = "1rem";
       } else {
         this.scrolledDown = false;
         document.querySelector("#navbar").classList.remove("nav-bg-dark");
         document.querySelector("#navbar").classList.remove("nav-bg-light");
         document.querySelector("#navbar").style.background = "transparent";
-        document.querySelector("#navbar").style.fontSize = "1.3rem";
       }
     };
     window.onscroll = () => {scrollFunction();};
@@ -159,9 +162,6 @@ export default {
       useHead({
         bodyAttrs: { "data-bs-theme": this.dark ? "dark" : "light" }
       });
-    },
-    setLang (lang) {
-      this.lang = lang;
     },
     collapseNav () {
       const nav = this.$refs.nav;
