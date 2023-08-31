@@ -3,6 +3,7 @@ export default {
   name: "Eliézer Ahmed Rangel Baysa",
   name_abreviated: "Eliézer A. Rangel B.",
   about_me: "Sobre Mí",
+  about: "Sobre Mí",
   bio: "Actualmente, me destaco como un desarrollador entusiasta que ha acumulado experiencia a lo largo de los años en varios tipos de tecnologías y frameworks, tanto en el ámbito frontend como en el backend, para la creación de aplicaciones web altamente eficientes y funcionales. Mi pasión desde pequeño por el mundo de las computadoras y las tecnologías emergentes impulsa constantemente mi crecimiento personal y profesional. Cuento con habilidades significativas en el desarrollo de aplicaciones web, automatización de sistemas, administración de bases de datos y la implementación de interfaces de programación de aplicaciones.",
   degree: "Lic. Ingeniería en Sistemas y Computación",
   bachelor: "Bachiller en Ciencias",

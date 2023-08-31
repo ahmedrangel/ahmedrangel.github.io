@@ -3,6 +3,7 @@ export default {
   name: "Eliezer Ahmed Rangel Baysa",
   name_abreviated: "Eliezer A. Rangel B.",
   about_me: "About Me",
+  about: "About",
   bio: "Currently, I stand out as an enthusiastic developer who has gathered experience over the years in various types of technologies and frameworks, both on the frontend and backend sides, for creating highly efficient and functional web applications. My lifelong passion for the world of computing and emerging technologies continually drives my personal and professional growth. I possess substantial skills in web application development, system automation, database management, and the implementation of application programming interfaces.",
   degree: "Computer and Systems Engineering",
   bachelor: "High School Diploma, Science",

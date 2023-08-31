@@ -105,6 +105,14 @@ body, html {
   background: #0f0f10!important;
 }
 
+.nav-item *:hover, #navbardrop:hover, .dropdown {
+  text-decoration: underline;
+}
+
+.dropdown {
+  text-decoration: none!important;
+}
+
 .smart-scroll{
   position: fixed;
   top: 0;

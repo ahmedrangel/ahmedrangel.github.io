@@ -3,22 +3,22 @@
 <template>
   <main class="mt-5 container-lg">
     <nav id="navbar" ref="nav" class="navbar navbar-expand-md px-4 py-3 fixed-top smart-scroll text-color fw-bold">
-      <NuxtLink class="navbar-brand py-0" to="/">
+      <NuxtLink class="navbar-brand py-0" to="/" :lang="lang">
         <span class="m-0 text-primary">{{ t("name_abreviated") }}</span>
       </NuxtLink>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon" />
       </button>
       <div id="collapsibleNavbar" class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item align-self-center">
-            <NuxtLink to="/#about">
-              <span class="m-0 text-primary">{{ t("about") }}</span>
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item">
+            <NuxtLink to="/#about" class="text-decoration-none">
+              <span class="m-0 text-primary" :lang="lang">{{ t("about") }}</span>
             </NuxtLink>
           </li>
-          <li class="nav-item dropdown mx-2">
+          <li class="nav-item dropdown mx-2 text-center">
             <span id="navbardrop" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">{{ lang.toUpperCase() }}</span>
-            <div class="dropdown-menu">
+            <div class="dropdown-menu text-decoration-none">
               <span class="dropdown-item" @click="lang = 'en'">EN</span>
               <span class="dropdown-item" @click="lang = 'es'">ES</span>
             </div>
