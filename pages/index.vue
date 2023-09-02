@@ -54,23 +54,16 @@ definePageMeta({ layout: "site" });
     <div id="education" class="row">
       <div class="col-12 col-lg-8 mb-4">
         <h3 class="fw-bold mb-3">{{ t("education") }}</h3>
-        <div class="mb-2">
-          <div class="h5 mb-0">
-            <span class="text-primary fw-bold me-2">{{ t("degree") }}</span>
-            <span class="me-2">{{ t("at") }}</span>
-            <span class="text-primary fw-bold">{{ t("utp") }}</span>
+        <div v-for="(education, index) of INFO.education" :key="index" class="mb-2">
+          <div class="mb-2">
+            <div class="h5 mb-0">
+              <span class="text-primary fw-bold me-2">{{ t(education.diploma) }}</span>
+              <span class="me-2">{{ t("at") }}</span>
+              <span class="text-primary fw-bold">{{ t(education.institution) }}</span>
+            </div>
+            <p class="m-0">{{ t(education.location) }}</p>
+            <p class="m-0">{{ t("months")[education.start_month - 1] }} {{ education.start_year }} — {{ t("months")[education.end_month - 1] }} {{ education.end_year }}</p>
           </div>
-          <p class="m-0">{{ t("panama_city") }}, {{ t("panama") }}</p>
-          <p class="m-0">{{ t("months")[1 - 1] }} 2016 — {{ t("months")[5 - 1] }} 2022</p>
-        </div>
-        <div class="mb-2">
-          <div class="h5 mb-0">
-            <span class="text-primary fw-bold me-2">{{ t("bachelor") }}</span>
-            <span class="me-2">{{ t("at") }}</span>
-            <span class="text-primary fw-bold">{{ t("pps") }}</span>
-          </div>
-          <p class="m-0">{{ t("la_chorrera") }}, {{ t("panama") }}</p>
-          <p class="m-0">{{ t("months")[2 - 1] }} 2010 — {{ t("months")[12 - 1] }} 2015</p>
         </div>
       </div>
       <!-- Languages -->
@@ -92,82 +85,24 @@ definePageMeta({ layout: "site" });
       <h3 class="fw-bold mb-3">{{ t("main_skills") }}</h3>
       <table class="table table-borderless m-0 align-middle">
         <tbody>
-          <tr>
+          <tr v-for="(main_skills, index) of INFO.main_skills" :key="index">
             <td class="col-3 text-center bg-primary m-2">
-              <span class="fw-bold mb-0 text-color-inverted">Web Development</span>
+              <span class="fw-bold mb-0 text-color-inverted">{{ t(main_skills.skill_id) }}</span>
             </td>
             <td>
-              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:javascript" />JavaScript</span>
-              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:html5" />HTML5</span>
-              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:css3" />CSS3</span>
-              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:php" />PHP</span>
-              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:bootstrap" />Bootstrap 5</span>
-              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:tailwindcss" />TailwindCSS</span>
-              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:cloudflare" />Cloudflare Pages</span>
-              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:github" />GitHub Pages</span>
-            </td>
-          </tr>
-          <tr>
-            <td class="col-3 text-center bg-primary m-2">
-              <span class="fw-bold mb-0 text-color-inverted">JavaScript</span>
-            </td>
-            <td>
-              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:javascript" />ES6+</span>
-              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:nodedotjs" />Node.js</span>
-              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:nuxtdotjs" />Nuxt</span>
-              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:vuedotjs" />Vue.js</span>
-            </td>
-          </tr>
-          <tr>
-            <td class="col-3 text-center bg-primary m-2">
-              <span class="fw-bold mb-0 text-color-inverted">Databases</span>
-            </td>
-            <td>
-              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:mysql" />MySQL</span>
-              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:postgresql" />PostgreSQL</span>
-              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:sqlite" />SQLite</span>
-              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:cloudflare" />Cloudflare D1</span>
-            </td>
-          </tr>
-          <tr>
-            <td class="col-3 text-center bg-primary m-2">
-              <span class="fw-bold mb-0 text-color-inverted">Serverless</span>
-            </td>
-            <td>
-              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:cloudflare" />Cloudflare Workers</span>
-              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:vercel" />Vercel</span>
-            </td>
-          </tr>
-          <tr>
-            <td class="col-3 text-center bg-primary m-2">
-              <span class="fw-bold mb-0 text-color-inverted">Software & Tools</span>
-            </td>
-            <td>
-              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:github" />GitHub</span>
-              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:visualstudiocode" />VSCode</span>
-              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:cloudflare" />Cloudflare</span>
-              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:amazonaws" />AWS</span>
-              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:wordpress" />WordPress</span>
-              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:git" />Git</span>
-              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:pnpm" />PNPM</span>
-              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:eslint" />ESLint</span>
-              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:postman" />Postman</span>
-            </td>
-          </tr>
-          <tr>
-            <td class="col-3 text-center bg-primary m-2">
-              <span class="fw-bold mb-0 text-color-inverted">Operating Systems</span>
-            </td>
-            <td>
-              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:windows" />Windows</span>
-              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:linux" />Linux</span>
-              <span class="sk m-1 px-2 py-1 text-nowrap"><Icon class="iconify me-1" name="simple-icons:ubuntu" />Ubuntu</span>
+              <span v-for="(skills, index2) of main_skills.skills" :key="index2" class="sk m-1 px-2 py-1 text-nowrap">
+                <Icon class="iconify me-1" :name="skills.icon" />{{ skills.name }}
+              </span>
             </td>
           </tr>
         </tbody>
       </table>
     </div>
     <hr class="my-4">
+    <!-- Skills -->
+    <div id="projects">
+      <h3 class="fw-bold mb-3">{{ t("projects") }}</h3>
+    </div>
   </main>
 </template>
 <script>
