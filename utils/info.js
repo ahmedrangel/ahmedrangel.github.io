@@ -231,7 +231,7 @@ export const INFO = {
     {
       name: "Kick Clips",
       url: "https://kickclips.ahmedrangel.com",
-      desc_es: "Herramienta en línea gratuita para descargar clips MP4 desde kick.com.",
+      desc_es: "Herramienta en línea gratuita para descargar clips MP4 de kick.com.",
       desc_en: "Free online tool for downloading MP4 clips from kick.com.",
       image: "kickclips-website.jpg",
       start_month: 7,
