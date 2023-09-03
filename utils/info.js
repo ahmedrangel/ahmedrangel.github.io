@@ -229,6 +229,46 @@ export const INFO = {
       tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages", "Web Socket"]
     },
     {
+      name: "Kick Clips",
+      url: "https://kickclips.ahmedrangel.com",
+      desc_es: "Herramienta en línea gratuita para descargar clips MP4 desde kick.com.",
+      desc_en: "Free online tool for downloading MP4 clips from kick.com.",
+      image: "kickclips-website.jpg",
+      start_month: 7,
+      start_year: 2023,
+      end_month: 13,
+      end_year: "",
+      desc_li_es: [""],
+      desc_li_en: [""],
+      tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages"]
+    },
+    {
+      name: "PESP.GG Website",
+      url: "https://pesp.gg",
+      desc_es: "El sitio web PESP.GG es un proyecto colaborativo entre programadores, diseñadores gráficos y la empresa Panama Esports Productions para la creación del sitio web oficial de la empresa.",
+      desc_en: "The PESP.GG website is a collaborative project between programmers, graphic designers and the company Panama Esports Productions for the creation of the company's official website.",
+      image: "pespgg-website.jpg",
+      start_month: 9,
+      start_year: 2021,
+      end_month: 13,
+      end_year: "",
+      desc_li_es: [
+        "El proyecto se desarrolló inicialmente utilizando PHP alojado en AWS EC2 y luego migró a Nuxt alojado en Cloudflare Pages.",
+        "Desarrolló un proyecto de sitio web de deportes electrónicos utilizando Nuxt alojado en Cloudflare Pages.",
+        "Implementó un panel para administrar las publicaciones del sitio web y ver estadísticas.",
+        "Diseñó una Base de Datos para las publicaciones del sitio web usando SQLite en desarrollo y Cloudflare D1 en producción usando Drizzle-ORM para consultas SQL.",
+        "Implementó un sistema de almacenamiento de contenido html de imágenes y publicaciones usando Cloudflare R2."
+      ],
+      desc_li_en: [
+        "The project was initially developed using PHP hosted on AWS EC2, then migrated to Nuxt hosted on Cloudflare Pages.",
+        "Developed an Esports website project using Nuxt hosted on Cloudflare Pages.",
+        "Implemented an admin dashboard to manage the website's posts and see statistics.",
+        "Designed a Database for the website's posts using SQLite in development and Cloudflare D1 in production using Drizzle-ORM for SQL queries.",
+        "Implemented an images and posts html content storage system using Cloudflare R2."
+      ],
+      tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages"]
+    },
+    {
       name: "Bayza Website",
       url: "https://bayzamusic.com",
       desc_es: "Sitio Web de Artista Musical",
