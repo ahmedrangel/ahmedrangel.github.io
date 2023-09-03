@@ -28,18 +28,24 @@ export const INFO = {
   ],
   education: [
     {
-      institution: "utp",
-      location: "address",
-      diploma: "degree",
+      institution_es: "Universidad Tecnolónica de Panamá",
+      institution_en: "Technological University of Panama",
+      location_es: "Ciudad de Panamá, Panamá",
+      location_en: "Panama City, Panama",
+      diploma_es: "Lic. Ingeniería en Sistemas y Computación",
+      diploma_en: "Computer and Systems Engineering",
       start_month: 1,
       start_year: 2016,
       end_month: 5,
       end_year: 2022
     },
     {
-      institution: "pps",
-      location: "address2",
-      diploma: "bachelor",
+      institution_es: "Escuela Secundaria Pedro Pablo Sánchez",
+      institution_en: "Pedro Pablo Sanchez High School",
+      location_es: "La Chorrera, Panamá",
+      location_en: "La Chorrera, Panama",
+      diploma_es: "Bachiller en Ciencias",
+      diploma_en: "High School Diploma, Science",
       start_month: 2,
       start_year: 2010,
       end_month: 12,
@@ -198,4 +204,49 @@ export const INFO = {
       ]
     }
   ],
+  projects: [
+    {
+      name: "Drawmond",
+      url: "https://drawmond.ahmedrangel.com",
+      desc_es: "Juego web enfocado a creadores de contenido de Twitch, donde desafían a su audiencia a adivinar los dibujos que el streamer crea.",
+      desc_en: "Web game focused on Twitch content creators, where they challenge their audience to guess the drawings that the streamer creates.",
+      image: "drawmond-website.jpg",
+      start_month: 8,
+      start_year: 2023,
+      end_month: 13,
+      end_year: "",
+      desc_li_es: [
+        "Desarrolló un juego web enfocado a creadores de contenido de Twitch, donde éstos desafían a su audiencia a descifrar los dibujos que este crea. Usando Nuxt.js alojado en Cloudflare Pages.",
+        "Implementó un lienzo con todas las herramientas básicas para el proceso de dibujo.",
+        "Empleó un WebSocket de Twitch para capturar y procesar los mensajes provenientes de la audiencia y gestionó todos los eventos que tienen lugar durante el juego, incluyendo inicio, aciertos, puntuaciones, transiciones, temporizador.",
+        "Realizó una traducción manual al inglés de todos los elementos y generó una extensa lista de palabras sobre diversas categorías, junto con sus correspondientes traducciones, para su uso en el juego."
+      ],
+      desc_li_en: [
+        "Developed a web game focused on Twitch content creators, where they challenge their audience to guess the drawings that the streamer creates. Using Nuxt.js hosted on Cloudflare Pages.",
+        "Implemented a canvas with all the basic tools for the drawing process.",
+        "Manually translated all items from Spanish to English and generated an extensive list of words across various categories, along with their corresponding translations, for use in the game."
+      ],
+      tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages", "Web Socket"]
+    },
+    {
+      name: "Bayza Website",
+      url: "https://bayzamusic.com",
+      desc_es: "Sitio Web de Artista Musical",
+      desc_en: "Music Artist Website",
+      image: "bayza-website.jpg",
+      start_month: 1,
+      start_year: 2020,
+      end_month: 13,
+      end_year: "",
+      desc_li_es: [
+        "Diseñó un sitio web enfocado a exhibir la colección completa de canciones del artista,su biografía, videos, detalles e hipervínculos relevantes.",
+        "Desarrolló el sitio utilizando Nuxt.js alojado en GitHub Pages."
+      ],
+      desc_li_en: [
+        "Designed a website focused on showcasing the artist's full collection of songs, biography, videos, details and relevant hyperlinks.",
+        "Developed using Nuxt.js hosted on GitHub Pages."
+      ],
+      tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "GitHub Pages"]
+    },
+  ]
 };

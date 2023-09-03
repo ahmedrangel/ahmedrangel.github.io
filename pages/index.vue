@@ -2,7 +2,7 @@
 definePageMeta({ layout: "site" });
 </script>
 <template>
-  <main class="mt-5 container-lg">
+  <main :v-bind="lang = locale.getLanguage()" class="mt-5 container-lg">
     <!-- About -->
     <div id="about" class="pt-5">
       <h3 class="fw-bold mb-3">{{ t("about_me") }}</h3>
@@ -10,7 +10,7 @@ definePageMeta({ layout: "site" });
         <div class="col-12 col-md-3 pb-3">
           <div class="ps-0 pe-3">
             <div class="position-relative">
-              <img class="img-fluid w-100" src="/ar-profile.jpg">
+              <img class="img-fluid w-100" src="/images/ar-profile.jpg">
               <div class="profile-image position-absolute w-100 h-100 border" />
             </div>
           </div>
@@ -57,11 +57,11 @@ definePageMeta({ layout: "site" });
         <div v-for="(education, index) of INFO.education" :key="index" class="mb-2">
           <div class="mb-2">
             <div class="h5 mb-0">
-              <span class="text-primary fw-bold me-2">{{ t(education.diploma) }}</span>
+              <span class="text-primary fw-bold me-2">{{ lang === 'en' ? education.diploma_en : INFO.diploma_es }}</span>
               <span class="me-2">{{ t("at") }}</span>
-              <span class="text-primary fw-bold">{{ t(education.institution) }}</span>
+              <span class="text-primary fw-bold">{{ lang === 'en' ? education.institution_en : INFO.institution_es }}</span>
             </div>
-            <p class="m-0">{{ t(education.location) }}</p>
+            <p class="m-0">{{ lang == 'en' ? education.location_en : INFO.location_es }}</p>
             <p class="m-0">{{ t("months")[education.start_month - 1] }} {{ education.start_year }} — {{ t("months")[education.end_month - 1] }} {{ education.end_year }}</p>
           </div>
         </div>
@@ -99,9 +99,41 @@ definePageMeta({ layout: "site" });
       </table>
     </div>
     <hr class="my-4">
-    <!-- Skills -->
+    <!-- Projects -->
     <div id="projects">
       <h3 class="fw-bold mb-3">{{ t("projects") }}</h3>
+      <MasonryWall :items="INFO.projects" :ssr-columns="1" :gap="8" :max-columns="2" :column-width="400">
+        <template #default="{item: projects}">
+          <div class="card">
+            <img :src="`/images/${projects.image}`" class="card-img-top" alt="">
+            <div class="card-body">
+              <a :href="projects.url" target="_blank" class="text-primary text-decoration-none fw-bold">
+                <h5 class="m-0 fw-bold">{{ projects.name }}</h5>
+              </a>
+              <p class="m-0">{{ t("months")[projects.start_month - 1] }} {{ projects.start_year }} — {{ t("months")[projects.end_month - 1] }} {{ projects.end_year }}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="my-2">
+                  <p>{{ lang === 'en' ? projects.desc_en : projects.desc_es }}</p>
+                  <ul>
+                    <li v-for="(li, index2) of lang === 'en' ? projects.desc_li_en : projects.desc_li_es" :key="index2">
+                      {{ li }}
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="my-2">
+                  <span v-for="(tags, index3) of projects.tags" :key="index3" class="sk m-1 px-2 py-1 text-nowrap">
+                    {{ tags }}
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </template>
+      </MasonryWall>
     </div>
   </main>
 </template>
@@ -110,7 +142,13 @@ export default {
   data () {
     return {
       scrolledDown: false,
+      lang: locale.getLanguage(),
     };
+  },
+  watch: {
+    lang(val) {
+      locale.setLanguage(val);
+    }
   },
 };
 </script>

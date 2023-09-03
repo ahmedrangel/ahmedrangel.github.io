@@ -178,6 +178,20 @@ body, html {
   border-bottom-width: 6px;
 }
 
-#skills td {
-  border-radius: 4px;
+.list-group-item {
+  border: 1px solid var(--muted-bg);
+}
+
+.card {
+  border: 0;
+}
+
+.masonry-item {
+  border: 2px solid var(--muted-bg);
+  border-radius: var(--bs-border-radius);
+  background-color: var(--muted-bg);
+}
+
+.list-group-flush {
+  border-top: 1px solid var(--muted-bg)!important;
 }

@@ -4,6 +4,9 @@ dependencies:
   '@nuxt/eslint-config':
     specifier: ^0.2.0
     version: 0.2.0(eslint@8.48.0)
+  '@yeger/vue-masonry-wall':
+    specifier: ^5.0.2
+    version: 5.0.2(vue@3.3.4)
   bootstrap:
     specifier: ^5.3.1
     version: 5.3.1(@popperjs/core@2.11.8)
@@ -1974,6 +1977,25 @@ packages:
 
   /@vue/shared@3.3.4:
     resolution: {integrity: sha512-7OjdcV8vQ74eiz1TZLzZP4JwqM5fA94K6yntPS5Z25r9HDuGNzaGdgvwKYq6S+MxwF0TFRwe50fIR/MYnakdkQ==}
+
+  /@yeger/vue-lib-adapter@2.0.1:
+    resolution: {integrity: sha512-s2t/4tLB/qd6GgvsUNZR+K2CqEufs0PB0RdOx4Fql/EryIQddRYV9WWOMR9fAyLMdlV8x28oNet0Nddn8II6Rw==}
+    dev: false
+
+  /@yeger/vue-masonry-wall-core@5.0.1:
+    resolution: {integrity: sha512-BNnv4cwdM07rBh46NvWXDhwbNDn/IDexui/oMIKjc+VMJGAyF5ieuvmAp1YhjvmqqcIzBROiYFqVqWbiuuyLeg==}
+    dependencies:
+      '@yeger/vue-lib-adapter': 2.0.1
+    dev: false
+
+  /@yeger/vue-masonry-wall@5.0.2(vue@3.3.4):
+    resolution: {integrity: sha512-rcOvMOW7zqU+HitFfu+IlX5pk9ObtyL4s6v71J3zWtDA/KQuQelEAh2VOYHpfkM4Ag8pZSKm1iWoXUHyv4QE5A==}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      '@yeger/vue-masonry-wall-core': 5.0.1
+      vue: 3.3.4
+    dev: false
 
   /abbrev@1.1.1:
     resolution: {integrity: sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==}
