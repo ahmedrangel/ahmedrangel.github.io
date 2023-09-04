@@ -4,6 +4,7 @@ export const INFO = {
   birthday: "1998-06-15",
   email: "ahmedrangel@outlook.com",
   dark: "true",
+  lang: "en",
   socials: [
     {
       name: "GitHub",
@@ -267,7 +268,7 @@ export const INFO = {
         "Designed a Database for the website's posts using SQLite in development and Cloudflare D1 in production using Drizzle-ORM for SQL queries.",
         "Implemented an images and posts html content storage system using Cloudflare R2."
       ],
-      tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages"]
+      tags: ["PHP", "MySQL", "AWS EC2", "Cloudflare D1", "Cloudflare R2", "Nuxt", "Vue.js", "JavaScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages"]
     },
     {
       name: "Bayza Website",

@@ -1,4 +1,5 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+import { INFO } from "./utils/info.js";
+
 export default defineNuxtConfig({
   css : [
     "bootstrap/dist/css/bootstrap.min.css",
@@ -11,7 +12,7 @@ export default defineNuxtConfig({
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
       htmlAttrs: {
-        lang: "en"
+        lang: INFO.lang
       },
       bodyAttrs: {
         "data-bs-theme": "dark"

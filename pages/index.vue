@@ -2,7 +2,7 @@
 definePageMeta({ layout: "site" });
 </script>
 <template>
-  <main :v-bind="lang = locale.getLanguage()" class="mt-5 container-lg">
+  <main :lang="getLang()" class="mt-5 container-lg">
     <!-- About -->
     <div id="about" class="pt-5">
       <h3 class="fw-bold mb-3">{{ t("about_me") }}</h3>
@@ -142,13 +142,19 @@ export default {
   data () {
     return {
       scrolledDown: false,
-      lang: locale.getLanguage(),
+      lang: INFO.lang,
     };
   },
   watch: {
     lang(val) {
       locale.setLanguage(val);
-    }
+    },
   },
+  methods: {
+    getLang() {
+      this.lang = locale.getLanguage();
+      return this.lang;
+    }
+  }
 };
 </script>

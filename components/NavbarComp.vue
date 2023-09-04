@@ -38,7 +38,7 @@ export default {
     return {
       dark: INFO.dark,
       nav: "",
-      lang: "en"
+      lang: INFO.lang
     };
   },
   watch: {
