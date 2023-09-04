@@ -57,11 +57,11 @@ definePageMeta({ layout: "site" });
         <div v-for="(education, index) of INFO.education" :key="index" class="mb-2">
           <div class="mb-2">
             <div class="h5 mb-0">
-              <span class="text-primary fw-bold me-2">{{ lang === 'en' ? education.diploma_en : INFO.diploma_es }}</span>
+              <span class="text-primary fw-bold me-2">{{ lang === 'en' ? education.diploma_en : education.diploma_es }}</span>
               <span class="me-2">{{ t("at") }}</span>
-              <span class="text-primary fw-bold">{{ lang === 'en' ? education.institution_en : INFO.institution_es }}</span>
+              <span class="text-primary fw-bold">{{ lang === 'en' ? education.institution_en : education.institution_es }}</span>
             </div>
-            <p class="m-0">{{ lang == 'en' ? education.location_en : INFO.location_es }}</p>
+            <p class="m-0">{{ lang == 'en' ? education.location_en : education.location_es }}</p>
             <p class="m-0">{{ t("months")[education.start_month - 1] }} {{ education.start_year }} — {{ t("months")[education.end_month - 1] }} {{ education.end_year }}</p>
           </div>
         </div>
