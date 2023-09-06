@@ -118,7 +118,8 @@ definePageMeta({ layout: "site" });
                   <p>{{ lang === 'en' ? projects.desc_en : projects.desc_es }}</p>
                   <ul>
                     <li v-for="(li, index2) of lang === 'en' ? projects.desc_li_en : projects.desc_li_es" :key="index2">
-                      {{ li }}
+                      <!-- eslint-disable-next-line vue/no-v-html, vue/no-v-html -->
+                      <span v-html="li" />
                     </li>
                   </ul>
                 </div>

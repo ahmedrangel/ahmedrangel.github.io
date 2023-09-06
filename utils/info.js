@@ -240,9 +240,23 @@ export const INFO = {
       start_year: 2023,
       end_month: 13,
       end_year: "",
-      desc_li_es: [""],
-      desc_li_en: [""],
+      desc_li_es: null,
+      desc_li_en: null,
       tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages"]
+    },
+    {
+      name: "Saldo Metrobus",
+      url: "https://saldometrobus.yizack.com",
+      desc_es: "Panamá Metrobus Saldo es una app para consultas de saldo y movimientos de todas las tarjetas Metro y Metrobus de la Ciudad de Panamá.",
+      desc_en: "Panama Metrobus Balance is an app for balance and movements inquires for all Metro and Metrobus cards in Panama City.",
+      image: "saldometrobus-website.jpg",
+      start_month: 1,
+      start_year: 2022,
+      end_month: 6,
+      end_year: 2022,
+      desc_li_es: ["Colaboró junto a <a href=\"https://yizack.com\" target=\"_blank\">Yizack Rangel<a/> en el desarrollo de un proyecto web y de Android de 25000+ descargas totales, actualmente ayuda a 6500+ usuarios a conocer el saldo y movimientos las tarjetas de Metro y Metrobús."],
+      desc_li_en: ["Collaborated with <a href=\"https://yizack.com\" target=\"_blank\">Yizack Rangel<a/> in the development of a web and Android project with 25,000+ downloads totals, currently helps 6500+ users to know the balance and movements of the Metro and Metrobús cards."],
+      tags: ["Android Studio", "Java", "PHP", "PostgreSQL", "AWS Elastic Beanstalk", "Bootstrap 5"]
     },
     {
       name: "PESP.GG Website",
