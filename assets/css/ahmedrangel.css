@@ -15,6 +15,7 @@
   --text-color: var(--dark);
   --navbar-bg: var(--white2);
   --text-color-inverted: var(--white);
+  --bs-link-hover-color: #ea3757;
 }
 
 :root [data-bs-theme=dark] {
@@ -27,6 +28,7 @@
   --text-color: var(--white);
   --text-color-inverted: var(--dark);
   --navbar-bg: var(--dark2);
+  --bs-link-hover-color: #ff93a7;
 }
 
 .navbar {
@@ -64,6 +66,9 @@ body, html {
 #about .iconify {
   font-size: 30px;
   min-width: fit-content;
+}
+
+#about .iconify {
   color: var(--primary);
 }
 
@@ -173,6 +178,13 @@ body, html {
   border-radius: 2px;
 }
 
+#projects .lnks {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--text-color-inverted);
+  border-radius: 2px;
+}
+
 #skills tr {
   border-color: var(--bs-body-bg);
   border-bottom-width: 6px;
@@ -194,4 +206,18 @@ body, html {
 
 .list-group-flush {
   border-top: 1px solid var(--muted-bg)!important;
+}
+
+#projects .sk, #projects .lnks {
+  font-size: 0.85em;
+}
+
+a:hover, .socials-icons .iconify:hover {
+  color: var(--bs-link-hover-color)!important;
+  text-decoration: underline!important;
+}
+
+a {
+  color: var(--primary)!important;
+  text-decoration: none!important;
 }

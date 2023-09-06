@@ -228,7 +228,8 @@ export const INFO = {
         "Used a Twitch WebSocket to capture and process the messages coming from the audience and managed all the events that take place during the game, including start, hits, evaluation, transitions, timer.",
         "Manually translated all items from Spanish to English and generated an extensive list of words across various categories, along with their corresponding translations, for use in the game."
       ],
-      tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages", "Web Socket"]
+      tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages", "Web Socket"],
+      repository: "https://github.com/ahmedrangel/drawmond"
     },
     {
       name: "Kick Clips",
@@ -242,7 +243,8 @@ export const INFO = {
       end_year: "",
       desc_li_es: null,
       desc_li_en: null,
-      tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages"]
+      tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages"],
+      repository: "https://github.com/ahmedrangel/kickclips"
     },
     {
       name: "Instagram Media Scraper",
@@ -256,7 +258,8 @@ export const INFO = {
       end_year: "",
       desc_li_es: null,
       desc_li_en: null,
-      tags: ["JavaScript", "ES6+", "Node.js", "Web Scraping"]
+      tags: ["JavaScript", "ES6+", "Node.js", "Web Scraping"],
+      repository: "https://github.com/ahmedrangel/instagram-media-scraper"
     },
     {
       name: "Saldo Metrobus",
@@ -296,7 +299,8 @@ export const INFO = {
         "Designed a Database for the website's posts using SQLite in development and Cloudflare D1 in production using Drizzle-ORM for SQL queries.",
         "Implemented an images and posts html content storage system using Cloudflare R2."
       ],
-      tags: ["PHP", "MySQL", "AWS EC2", "Cloudflare D1", "Cloudflare R2", "Nuxt", "Vue.js", "JavaScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages"]
+      tags: ["PHP", "MySQL", "AWS EC2", "Cloudflare D1", "Cloudflare R2", "Nuxt", "Vue.js", "JavaScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages"],
+      repository: "https://github.com/yizack/pesp.gg"
     },
     {
       name: "Bayza Website",
@@ -316,7 +320,8 @@ export const INFO = {
         "Designed a website focused on showcasing the artist's full collection of songs, biography, videos, details and relevant hyperlinks.",
         "Developed using Nuxt.js hosted on GitHub Pages."
       ],
-      tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "GitHub Pages"]
+      tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "GitHub Pages"],
+      repository: "https://github.com/ahmedrangel/bayza"
     },
   ]
 };

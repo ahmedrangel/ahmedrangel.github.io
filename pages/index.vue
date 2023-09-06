@@ -36,11 +36,11 @@ definePageMeta({ layout: "site" });
             </div>
             <div class="col-lg-6 col-md-6 d-flex align-items-center">
               <Icon class="iconify me-2" name="ph:envelope-simple-duotone" />
-              <a :href="`mailto:${INFO.email}`" class="text-decoration-none" target="_blank">{{ INFO.email }}</a>
+              <a :href="`mailto:${INFO.email}`" target="_blank">{{ INFO.email }}</a>
             </div>
             <div class="col-lg-6 col-md-6 d-flex align-items-center">
               <div v-for="(socials, index) of INFO.socials" :key="index">
-                <a :href="socials.url" target="_blank">
+                <a :href="socials.url" target="_blank" class="socials-icons">
                   <Icon class="iconify me-2" :name="socials.icon" />
                 </a>
               </div>
@@ -98,16 +98,16 @@ definePageMeta({ layout: "site" });
         </tbody>
       </table>
     </div>
-    <hr class="my-4">
+    <hr class="mt-4 mb-0">
     <!-- Projects -->
-    <div id="projects">
+    <div id="projects" class="pt-4">
       <h3 class="fw-bold mb-3">{{ t("projects") }}</h3>
       <MasonryWall :items="INFO.projects" :ssr-columns="1" :gap="8" :max-columns="2" :column-width="400">
         <template #default="{item: projects}">
           <div class="card">
             <img :src="`/images/${projects.image}`" class="card-img-top" alt="">
             <div class="card-body">
-              <a :href="projects.url" target="_blank" class="text-primary text-decoration-none fw-bold">
+              <a :href="projects.url" target="_blank" class="text-primary  fw-bold">
                 <h5 class="m-0 fw-bold">{{ projects.name }}</h5>
               </a>
               <p class="m-0">{{ t("months")[projects.start_month - 1] }} {{ projects.start_year }} — {{ t("months")[projects.end_month - 1] }} {{ projects.end_year }}</p>
@@ -125,9 +125,17 @@ definePageMeta({ layout: "site" });
                 </div>
               </li>
               <li class="list-group-item">
-                <div class="my-2">
+                <div class="my-1">
                   <span v-for="(tags, index3) of projects.tags" :key="index3" class="sk m-1 px-2 py-1 text-nowrap">
                     {{ tags }}
+                  </span>
+                  <span class="lnks m-1 text-nowrap">
+                    <a v-if="projects.repository" :href="projects.repository" target="_blank" class="d-inline-flex align-items-center">
+                      <Icon class="iconify me-1" name="simple-icons:github" />
+                      <span class="card-foot">
+                        <b>Repository</b>
+                      </span>
+                    </a>
                   </span>
                 </div>
               </li>

@@ -1,22 +1,27 @@
 <template>
   <!-- Navbar -->
-  <nav id="navbar" ref="nav" class="navbar navbar-expand-md px-4 py-3 fixed-top smart-scroll text-color fw-bold">
+  <nav id="navbar" ref="nav" class="navbar navbar-expand-md px-4 py-3 fixed-top smart-scroll fw-bold">
     <NuxtLink class="navbar-brand py-0" to="/">
-      <span class="m-0 text-primary">{{ t("name_abreviated") }}</span>
+      <span>{{ t("name_abreviated") }}</span>
     </NuxtLink>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon" />
     </button>
-    <div id="collapsibleNavbar" class="collapse navbar-collapse">
+    <div id="collapsibleNavbar" ref="collapsibleNav" class="collapse navbar-collapse">
       <ul class="navbar-nav ms-auto align-items-center">
-        <li class="nav-item">
-          <NuxtLink to="/#about" class="text-decoration-none">
-            <span class="m-0 text-primary">{{ t("about") }}</span>
+        <li class="nav-item mx-2">
+          <NuxtLink to="/#about" @click="collapseNav()">
+            <span>{{ t("about") }}</span>
+          </NuxtLink>
+        </li>
+        <li class="nav-item mx-2">
+          <NuxtLink to="/#projects" @click="collapseNav()">
+            <span>{{ t("projects") }}</span>
           </NuxtLink>
         </li>
         <li class="nav-item dropdown mx-2 text-center">
           <span id="navbardrop" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">{{ t("lang").toUpperCase() }}</span>
-          <div class="dropdown-menu text-decoration-none" role="button">
+          <div class="dropdown-menu" role="button">
             <span class="dropdown-item" @click="lang = 'en'">EN</span>
             <span class="dropdown-item" @click="lang = 'es'">ES</span>
           </div>
@@ -77,8 +82,8 @@ export default {
   },
   methods: {
     collapseNav () {
-      if (this.nav.classList.contains("show")) {
-        this.$nuxt.$bootstrap.toogleCollapse(nav);
+      if (this.$refs.collapsibleNav.classList.contains("show")) {
+        this.$nuxt.$bootstrap.toogleCollapse(this.$refs.collapsibleNav);
       }
     },
     toggleTheme () {
