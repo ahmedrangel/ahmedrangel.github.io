@@ -79,9 +79,9 @@ definePageMeta({ layout: "site" });
         </div>
       </div>
     </div>
-    <hr class="mt-0 mb-4">
+    <hr class="m-0">
     <!-- Skills -->
-    <div id="skills">
+    <div id="skills" class="pt-4">
       <h3 class="fw-bold mb-3">{{ t("main_skills") }}</h3>
       <table class="table table-borderless m-0 align-middle">
         <tbody>

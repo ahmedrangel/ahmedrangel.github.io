@@ -28,6 +28,7 @@ export default {
   native: "Native",
   intermediate: "Intermediate",
   advanced: "Advanced",
+  skills: "Skills",
   main_skills: "Main Skills",
   web_development: "Web Development",
   javascript: "JavaScript",

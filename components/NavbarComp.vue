@@ -15,6 +15,11 @@
           </NuxtLink>
         </li>
         <li class="nav-item mx-2">
+          <NuxtLink to="/#skills" @click="collapseNav()">
+            <span>{{ t("skills") }}</span>
+          </NuxtLink>
+        </li>
+        <li class="nav-item mx-2">
           <NuxtLink to="/#projects" @click="collapseNav()">
             <span>{{ t("projects") }}</span>
           </NuxtLink>
