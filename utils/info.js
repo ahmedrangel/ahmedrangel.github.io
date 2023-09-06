@@ -4,7 +4,7 @@ export const INFO = {
   birthday: "1998-06-15",
   email: "ahmedrangel@outlook.com",
   dark: "true",
-  lang: "en",
+  lang: "es",
   socials: [
     {
       name: "GitHub",

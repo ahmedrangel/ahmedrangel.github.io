@@ -36,4 +36,5 @@ export default {
   software_and_tools: "Software y Herramientas",
   operating_systems: "Sistemas Operativos",
   projects: "Proyectos",
+  repository: "Repositorio",
 };

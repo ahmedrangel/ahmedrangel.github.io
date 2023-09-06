@@ -22,8 +22,8 @@
         <li class="nav-item dropdown mx-2 text-center">
           <span id="navbardrop" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">{{ t("lang").toUpperCase() }}</span>
           <div class="dropdown-menu" role="button">
-            <span class="dropdown-item" @click="lang = 'en'">EN</span>
             <span class="dropdown-item" @click="lang = 'es'">ES</span>
+            <span class="dropdown-item" @click="lang = 'en'">EN</span>
           </div>
         </li>
         <li class="nav-item align-self-center">

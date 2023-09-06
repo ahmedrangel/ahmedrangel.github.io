@@ -133,7 +133,7 @@ definePageMeta({ layout: "site" });
                     <a v-if="projects.repository" :href="projects.repository" target="_blank" class="d-inline-flex align-items-center">
                       <Icon class="iconify me-1" name="simple-icons:github" />
                       <span class="card-foot">
-                        <b>Repository</b>
+                        <b>{{ t("repository") }}</b>
                       </span>
                     </a>
                   </span>
