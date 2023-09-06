@@ -268,8 +268,8 @@ export const INFO = {
       start_year: 2022,
       end_month: 6,
       end_year: 2022,
-      desc_li_es: ["Colaboró junto a <a href=\"https://yizack.com\" target=\"_blank\">Yizack Rangel<a/> en el desarrollo de un proyecto web y de Android de 25000+ descargas totales, actualmente ayuda a 6500+ usuarios a conocer el saldo y movimientos las tarjetas de Metro y Metrobús."],
-      desc_li_en: ["Collaborated with <a href=\"https://yizack.com\" target=\"_blank\">Yizack Rangel<a/> in the development of a web and Android project with 25,000+ downloads totals, currently helps 6500+ users to know the balance and movements of the Metro and Metrobús cards."],
+      desc_li_es: ["Colaboró junto a <a href=\"https://yizack.com\" target=\"_blank\">Yizack Rangel</a> en el desarrollo de un proyecto web y de Android de 25000+ descargas totales, actualmente ayuda a 6500+ usuarios a conocer el saldo y movimientos las tarjetas de Metro y Metrobús."],
+      desc_li_en: ["Collaborated with <a href=\"https://yizack.com\" target=\"_blank\">Yizack Rangel</a> in the development of a web and Android project with 25,000+ downloads totals, currently helps 6500+ users to know the balance and movements of the Metro and Metrobús cards."],
       tags: ["Android Studio", "Java", "PHP", "PostgreSQL", "AWS Elastic Beanstalk", "Bootstrap 5"]
     },
     {
