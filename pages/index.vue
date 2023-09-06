@@ -5,7 +5,7 @@ definePageMeta({ layout: "site" });
   <main :lang="getLang()" class="mt-5 container-lg">
     <!-- About -->
     <div id="about" class="pt-5">
-      <h3 class="fw-bold mb-3">{{ t("about_me") }}</h3>
+      <h3 class="fw-bold mb-4">{{ t("about_me") }}</h3>
       <div class="row justify-content-center g-4">
         <div class="col-12 col-md-3 pb-3">
           <div class="ps-0 pe-3">
@@ -49,13 +49,13 @@ definePageMeta({ layout: "site" });
         </div>
       </div>
     </div>
-    <hr class="my-4">
+    <hr class="my-5">
     <!-- Education -->
     <div id="education" class="row">
       <div class="col-12 col-lg-8 mb-4">
-        <h3 class="fw-bold mb-3">{{ t("education") }}</h3>
+        <h3 class="fw-bold mb-4">{{ t("education") }}</h3>
         <div v-for="(education, index) of INFO.education" :key="index" class="mb-2">
-          <div class="mb-2">
+          <div class="mb-3">
             <div class="h5 mb-0">
               <span class="text-primary fw-bold me-2">{{ lang === 'en' ? education.diploma_en : education.diploma_es }}</span>
               <span class="me-2">{{ t("at") }}</span>
@@ -68,9 +68,9 @@ definePageMeta({ layout: "site" });
       </div>
       <!-- Languages -->
       <div class="col-12 col-lg-4 mb-4">
-        <h3 class="fw-bold mb-3">{{ t("languages") }}</h3>
+        <h3 class="fw-bold mb-4">{{ t("languages") }}</h3>
         <p class="mb-1"><b>{{ t("spanish") }}:</b> {{ t("native") }}</p>
-        <div class="progress mb-3">
+        <div class="progress mb-4">
           <div class="progress-bar w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" />
         </div>
         <p class="mb-1"><b>{{ t("english") }}:</b> {{ t("intermediate") }} / {{ t("advanced") }}</p>
@@ -81,8 +81,8 @@ definePageMeta({ layout: "site" });
     </div>
     <hr class="m-0">
     <!-- Skills -->
-    <div id="skills" class="pt-4">
-      <h3 class="fw-bold mb-3">{{ t("main_skills") }}</h3>
+    <div id="skills" class="pt-5">
+      <h3 class="fw-bold mb-4">{{ t("main_skills") }}</h3>
       <table class="table table-borderless m-0 align-middle">
         <tbody>
           <tr v-for="(main_skills, index) of INFO.main_skills" :key="index">
@@ -98,11 +98,11 @@ definePageMeta({ layout: "site" });
         </tbody>
       </table>
     </div>
-    <hr class="mt-4 mb-0">
+    <hr class="mt-5 mb-0">
     <!-- Projects -->
-    <div id="projects" class="pt-4">
-      <h3 class="fw-bold mb-3">{{ t("projects") }}</h3>
-      <MasonryWall :items="INFO.projects" :ssr-columns="1" :gap="8" :max-columns="2" :column-width="400">
+    <div id="projects" class="pt-5">
+      <h3 class="fw-bold mb-4">{{ t("projects") }}</h3>
+      <MasonryWall :items="INFO.projects" :ssr-columns="1" :gap="12" :max-columns="2" :column-width="400">
         <template #default="{item: projects}">
           <div class="card">
             <img :src="`/images/${projects.image}`" class="card-img-top" alt="">

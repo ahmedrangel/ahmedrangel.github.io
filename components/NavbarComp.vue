@@ -1,6 +1,6 @@
 <template>
   <!-- Navbar -->
-  <nav id="navbar" ref="nav" class="navbar navbar-expand-md px-4 py-3 fixed-top smart-scroll fw-bold">
+  <nav id="navbar" ref="nav" class="navbar navbar-expand-md px-4 py-2 fixed-top smart-scroll fw-bold">
     <NuxtLink class="navbar-brand py-0" to="/">
       <span>{{ t("name_abreviated") }}</span>
     </NuxtLink>
@@ -9,34 +9,34 @@
     </button>
     <div id="collapsibleNavbar" ref="collapsibleNav" class="collapse navbar-collapse">
       <ul class="navbar-nav ms-auto align-items-center">
-        <li class="nav-item mx-2">
+        <li class="nav-item me-3">
           <NuxtLink to="/#about" @click="collapseNav()">
             <span>{{ t("about") }}</span>
           </NuxtLink>
         </li>
-        <li class="nav-item mx-2">
+        <li class="nav-item mx-3">
           <NuxtLink to="/#skills" @click="collapseNav()">
             <span>{{ t("skills") }}</span>
           </NuxtLink>
         </li>
-        <li class="nav-item mx-2">
+        <li class="nav-item mx-3">
           <NuxtLink to="/#projects" @click="collapseNav()">
             <span>{{ t("projects") }}</span>
           </NuxtLink>
         </li>
-        <li class="nav-item mx-2">
+        <li class="nav-item mx-3">
           <a :href="INFO.resume" target="_blank" @click="collapseNav()">
             <span>{{ t("download_resume") }}</span>
           </a>
         </li>
-        <li class="nav-item dropdown mx-2 text-center">
+        <li class="nav-item dropdown mx-1 text-center">
           <span id="navbardrop" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">{{ t("lang").toUpperCase() }}</span>
           <div class="dropdown-menu" role="button">
             <span class="dropdown-item" @click="lang = 'es'">ES</span>
             <span class="dropdown-item" @click="lang = 'en'">EN</span>
           </div>
         </li>
-        <li class="nav-item align-self-center">
+        <li class="nav-item align-self-center ms-2">
           <div class="form-check form-switch d-flex justify-content-center align-items-center pe-auto p-0 m-0">
             <input id="flexSwitchCheckChecked" class="form-check-input p-0 m-0" type="checkbox" role="button" :style="`--bs-form-switch-bg: url(${MoonSun(dark)})`" checked @click="toggleTheme()">
             <span class="slider" />
@@ -65,17 +65,7 @@ export default {
     this.nav = this.$refs.nav;
     if (this.nav) {
       let last_scroll_top = 0;
-      window.addEventListener("scroll", () => {
-        const scroll_top = window.pageYOffset || document.documentElement.scrollTop;
-        if (scroll_top < last_scroll_top) {
-          this.nav.classList.remove("scrolled-down");
-          this.nav.classList.add("scrolled-up");
-        } else {
-          this.nav.classList.remove("scrolled-up");
-          this.nav.classList.add("scrolled-down");
-        }
-        last_scroll_top = scroll_top;
-      });
+
     }
     const scrollFunction = () => {
       if ((document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) || (window.innerWidth < 767)) {
