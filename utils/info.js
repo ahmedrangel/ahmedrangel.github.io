@@ -5,6 +5,7 @@ export const INFO = {
   email: "ahmedrangel@outlook.com",
   dark: "true",
   lang: "es",
+  resume: "Eliezer_Rangel_CV_ES.pdf",
   socials: [
     {
       name: "GitHub",

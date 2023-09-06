@@ -19,6 +19,11 @@
             <span>{{ t("projects") }}</span>
           </NuxtLink>
         </li>
+        <li class="nav-item mx-2">
+          <a :href="INFO.resume" target="_blank" @click="collapseNav()">
+            <span>{{ t("download_resume") }}</span>
+          </a>
+        </li>
         <li class="nav-item dropdown mx-2 text-center">
           <span id="navbardrop" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">{{ t("lang").toUpperCase() }}</span>
           <div class="dropdown-menu" role="button">
