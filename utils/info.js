@@ -236,13 +236,27 @@ export const INFO = {
       desc_es: "Herramienta en línea gratuita para descargar clips MP4 de kick.com.",
       desc_en: "Free online tool for downloading MP4 clips from kick.com.",
       image: "kickclips-website.jpg",
-      start_month: 7,
+      start_month: 6,
       start_year: 2023,
       end_month: 13,
       end_year: "",
       desc_li_es: null,
       desc_li_en: null,
       tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages"]
+    },
+    {
+      name: "Instagram Media Scraper",
+      url: "https://github.com/ahmedrangel/instagram-media-scraper",
+      desc_es: "Este es un código Node.js simple para obtener información pública y medios (imágenes, videos, carrusel) de cualquier publicación o reel de Instagram sin API. Podrás obtener información, versiones de imágenes, versiones de video y medios carrusel con sus respectivas versiones de imagen y/o versiones de video de cada uno de ellos.",
+      desc_en: "This is simple Node.js code to get public information and media (images, videos, carousel) from every instagram post or reel URL without API. You can get information, image versions, video versions and carousel media with their respective image versions and/or video versions of each of them.",
+      image: "instagram-scraper.jpg",
+      start_month: 6,
+      start_year: 2023,
+      end_month: 13,
+      end_year: "",
+      desc_li_es: null,
+      desc_li_en: null,
+      tags: ["JavaScript", "ES6+", "Node.js", "Web Scraping"]
     },
     {
       name: "Saldo Metrobus",
