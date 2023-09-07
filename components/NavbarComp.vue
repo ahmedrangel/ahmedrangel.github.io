@@ -9,7 +9,7 @@
     </button>
     <div id="collapsibleNavbar" ref="collapsibleNav" class="collapse navbar-collapse">
       <ul class="navbar-nav ms-auto align-items-center">
-        <li class="nav-item me-3">
+        <li class="nav-item mx-3">
           <NuxtLink to="/#about" @click="collapseNav()">
             <span>{{ t("about") }}</span>
           </NuxtLink>
@@ -29,15 +29,15 @@
             <span>{{ t("download_resume") }}</span>
           </a>
         </li>
-        <li class="nav-item dropdown mx-1 text-center">
+        <li class="nav-item dropdown ms-2 me-1 text-center">
           <span id="navbardrop" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">{{ t("lang").toUpperCase() }}</span>
           <div class="dropdown-menu" role="button">
             <span class="dropdown-item" @click="lang = 'es'">ES</span>
             <span class="dropdown-item" @click="lang = 'en'">EN</span>
           </div>
         </li>
-        <li class="nav-item align-self-center ms-2">
-          <div class="form-check form-switch d-flex justify-content-center align-items-center pe-auto p-0 m-0">
+        <li class="nav-item align-self-center mx-2">
+          <div class="form-check form-switch p-0 m-0">
             <input id="flexSwitchCheckChecked" class="form-check-input p-0 m-0" type="checkbox" role="button" :style="`--bs-form-switch-bg: url(${MoonSun(dark)})`" checked @click="toggleTheme()">
             <span class="slider" />
             <label class="form-check-label" for="flexSwitchCheckChecked" />
