@@ -99,6 +99,9 @@ body, html {
   .form-check-input {
     background-color: var(--white)!important;
   }
+  body, html {
+    font-size: 16px;
+  }
 }
 
 #navbar {
