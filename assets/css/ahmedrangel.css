@@ -85,8 +85,7 @@ body, html {
 #navbar .iconify {
   font-size: 30px;
 }
-
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   #navbar {
     background: var(--navbar-bg)!important;
     font-size: 1rem;
@@ -94,6 +93,9 @@ body, html {
   .nav-item {
     margin-top: 1rem;
   }
+}
+
+@media only screen and (max-width: 767px) {
   .form-check-input:checked {
     background-color: var(--dark)!important;
   }
