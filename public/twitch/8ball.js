@@ -9,7 +9,6 @@ arr_respuestas = [
   "Es poco probable. FallHalp",
   "Sí, definitivamente. angarSi",
   "No lo sé. TearGlove",
-  "Tal vez Joss tenga la respuesta. PotFriend"
 ];
 
 if (q) {
