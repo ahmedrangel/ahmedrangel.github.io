@@ -1,4 +1,5 @@
 export const INFO = {
+  name: "Ahmed Rangel",
   domain: "ahmedrangel.com",
   phone: "+507 68279308",
   birthday: "1998-06-15",
