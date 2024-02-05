@@ -1,5 +1,9 @@
 <script setup>
 definePageMeta({ layout: "site" });
+
+const projectsOrdered = computed(() => {
+  return sortProjects(INFO.projects);
+});
 </script>
 <template>
   <main :lang="getLang()" class="mt-5 container-lg">
@@ -102,7 +106,7 @@ definePageMeta({ layout: "site" });
     <!-- Projects -->
     <div id="projects" class="pt-5">
       <h3 class="fw-bold mb-4">{{ t("projects") }}</h3>
-      <MasonryWall :items="INFO.projects" :ssr-columns="1" :gap="12" :max-columns="2" :column-width="400">
+      <MasonryWall :items="projectsOrdered" :ssr-columns="1" :gap="12" :max-columns="2" :column-width="400">
         <template #default="{item: projects}">
           <div class="card">
             <img :src="`/images/${projects.image}`" class="card-img-top" alt="">

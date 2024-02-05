@@ -6,7 +6,10 @@ export const INFO = {
   email: "ahmedrangel@outlook.com",
   dark: "true",
   lang: "es",
-  resume: "Eliezer_Rangel_CV_ES.pdf",
+  resume: {
+    es: "Eliezer_Rangel_CV_ES.pdf",
+    en: "Eliezer_Rangel_CV_EN.pdf"
+  },
   socials: [
     {
       name: "GitHub",
@@ -59,155 +62,96 @@ export const INFO = {
     {
       skill_id: "web_development",
       skills: [
-        {
-          name: "JavaScript",
-          icon: "simple-icons:javascript",
-        },
-        {
-          name: "HTML5",
-          icon: "simple-icons:html5",
-        },
-        {
-          name: "CSS3",
-          icon: "simple-icons:css3",
-        },
-        {
-          name: "PHP",
-          icon: "simple-icons:php",
-        },
-        {
-          name: "Bootstrap",
-          icon: "simple-icons:bootstrap",
-        },
-        {
-          name: "TailwindCSS",
-          icon: "simple-icons:tailwindcss",
-        },
-        {
-          name: "Cloudflare Pages",
-          icon: "simple-icons:cloudflare",
-        },
-        {
-          name: "GitHub Pages",
-          icon: "simple-icons:github",
-        }
+        { name: "JavaScript", icon: "simple-icons:javascript" },
+        { name: "HTML5", icon: "simple-icons:html5" },
+        { name: "CSS3", icon: "simple-icons:css3" },
+        { name: "PHP", icon: "simple-icons:php" },
+        { name: "Bootstrap", icon: "simple-icons:bootstrap" },
+        { name: "TailwindCSS", icon: "simple-icons:tailwindcss" },
+        { name: "Cloudflare Pages", icon: "simple-icons:cloudflare" },
+        { name: "GitHub Pages", icon: "simple-icons:github" }
       ]
     },
     {
       skill_id: "javascript",
       skills: [
-        {
-          name: "ES6+",
-          icon: "simple-icons:javascript",
-        },
-        {
-          name: "Node.js",
-          icon: "simple-icons:nodedotjs",
-        },
-        {
-          name: "Nuxt",
-          icon: "simple-icons:nuxtdotjs",
-        },
-        {
-          name: "Vue.js",
-          icon: "simple-icons:vuedotjs",
-        }
+        { name: "ES6+", icon: "simple-icons:javascript" },
+        { name: "Node.js", icon: "simple-icons:nodedotjs" },
+        { name: "Nuxt", icon: "simple-icons:nuxtdotjs" },
+        { name: "Vue.js", icon: "simple-icons:vuedotjs" }
       ]
     },
     {
       skill_id: "databases",
       skills: [
-        {
-          name: "MySQL",
-          icon: "simple-icons:mysql",
-        },
-        {
-          name: "PostgreSQL",
-          icon: "simple-icons:postgresql",
-        },
-        {
-          name: "SQLite",
-          icon: "simple-icons:sqlite",
-        },
-        {
-          name: "Cloudflare D1",
-          icon: "simple-icons:cloudflare",
-        }
+        { name: "MySQL", icon: "simple-icons:mysql" },
+        { name: "PostgreSQL", icon: "simple-icons:postgresql" },
+        { name: "SQLite", icon: "simple-icons:sqlite" },
+        { name: "Cloudflare D1", icon: "simple-icons:cloudflare" }
       ]
     },
     {
       skill_id: "serverless",
       skills: [
-        {
-          name: "Cloudflare Workers",
-          icon: "simple-icons:cloudflare",
-        },
-        {
-          name: "Vercel",
-          icon: "simple-icons:vercel",
-        }
+        { name: "Cloudflare Workers", icon: "simple-icons:cloudflare" },
+        { name: "Vercel", icon: "simple-icons:vercel" }
       ]
     },
     {
       skill_id: "software_and_tools",
       skills: [
-        {
-          name: "GitHub",
-          icon: "simple-icons:github",
-        },
-        {
-          name: "VSCode",
-          icon: "simple-icons:visualstudiocode",
-        },
-        {
-          name: "Cloudflare",
-          icon: "simple-icons:cloudflare",
-        },
-        {
-          name: "AWS",
-          icon: "simple-icons:amazonaws",
-        },
-        {
-          name: "WordPress",
-          icon: "simple-icons:wordpress",
-        },
-        {
-          name: "Git",
-          icon: "simple-icons:git",
-        },
-        {
-          name: "PNPM",
-          icon: "simple-icons:pnpm",
-        },
-        {
-          name: "ESLint",
-          icon: "simple-icons:eslint",
-        },
-        {
-          name: "Postman",
-          icon: "simple-icons:postman",
-        }
+        { name: "GitHub", icon: "simple-icons:github" },
+        { name: "VSCode", icon: "simple-icons:visualstudiocode" },
+        { name: "Cloudflare", icon: "simple-icons:cloudflare" },
+        { name: "DigitalOcean", icon: "simple-icons:digitalocean" },
+        { name: "AWS", icon: "simple-icons:amazonaws" },
+        { name: "WordPress", icon: "simple-icons:wordpress" },
+        { name: "Git", icon: "simple-icons:git" },
+        { name: "PNPM", icon: "simple-icons:pnpm" },
+        { name: "ESLint", icon: "simple-icons:eslint" },
+        { name: "Postman", icon: "simple-icons:postman" }
       ]
     },
     {
       skill_id: "operating_systems",
       skills: [
-        {
-          name: "Windows",
-          icon: "simple-icons:windows",
-        },
-        {
-          name: "Linux",
-          icon: "simple-icons:linux",
-        },
-        {
-          name: "Ubuntu",
-          icon: "simple-icons:ubuntu",
-        }
+        { name: "Windows", icon: "simple-icons:windows" },
+        { name: "Linux", icon: "simple-icons:linux" },
+        { name: "Ubuntu", icon: "simple-icons:ubuntu" }
       ]
     }
   ],
   projects: [
+    {
+      name: "Anime Web Client",
+      url: "https://anime.ahmedrangel.com",
+      desc_es: "Cliente web para buscar información relacionada con anime.",
+      desc_en: "Web client to search for anime related information.",
+      image: "anime-website.jpg",
+      start_month: 2,
+      start_year: 2024,
+      end_month: 13,
+      end_year: null,
+      desc_li_es: null,
+      des_lin_en: null,
+      tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages"],
+      repository: "https://github.com/ahmedrangel/anime"
+    },
+    {
+      name: "Unbot.me",
+      url: "https://unbot.me",
+      desc_es: "Unbotme es un bot para Twitch diseñado para banear automáticamente a bots identificados que suelen acechar persistentemente en múltiples canales.",
+      desc_en: "Unbotme is a bot for Twitch designed to automatically ban identified bots that persistently lurk in channels.",
+      image: "unbotme-website.jpg",
+      start_month: 1,
+      start_year: 2024,
+      end_month: 13,
+      end_year: null,
+      desc_li_es: null,
+      des_lin_en: null,
+      tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages", "Web Socket"],
+      repository: "https://github.com/ahmedrangel/unbot.me"
+    },
     {
       name: "Drawmond",
       url: "https://drawmond.ahmedrangel.com",
@@ -216,8 +160,8 @@ export const INFO = {
       image: "drawmond-website.jpg",
       start_month: 8,
       start_year: 2023,
-      end_month: 13,
-      end_year: "",
+      end_month: 8,
+      end_year: 2023,
       desc_li_es: [
         "Desarrolló un juego web enfocado a creadores de contenido de Twitch, donde éstos desafían a su audiencia a descifrar los dibujos que este crea. Usando Nuxt.js alojado en Cloudflare Pages.",
         "Implementó un lienzo con todas las herramientas básicas para el proceso de dibujo.",
@@ -242,7 +186,7 @@ export const INFO = {
       start_month: 6,
       start_year: 2023,
       end_month: 13,
-      end_year: "",
+      end_year: null,
       desc_li_es: null,
       desc_li_en: null,
       tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages"],
@@ -256,8 +200,8 @@ export const INFO = {
       image: "instagram-scraper.jpg",
       start_month: 6,
       start_year: 2023,
-      end_month: 13,
-      end_year: "",
+      end_month: 1,
+      end_year: 2024,
       desc_li_es: null,
       desc_li_en: null,
       tags: ["JavaScript", "ES6+", "Node.js", "Web Scraping"],
@@ -286,7 +230,7 @@ export const INFO = {
       start_month: 9,
       start_year: 2021,
       end_month: 13,
-      end_year: "",
+      end_year: null,
       desc_li_es: [
         "El proyecto se desarrolló inicialmente utilizando PHP alojado en AWS EC2 y luego migró a Nuxt alojado en Cloudflare Pages.",
         "Desarrolló un proyecto de sitio web de deportes electrónicos utilizando Nuxt alojado en Cloudflare Pages.",
@@ -313,7 +257,7 @@ export const INFO = {
       start_month: 1,
       start_year: 2020,
       end_month: 13,
-      end_year: "",
+      end_year: null,
       desc_li_es: [
         "Diseñó un sitio web enfocado a exhibir la colección completa de canciones del artista,su biografía, videos, detalles e hipervínculos relevantes.",
         "Desarrolló el sitio utilizando Nuxt.js alojado en GitHub Pages."

@@ -25,7 +25,7 @@
           </NuxtLink>
         </li>
         <li class="nav-item mx-3">
-          <a :href="INFO.resume" target="_blank" @click="collapseNav()">
+          <a :href="lang === 'es' ? INFO.resume.es : INFO.resume.en " target="_blank" @click="collapseNav()">
             <span>{{ t("download_resume") }}</span>
           </a>
         </li>
