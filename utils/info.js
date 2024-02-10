@@ -108,6 +108,7 @@ export const INFO = {
         { name: "AWS", icon: "simple-icons:amazonaws" },
         { name: "WordPress", icon: "simple-icons:wordpress" },
         { name: "Git", icon: "simple-icons:git" },
+        { name: "GraphQL", icon: "simple-icons:graphql" },
         { name: "PNPM", icon: "simple-icons:pnpm" },
         { name: "ESLint", icon: "simple-icons:eslint" },
         { name: "Postman", icon: "simple-icons:postman" }
