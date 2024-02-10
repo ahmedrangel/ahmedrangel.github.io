@@ -76,6 +76,7 @@ export const INFO = {
       skill_id: "javascript",
       skills: [
         { name: "ES6+", icon: "simple-icons:javascript" },
+        { name: "Typescript", icon: "simple-icons:typescript" },
         { name: "Node.js", icon: "simple-icons:nodedotjs" },
         { name: "Nuxt", icon: "simple-icons:nuxtdotjs" },
         { name: "Vue.js", icon: "simple-icons:vuedotjs" }
