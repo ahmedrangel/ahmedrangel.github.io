@@ -39,4 +39,6 @@ export default {
   projects: "Projects",
   repository: "Repository",
   download_resume: "Download Resume",
+  tools: "Tools",
+  cloud: "Cloud"
 };

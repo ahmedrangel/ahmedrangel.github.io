@@ -99,19 +99,25 @@ export const INFO = {
       ]
     },
     {
-      skill_id: "software_and_tools",
+      skill_id: "tools",
       skills: [
         { name: "GitHub", icon: "simple-icons:github" },
         { name: "VSCode", icon: "simple-icons:visualstudiocode" },
-        { name: "Cloudflare", icon: "simple-icons:cloudflare" },
-        { name: "DigitalOcean", icon: "simple-icons:digitalocean" },
-        { name: "AWS", icon: "simple-icons:amazonaws" },
         { name: "WordPress", icon: "simple-icons:wordpress" },
         { name: "Git", icon: "simple-icons:git" },
         { name: "GraphQL", icon: "simple-icons:graphql" },
         { name: "PNPM", icon: "simple-icons:pnpm" },
         { name: "ESLint", icon: "simple-icons:eslint" },
         { name: "Postman", icon: "simple-icons:postman" }
+      ]
+    },
+    {
+      skill_id: "cloud",
+      skills: [
+        { name: "Cloudflare", icon: "simple-icons:cloudflare" },
+        { name: "DigitalOcean", icon: "simple-icons:digitalocean" },
+        { name: "AWS", icon: "simple-icons:amazonaws" },
+        { name: "Replit", icon: "simple-icons:replit" },
       ]
     },
     {

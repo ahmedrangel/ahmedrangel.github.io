@@ -39,4 +39,6 @@ export default {
   projects: "Proyectos",
   repository: "Repositorio",
   download_resume: "Descargar CV",
+  tools: "Herramientas",
+  cloud: "Cloud"
 };
