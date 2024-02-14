@@ -12,7 +12,7 @@
   "devDependencies": {
     "@nuxt/eslint-config": "^0.2.0",
     "eslint": "^8.56.0",
-    "nuxt": "^3.10.1"
+    "nuxt": "^3.10.2"
   },
   "dependencies": {
     "@nuxtjs/google-fonts": "^3.1.3",
