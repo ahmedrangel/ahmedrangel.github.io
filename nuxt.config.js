@@ -17,13 +17,24 @@ export default defineNuxtConfig({
       },
       bodyAttrs: {
         "data-bs-theme": "dark"
-      },
-      link: [
-        { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Zen+Kaku+Gothic+New", }
-      ]
+      }
     },
   },
   modules: [
-    "nuxt-icon"
-  ]
+    "@nuxtjs/google-fonts",
+    "nuxt-icon",
+    "nuxt-aos"
+  ],
+  googleFonts: {
+    display: "swap",
+    download: true,
+    families: {
+      "Zen Kaku Gothic New": [300, 400, 500, 600, 700],
+    },
+  },
+  aos: {
+    once: true,
+    easing: "ease-in-sine",
+    duration: 500
+  }
 });
