@@ -33,7 +33,6 @@ export default defineNuxtConfig({
     },
   },
   aos: {
-    once: true,
     easing: "ease-in-sine",
     duration: 500
   }

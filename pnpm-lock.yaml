@@ -14,6 +14,9 @@ dependencies:
   bootstrap:
     specifier: ^5.3.2
     version: 5.3.2(@popperjs/core@2.11.8)
+  nuxt-aos:
+    specifier: ^1.2.3
+    version: 1.2.3(nuxt@3.10.1)(vite@5.0.12)
   nuxt-icon:
     specifier: ^0.6.8
     version: 0.6.8(nuxt@3.10.1)(vite@5.0.12)(vue@3.4.15)
@@ -28,9 +31,6 @@ devDependencies:
   nuxt:
     specifier: ^3.10.1
     version: 3.10.1(eslint@8.56.0)(typescript@5.2.2)(vite@5.0.12)
-  nuxt-aos:
-    specifier: ^1.2.3
-    version: 1.2.3(nuxt@3.10.1)(vite@5.0.12)
 
 packages:
 
@@ -2194,7 +2194,7 @@ packages:
       classlist-polyfill: 1.2.0
       lodash.debounce: 4.0.8
       lodash.throttle: 4.1.1
-    dev: true
+    dev: false
 
   /aproba@2.0.0:
     resolution: {integrity: sha512-lYe4Gx7QT+MKGbDsA+Z+he/Wtef0BiwDOlK/XkBrdfsh9J/jPPXbX0tE9x9cl27Tmu5gg3QUbUrQYa/y+KOHPQ==, tarball: https://registry.npmjs.org/aproba/-/aproba-2.0.0.tgz}
@@ -2470,7 +2470,7 @@ packages:
 
   /classlist-polyfill@1.2.0:
     resolution: {integrity: sha512-GzIjNdcEtH4ieA2S8NmrSxv7DfEV5fmixQeyTmqmRmRJPGpRBaSnA2a0VrCjyT8iW8JjEdMbKzDotAJf+ajgaQ==, tarball: https://registry.npmjs.org/classlist-polyfill/-/classlist-polyfill-1.2.0.tgz}
-    dev: true
+    dev: false
 
   /clean-stack@2.2.0:
     resolution: {integrity: sha512-4diC9HaTE+KRAMWhDhrGOECgWZxoevMc5TlkObMqNSsVU62PYzXZ/SMTjzyGAFF1YusgxGcSWTEXBhp0CPwQ1A==, tarball: https://registry.npmjs.org/clean-stack/-/clean-stack-2.2.0.tgz}
@@ -3829,7 +3829,7 @@ packages:
 
   /lodash.debounce@4.0.8:
     resolution: {integrity: sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==, tarball: https://registry.npmjs.org/lodash.debounce/-/lodash.debounce-4.0.8.tgz}
-    dev: true
+    dev: false
 
   /lodash.defaults@4.2.0:
     resolution: {integrity: sha512-qjxPLHd3r5DnsdGacqOMU6pb/avJzdh9tFX2ymgoZE27BmjXrNy/y4LoaiTeAb+O3gL8AfpJGtqfX/ae2leYYQ==, tarball: https://registry.npmjs.org/lodash.defaults/-/lodash.defaults-4.2.0.tgz}
@@ -3845,7 +3845,7 @@ packages:
 
   /lodash.throttle@4.1.1:
     resolution: {integrity: sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ==, tarball: https://registry.npmjs.org/lodash.throttle/-/lodash.throttle-4.1.1.tgz}
-    dev: true
+    dev: false
 
   /lodash.uniq@4.5.0:
     resolution: {integrity: sha512-xfBaXQd9ryd9dlSDvnvI0lvxfLJlYAZzXomUYzLKtUeOQvOP5piqAWuGtrhWeqaXK9hhoM/iyJc5AV+XfsX3HQ==, tarball: https://registry.npmjs.org/lodash.uniq/-/lodash.uniq-4.5.0.tgz}
@@ -4359,7 +4359,7 @@ packages:
       - rollup
       - supports-color
       - vite
-    dev: true
+    dev: false
 
   /nuxt-icon@0.6.8(nuxt@3.10.1)(vite@5.0.12)(vue@3.4.15):
     resolution: {integrity: sha512-6eWlNOb6Uvp63uXFdhcmsB1JlubDv76Pot/VwmIu0yJxDYhwytbnv3WAjw2khl2l7W/65V4eMGIEeX9C5Ahxng==, tarball: https://registry.npmjs.org/nuxt-icon/-/nuxt-icon-0.6.8.tgz}
