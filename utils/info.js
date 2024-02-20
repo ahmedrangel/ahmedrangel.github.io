@@ -131,6 +131,29 @@ export const INFO = {
   ],
   projects: [
     {
+      name: "SoloQ Challenge Ranking Demo",
+      url: "https://soloqchallenge.pages.dev",
+      desc_es: "Sitio web que muestra un ranking de streamers de Twitch sobre el juego League of Legends.",
+      desc_en: "Website that displays a ranking of Twitch streamers for the game League of Legends.",
+      image: "soloqchallenge-website.jpg",
+      start_month: 2,
+      start_year: 2024,
+      end_month: 13,
+      end_year: null,
+      desc_li_es: [
+        "Desarrolló una tabla de clasificación para el juego League of Legends agregando una lista de streamers con sus respectivas cuentas de juego y redes sociales. Usando Nuxt.js alojado en Cloudflare Pages.",
+        "Diseñó una base de datos que guarda información sobre Twitch y League of Legends de cada streamer para ser mostradas directamente de manera visual en el sitio web.",
+        "Implementó algunos cron triggers que actualizan periódicamente la información correspondiente a cada streamer para mantener actualizado el sitio web. Usando Cloudflare Workers junto con las API de Riot Games y Twitch.",
+      ],
+      desc_li_en: [
+        "Developed a leaderboard for the game League of Legends by adding a list of streamers with their respective game accounts and social media. Using Nuxt.js hosted on Cloudflare Pages.",
+        "Designed a database that stores information about Twitch and League of Legends for each streamer to be displayed visually on the website.",
+        "Implemented some cron triggers that periodically update the information corresponding to each streamer to keep the website up-to-date. Using Cloudflare Workers in conjunction with the Riot Games and Twitch APIs."
+      ],
+      tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "TypeScript", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages", "Cloudflare Workers", "Cloudflare D1", "Cron Triggers", "Riot Games API", "Twitch API"],
+      repository: null
+    },
+    {
       name: "Anime Web Client",
       url: "https://anime.ahmedrangel.com",
       desc_es: "Cliente web para buscar información relacionada con anime.",
@@ -141,8 +164,8 @@ export const INFO = {
       end_month: 13,
       end_year: null,
       desc_li_es: null,
-      des_lin_en: null,
-      tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages"],
+      desc_li_en: null,
+      tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "TypeScript", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages", "GraphQL", "AniList API"],
       repository: "https://github.com/ahmedrangel/anime"
     },
     {
@@ -156,8 +179,8 @@ export const INFO = {
       end_month: 13,
       end_year: null,
       desc_li_es: null,
-      des_lin_en: null,
-      tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages", "Web Socket"],
+      desc_li_en: null,
+      tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "TypeScript", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages", "Web Socket", "REST API"],
       repository: "https://github.com/ahmedrangel/unbot.me"
     },
     {
