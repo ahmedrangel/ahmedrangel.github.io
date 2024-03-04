@@ -35,10 +35,6 @@ const projectsOrdered = computed(() => {
               <span>{{ t("address") }}</span>
             </div>
             <div class="col-lg-6 col-md-6 d-flex align-items-center">
-              <Icon class="iconify me-2" name="ph:phone-duotone" />
-              <span>{{ INFO.phone }}</span>
-            </div>
-            <div class="col-lg-6 col-md-6 d-flex align-items-center">
               <Icon class="iconify me-2" name="ph:envelope-simple-duotone" />
               <a :href="`mailto:${INFO.email}`" target="_blank">{{ INFO.email }}</a>
             </div>
