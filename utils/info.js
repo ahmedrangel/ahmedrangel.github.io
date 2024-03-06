@@ -130,11 +130,11 @@ export const INFO = {
   ],
   projects: [
     {
-      name: "SoloQ Challenge Ranking Demo",
+      name: "Muelitas Challenge Ranking 2024",
       url: "https://soloqchallenge.pages.dev",
-      desc_es: "Sitio web que muestra un ranking de streamers de Twitch sobre el juego League of Legends.",
-      desc_en: "Website that displays a ranking of Twitch streamers for the game League of Legends.",
-      image: "soloqchallenge-website.jpg",
+      desc_es: "Sitio web para el evento Muelitas Challenge 2024 que muestra una tabla de clasificación de streamers de Twitch ordenado por rango en el juego League of Legends.",
+      desc_en: "Website for the Muelitas Challenge event that displays a leaderboard of Twitch streamers sorted by rank in the game League of Legends.",
+      image: "muelitaschallenge-website.jpg",
       start_month: 2,
       start_year: 2024,
       end_month: 13,
@@ -150,7 +150,7 @@ export const INFO = {
         "Implemented some cron triggers that periodically update the information corresponding to each streamer to keep the website up-to-date. Using Cloudflare Workers in conjunction with the Riot Games and Twitch APIs."
       ],
       tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "TypeScript", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages", "Cloudflare Workers", "Cloudflare D1", "Cron Triggers", "Riot Games API", "Twitch API"],
-      repository: null
+      repository: "https://github.com/ahmedrangel/soloqchallenge"
     },
     {
       name: "Anime Web Client",

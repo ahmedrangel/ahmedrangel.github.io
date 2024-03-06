@@ -100,13 +100,13 @@ const projectsOrdered = computed(() => {
     </div>
     <hr class="mt-5 mb-0">
     <!-- Projects -->
-    <div id="projects" class="pt-5">
+    <div id="projects" class="py-5">
       <h3 class="fw-bold mb-4" data-aos="fade-right">{{ t("projects") }}</h3>
-      <MasonryWall :items="projectsOrdered" :ssr-columns="1" :gap="12" :max-columns="2" :column-width="400" data-aos="fade-in" data-aos-duration="1000">
+      <MasonryWall :items="projectsOrdered" :ssr-columns="1" :gap="12" :max-columns="2" :column-width="400" data-aos="fade-in">
         <template #default="{item: projects}">
-          <div class="card">
-            <img :src="`/images/${projects.image}`" class="card-img-top" alt="">
-            <div class="card-body">
+          <div class="card overflow-hidden">
+            <img :src="`/images/${projects.image}`" class="card-img-top" alt="" data-aos="fade-in">
+            <div class="card-body" data-aos="fade-right">
               <a :href="projects.url" target="_blank" class="text-primary  fw-bold">
                 <h5 class="m-0 fw-bold">{{ projects.name }}</h5>
               </a>
@@ -114,7 +114,7 @@ const projectsOrdered = computed(() => {
             </div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
-                <div class="my-2">
+                <div class="my-2" data-aos="fade-left">
                   <p>{{ lang === 'en' ? projects.desc_en : projects.desc_es }}</p>
                   <ul>
                     <li v-for="(li, index2) of lang === 'en' ? projects.desc_li_en : projects.desc_li_es" :key="index2">
@@ -125,7 +125,7 @@ const projectsOrdered = computed(() => {
                 </div>
               </li>
               <li class="list-group-item">
-                <div class="my-1">
+                <div class="my-1" data-aos="fade-right">
                   <span v-for="(tags, index3) of projects.tags" :key="index3" class="sk m-1 px-2 py-1 text-nowrap">
                     {{ tags }}
                   </span>
