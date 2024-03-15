@@ -107,7 +107,8 @@ export const INFO = {
         { name: "GraphQL", icon: "simple-icons:graphql" },
         { name: "PNPM", icon: "simple-icons:pnpm" },
         { name: "ESLint", icon: "simple-icons:eslint" },
-        { name: "Postman", icon: "simple-icons:postman" }
+        { name: "Postman", icon: "simple-icons:postman" },
+        { name: "Chart.js", icon: "simple-icons:chartdotjs" }
       ]
     },
     {
@@ -150,7 +151,7 @@ export const INFO = {
         "Implemented some cron triggers that periodically update the information corresponding to each streamer to keep the website up-to-date. Using Cloudflare Workers in conjunction with the Riot Games and Twitch APIs."
       ],
       tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "TypeScript", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages", "Cloudflare Workers", "Cloudflare D1", "Cron Triggers", "Riot Games API", "Twitch API"],
-      repository: "https://github.com/ahmedrangel/soloqchallenge"
+      repository: "https://github.com/ahmedrangel/muelitaschallenge"
     },
     {
       name: "Anime Web Client",
