@@ -166,7 +166,7 @@ export const INFO = {
       desc_li_es: null,
       desc_li_en: null,
       tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "TypeScript", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages", "GraphQL", "AniList API"],
-      repository: "https://github.com/ahmedrangel/anime"
+      repository: "https://github.com/ahmedrangel/animed"
     },
     {
       name: "Unbot.me",
