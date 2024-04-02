@@ -115,7 +115,8 @@ const projectsOrdered = computed(() => {
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
                 <div class="my-2" data-aos="fade-left">
-                  <p>{{ lang === 'en' ? projects.desc_en : projects.desc_es }}</p>
+                  <!-- eslint-disable-next-line vue/no-v-html, vue/no-v-html -->
+                  <p v-html="lang === 'en' ? projects.desc_en : projects.desc_es" />
                   <ul>
                     <li v-for="(li, index2) of lang === 'en' ? projects.desc_li_en : projects.desc_li_es" :key="index2">
                       <!-- eslint-disable-next-line vue/no-v-html, vue/no-v-html -->
