@@ -67,7 +67,7 @@ export const INFO = {
         { name: "PHP", icon: "simple-icons:php" },
         { name: "Bootstrap", icon: "simple-icons:bootstrap" },
         { name: "TailwindCSS", icon: "simple-icons:tailwindcss" },
-        { name: "Cloudflare Pages", icon: "simple-icons:cloudflare" },
+        { name: "Cloudflare Pages", icon: "simple-icons:cloudflarepages" },
         { name: "GitHub Pages", icon: "simple-icons:github" }
       ]
     },
@@ -93,7 +93,7 @@ export const INFO = {
     {
       skill_id: "serverless",
       skills: [
-        { name: "Cloudflare Workers", icon: "simple-icons:cloudflare" },
+        { name: "Cloudflare Workers", icon: "simple-icons:cloudflareworkers" },
         { name: "Vercel", icon: "simple-icons:vercel" }
       ]
     },
