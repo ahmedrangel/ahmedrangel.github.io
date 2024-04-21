@@ -7,7 +7,6 @@ export default defineNuxtConfig({
   ],
   app: {
     rootId: "app",
-    buildAssetDir: "/_app",
     head: {
       title: INFO.name,
       charset: "utf-8",
@@ -20,16 +19,12 @@ export default defineNuxtConfig({
       }
     },
   },
-  modules: [
-    "@nuxtjs/google-fonts",
-    "nuxt-icon",
-    "nuxt-aos"
-  ],
+  modules: ["@nuxtjs/google-fonts", "nuxt-icon", "nuxt-aos", "@nuxt/eslint"],
   googleFonts: {
     display: "swap",
     download: true,
     families: {
-      "Zen Kaku Gothic New": [300, 400, 500, 600, 700],
+      "Zen Kaku Gothic New": [300, 400, 500, 700],
     },
   },
   aos: {

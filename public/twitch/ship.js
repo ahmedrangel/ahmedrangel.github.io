@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 porcentaje = Math.round(Math.random()*100);
 emote_adpt = "";
 if (porcentaje >= 90) {

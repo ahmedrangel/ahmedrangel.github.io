@@ -7,16 +7,16 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint": "eslint --ext .ts,.js,.vue --fix --ignore-path .gitignore ."
+    "lint": "eslint --fix ."
   },
   "devDependencies": {
-    "@nuxt/eslint-config": "^0.2.0",
-    "eslint": "^8.57.0",
-    "nuxt": "^3.11.1"
+    "@nuxt/eslint": "^0.3.8",
+    "eslint": "^9.1.0",
+    "nuxt": "^3.11.2"
   },
   "dependencies": {
     "@nuxtjs/google-fonts": "^3.2.0",
-    "@yeger/vue-masonry-wall": "^5.0.9",
+    "@yeger/vue-masonry-wall": "^5.0.10",
     "bootstrap": "^5.3.3",
     "nuxt-aos": "^1.2.4",
     "nuxt-icon": "^0.6.10"

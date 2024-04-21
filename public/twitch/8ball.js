@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 arr_respuestas = [
   "Es cierto. angarSi",
   "Por supuesto! FallWinning",
@@ -12,7 +13,7 @@ arr_respuestas = [
 ];
 
 if (q) {
-  respuesta = arr_respuestas[Math.floor(Math.random()*arr_respuestas.length)];
+  respuesta = arr_respuestas[Math.floor(Math.random()*arr_respuestas.length)]
 } else {
   "Escribe una pregunta. Las respuestas de este comando mayormente son para afirmar o negar una pregunta. PotFriend";
 }
