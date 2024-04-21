@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 if(x<=5) {
   `A ${u} le mide ${x} cms. angarSad `;
 } else if (x>=10 && x<=15) {

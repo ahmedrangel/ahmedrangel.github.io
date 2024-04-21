@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 arr_respuestas = [
   "Es cierto. angarSi",
   "Por supuesto! angarP",
