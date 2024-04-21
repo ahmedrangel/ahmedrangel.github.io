@@ -154,8 +154,8 @@ export const INFO = {
       repository: "https://github.com/ahmedrangel/muelitaschallenge"
     },
     {
-      name: "Anime Web Client",
-      url: "https://anime.ahmedrangel.com",
+      name: "Animed | TV Anime Web Library",
+      url: "https://animed.ahmedrangel.com",
       desc_es: "Cliente web para buscar información relacionada con series de TV anime.",
       desc_en: "Web client to search for TV anime series related information.",
       image: "anime-website.jpg",
