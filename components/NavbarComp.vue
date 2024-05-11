@@ -1,3 +1,11 @@
+<script setup>
+const setLang = (code) => {
+  locale.setLanguage(code);
+  const lang_cookie = useCookie("lang");
+  lang_cookie.value = code;
+};
+</script>
+
 <template>
   <!-- Navbar -->
   <nav id="navbar" ref="nav" class="navbar navbar-expand-lg px-4 py-2 fixed-top smart-scroll fw-bold">
@@ -32,8 +40,8 @@
         <li class="nav-item dropdown ms-2 me-1 text-center">
           <span id="navbardrop" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">{{ t("lang").toUpperCase() }}</span>
           <div class="dropdown-menu" role="button">
-            <span class="dropdown-item" @click="lang = 'es'">ES</span>
-            <span class="dropdown-item" @click="lang = 'en'">EN</span>
+            <span class="dropdown-item" @click="setLang('es')">ES</span>
+            <span class="dropdown-item" @click="setLang('en')">EN</span>
           </div>
         </li>
         <li class="nav-item align-self-center mx-2">
@@ -53,7 +61,7 @@ export default {
     return {
       dark: INFO.dark,
       nav: "",
-      lang: INFO.lang
+      lang: locale.getLanguage()
     };
   },
   watch: {
