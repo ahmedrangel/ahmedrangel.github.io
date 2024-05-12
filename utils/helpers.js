@@ -35,3 +35,5 @@ export const sortProjects = (projects) => {
   const finalProjects = [...presentProjects, ...oldProjects];
   return finalProjects;
 };
+
+export const cookieMaxAge = { maxAge: 365 * 24 * 60 * 60 };
