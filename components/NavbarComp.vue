@@ -3,6 +3,7 @@ const setLang = (code) => {
   locale.setLanguage(code);
   const lang_cookie = useCookie("lang");
   lang_cookie.value = code;
+  useHead({ htmlAttrs: { lang: code } });
 };
 </script>
 
