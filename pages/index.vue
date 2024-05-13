@@ -6,7 +6,7 @@ const projectsOrdered = computed(() => {
 });
 </script>
 <template>
-  <main :lang="getLang()" class="mt-5 container-lg">
+  <main class="mt-5 container-lg">
     <!-- About -->
     <div id="about" class="pt-5">
       <h3 class="fw-bold mb-4" data-aos="fade-right">{{ t("about_me") }}</h3>
