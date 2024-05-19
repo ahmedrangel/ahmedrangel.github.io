@@ -108,7 +108,8 @@ export const INFO = {
         { name: "PNPM", icon: "simple-icons:pnpm" },
         { name: "ESLint", icon: "simple-icons:eslint" },
         { name: "Postman", icon: "simple-icons:postman" },
-        { name: "Chart.js", icon: "simple-icons:chartdotjs" }
+        { name: "Chart.js", icon: "simple-icons:chartdotjs" },
+        { name: "Google Adsense", icon: "simple-icons:googleadsense" }
       ]
     },
     {
