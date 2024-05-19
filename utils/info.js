@@ -161,7 +161,7 @@ export const INFO = {
       image: "anime-website.jpg",
       start_month: 2,
       start_year: 2024,
-      end_month: 4,
+      end_month: 5,
       end_year: 2024,
       desc_li_es: null,
       desc_li_en: null,
