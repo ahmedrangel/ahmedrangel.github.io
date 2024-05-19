@@ -10,8 +10,8 @@
     "lint": "eslint --fix ."
   },
   "devDependencies": {
-    "@nuxt/eslint": "^0.3.12",
-    "eslint": "^9.2.0",
+    "@nuxt/eslint": "^0.3.13",
+    "eslint": "^9.3.0",
     "nuxt": "^3.11.2"
   },
   "dependencies": {
