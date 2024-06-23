@@ -79,7 +79,7 @@ onMounted(() => {
         </li>
         <li class="nav-item align-self-center mx-2">
           <div class="form-check form-switch p-0 m-0">
-            <input id="flexSwitchCheckChecked" class="form-check-input p-0 m-0" type="checkbox" role="button" :style="`--bs-form-switch-bg: url(${MoonSun(dark)})`" :checked="dark" @click="toggleTheme()">
+            <input id="flexSwitchCheckChecked" class="form-check-input p-0 m-0 dark-mode-input" :class="dark ? 'dark' : ''" type="checkbox" role="button" :checked="Boolean(dark)" @click="toggleTheme()">
             <span class="slider" />
             <label class="form-check-label" for="flexSwitchCheckChecked" />
           </div>
