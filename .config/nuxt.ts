@@ -1,4 +1,4 @@
-import { INFO } from "./utils/info.js";
+import { INFO } from "../utils/info.js";
 
 export default defineNuxtConfig({
   css : [
@@ -27,5 +27,11 @@ export default defineNuxtConfig({
   aos: {
     easing: "ease-in-sine",
     duration: 500
-  }
+  },
+  eslint: {
+    config: {
+      autoInit: false,
+      stylistic: true
+    }
+  },
 });
