@@ -117,7 +117,7 @@ export const INFO = {
       skills: [
         { name: "Cloudflare", icon: "simple-icons:cloudflare" },
         { name: "DigitalOcean", icon: "simple-icons:digitalocean" },
-        { name: "AWS", icon: "simple-icons:amazonaws" },
+        { name: "AWS", icon: "simple-icons:amazonwebservices" },
         { name: "Replit", icon: "simple-icons:replit" }
       ]
     },
@@ -162,8 +162,8 @@ export const INFO = {
       image: "anime-website.jpg",
       start_month: 2,
       start_year: 2024,
-      end_month: 5,
-      end_year: 2024,
+      end_month: 13,
+      end_year: null,
       desc_li_es: null,
       desc_li_en: null,
       tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "TypeScript", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages", "GraphQL", "AniList API"],
@@ -177,8 +177,8 @@ export const INFO = {
       image: "unbotme-website.jpg",
       start_month: 1,
       start_year: 2024,
-      end_month: 13,
-      end_year: null,
+      end_month: 4,
+      end_year: 2024,
       desc_li_es: null,
       desc_li_en: null,
       tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "TypeScript", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages", "Web Socket", "REST API"],
