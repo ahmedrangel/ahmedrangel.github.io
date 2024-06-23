@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "ahmedrangel.com",
   "private": true,
   "scripts": {
     "build": "nuxt build",
@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "@nuxt/eslint": "^0.3.13",
+    "@nuxtjs/sitemap": "^5.2.0",
     "eslint": "^9.5.0",
     "nuxt": "^3.12.2"
   },

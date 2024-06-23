@@ -13,7 +13,26 @@ export default defineNuxtConfig({
       viewport: "width=device-width, initial-scale=1"
     }
   },
-  modules: ["@nuxtjs/google-fonts", "@nuxt/icon", "nuxt-aos", "@nuxt/eslint"],
+  modules: ["@nuxtjs/google-fonts", "@nuxt/icon", "nuxt-aos", "@nuxt/eslint", "@nuxtjs/sitemap"],
+  features: {
+    inlineStyles: false
+  },
+  site: {
+    url: "https://" + INFO.domain
+  },
+  nitro: {
+    prerender: {
+      routes: ["/sitemap.xml"]
+    }
+  },
+  sitemap: {
+    dynamicUrlsApiEndpoint: "/__sitemap",
+    xslColumns: [
+      { label: "URL", width: "65%" },
+      { label: "Priority", select: "sitemap:priority", width: "12.5%" },
+      { label: "Last Modified", select: "sitemap:lastmod", width: "35%" }
+    ]
+  },
   googleFonts: {
     display: "swap",
     download: true,
