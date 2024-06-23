@@ -56,6 +56,7 @@ const setLang = (code) => {
     </div>
   </nav>
 </template>
+
 <script>
 export default {
   data () {
@@ -66,7 +67,7 @@ export default {
     };
   },
   watch: {
-    lang(val) {
+    lang (val) {
       locale.setLanguage(val);
     }
   },
@@ -77,13 +78,14 @@ export default {
         this.scrolledDown = true;
         this.nav.classList.add(this.dark ? "nav-bg-dark" : "nav-bg-light");
         this.nav.classList.remove(!this.dark ? "nav-bg-dark" : "nav-bg-light");
-      } else {
+      }
+      else {
         this.scrolledDown = false;
         this.nav.classList.remove("nav-bg-dark");
         this.nav.classList.remove("nav-bg-light");
       }
     };
-    window.onscroll = () => {scrollFunction();};
+    window.onscroll = () => scrollFunction();
   },
   methods: {
     collapseNav () {

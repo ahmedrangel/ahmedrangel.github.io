@@ -1,7 +1,7 @@
 import { INFO } from "../utils/info.js";
 
 export default defineNuxtConfig({
-  css : [
+  css: [
     "bootstrap/dist/css/bootstrap.min.css",
     "~/assets/css/ahmedrangel.css"
   ],
@@ -14,15 +14,15 @@ export default defineNuxtConfig({
       bodyAttrs: {
         "data-bs-theme": "dark"
       }
-    },
+    }
   },
   modules: ["@nuxtjs/google-fonts", "@nuxt/icon", "nuxt-aos", "@nuxt/eslint"],
   googleFonts: {
     display: "swap",
     download: true,
     families: {
-      "Zen Kaku Gothic New": [300, 400, 500, 700],
-    },
+      "Zen Kaku Gothic New": [300, 400, 500, 700]
+    }
   },
   aos: {
     easing: "ease-in-sine",
@@ -33,5 +33,5 @@ export default defineNuxtConfig({
       autoInit: false,
       stylistic: true
     }
-  },
+  }
 });

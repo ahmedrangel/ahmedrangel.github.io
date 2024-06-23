@@ -118,7 +118,7 @@ export const INFO = {
         { name: "Cloudflare", icon: "simple-icons:cloudflare" },
         { name: "DigitalOcean", icon: "simple-icons:digitalocean" },
         { name: "AWS", icon: "simple-icons:amazonaws" },
-        { name: "Replit", icon: "simple-icons:replit" },
+        { name: "Replit", icon: "simple-icons:replit" }
       ]
     },
     {
@@ -144,7 +144,7 @@ export const INFO = {
       desc_li_es: [
         "Desarrolló una tabla de clasificación para el juego League of Legends agregando una lista de streamers con sus respectivas cuentas de juego y redes sociales. Usando Nuxt.js alojado en Cloudflare Pages.",
         "Diseñó una base de datos que guarda información sobre Twitch y League of Legends de cada streamer para ser mostradas directamente de manera visual en el sitio web.",
-        "Implementó algunos cron triggers que actualizan periódicamente la información correspondiente a cada streamer para mantener actualizado el sitio web. Usando Cloudflare Workers junto con las API de Riot Games y Twitch.",
+        "Implementó algunos cron triggers que actualizan periódicamente la información correspondiente a cada streamer para mantener actualizado el sitio web. Usando Cloudflare Workers junto con las API de Riot Games y Twitch."
       ],
       desc_li_en: [
         "Developed a leaderboard for the game League of Legends by adding a list of streamers with their respective game accounts and social media. Using Nuxt.js hosted on Cloudflare Pages.",
@@ -300,6 +300,6 @@ export const INFO = {
       ],
       tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "GitHub Pages"],
       repository: "https://github.com/ahmedrangel/bayza"
-    },
+    }
   ]
 };

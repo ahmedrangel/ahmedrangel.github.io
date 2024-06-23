@@ -1,8 +1,10 @@
 /* eslint-disable no-undef */
-if(x<=9) {
+if (x <= 9) {
   `A ${u} le mide ${x} cms. zihneeTite`;
-} else if (x>=10 && x<=15) {
+}
+else if (x >= 10 && x <= 15) {
   `A ${u} le mide ${x} cms. zihneePog`;
-} else {
+}
+else {
   `A ${u} le mide ${x} cms. zihneeUwu`;
 }

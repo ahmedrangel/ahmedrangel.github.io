@@ -5,6 +5,7 @@ const projectsOrdered = computed(() => {
   return sortProjects(INFO.projects);
 });
 </script>
+
 <template>
   <main class="mt-5 container-lg">
     <!-- About -->
@@ -103,7 +104,7 @@ const projectsOrdered = computed(() => {
     <div id="projects" class="py-5">
       <h3 class="fw-bold mb-4" data-aos="fade-right">{{ t("projects") }}</h3>
       <MasonryWall :items="projectsOrdered" :ssr-columns="1" :gap="12" :max-columns="2" :column-width="400" data-aos="fade-in">
-        <template #default="{item: projects}">
+        <template #default="{ item: projects }">
           <div class="card overflow-hidden">
             <img :src="`/images/${projects.image}`" class="card-img-top" alt="" data-aos="fade-in">
             <div class="card-body" data-aos="fade-right">
@@ -147,21 +148,22 @@ const projectsOrdered = computed(() => {
     </div>
   </main>
 </template>
+
 <script>
 export default {
   data () {
     return {
       scrolledDown: false,
-      lang: INFO.lang,
+      lang: INFO.lang
     };
   },
   watch: {
-    lang(val) {
+    lang (val) {
       locale.setLanguage(val);
-    },
+    }
   },
   methods: {
-    getLang() {
+    getLang () {
       this.lang = locale.getLanguage();
       return this.lang;
     }
