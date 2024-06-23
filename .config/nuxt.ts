@@ -10,10 +10,7 @@ export default defineNuxtConfig({
     head: {
       title: INFO.name,
       charset: "utf-8",
-      viewport: "width=device-width, initial-scale=1",
-      bodyAttrs: {
-        "data-bs-theme": "dark"
-      }
+      viewport: "width=device-width, initial-scale=1"
     }
   },
   modules: ["@nuxtjs/google-fonts", "@nuxt/icon", "nuxt-aos", "@nuxt/eslint"],

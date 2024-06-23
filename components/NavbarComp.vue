@@ -1,10 +1,42 @@
 <script setup>
+const lang = locale.getLanguage();
+
 const setLang = (code) => {
   locale.setLanguage(code);
   const lang_cookie = useCookie("lang");
   lang_cookie.value = code;
   useHead({ htmlAttrs: { lang: code } });
 };
+
+const nav = ref("nav");
+const scrolledDown = ref(false);
+
+const dark = useCookie("dark", { ...cookieMaxAge });
+dark.value = dark.value === undefined ? INFO.dark : dark.value;
+useHead({ htmlAttrs: { "data-bs-theme": dark.value ? "dark" : "light" } });
+
+const toggleTheme = () => {
+  dark.value = !dark.value;
+  nav.value.classList.add(dark.value && scrolledDown.value ? "nav-bg-dark" : "nav-bg-light");
+  nav.value.classList.remove(!dark.value && scrolledDown.value ? "nav-bg-dark" : "nav-bg-light");
+  useHead({ htmlAttrs: { "data-bs-theme": dark.value ? "dark" : "light" } });
+};
+
+onMounted(() => {
+  const scrollFunction = () => {
+    if ((document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) || (window.innerWidth < 767)) {
+      scrolledDown.value = true;
+      nav.value.classList.add(dark.value ? "nav-bg-dark" : "nav-bg-light");
+      nav.value.classList.remove(!dark.value ? "nav-bg-dark" : "nav-bg-light");
+    }
+    else {
+      scrolledDown.value = false;
+      nav.value.classList.remove("nav-bg-dark");
+      nav.value.classList.remove("nav-bg-light");
+    }
+  };
+  window.onscroll = () => scrollFunction();
+});
 </script>
 
 <template>
@@ -47,7 +79,7 @@ const setLang = (code) => {
         </li>
         <li class="nav-item align-self-center mx-2">
           <div class="form-check form-switch p-0 m-0">
-            <input id="flexSwitchCheckChecked" class="form-check-input p-0 m-0" type="checkbox" role="button" :style="`--bs-form-switch-bg: url(${MoonSun(dark)})`" checked @click="toggleTheme()">
+            <input id="flexSwitchCheckChecked" class="form-check-input p-0 m-0" type="checkbox" role="button" :style="`--bs-form-switch-bg: url(${MoonSun(dark)})`" :checked="dark" @click="toggleTheme()">
             <span class="slider" />
             <label class="form-check-label" for="flexSwitchCheckChecked" />
           </div>
@@ -59,48 +91,11 @@ const setLang = (code) => {
 
 <script>
 export default {
-  data () {
-    return {
-      dark: INFO.dark,
-      nav: "",
-      lang: locale.getLanguage()
-    };
-  },
-  watch: {
-    lang (val) {
-      locale.setLanguage(val);
-    }
-  },
-  mounted () {
-    this.nav = this.$refs.nav;
-    const scrollFunction = () => {
-      if ((document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) || (window.innerWidth < 767)) {
-        this.scrolledDown = true;
-        this.nav.classList.add(this.dark ? "nav-bg-dark" : "nav-bg-light");
-        this.nav.classList.remove(!this.dark ? "nav-bg-dark" : "nav-bg-light");
-      }
-      else {
-        this.scrolledDown = false;
-        this.nav.classList.remove("nav-bg-dark");
-        this.nav.classList.remove("nav-bg-light");
-      }
-    };
-    window.onscroll = () => scrollFunction();
-  },
   methods: {
     collapseNav () {
       if (this.$refs.collapsibleNav.classList.contains("show")) {
         this.$nuxt.$bootstrap.toogleCollapse(this.$refs.collapsibleNav);
       }
-    },
-    toggleTheme () {
-      this.dark = !this.dark;
-      this.textColor = "#12151c";
-      this.nav.classList.add(this.dark && this.scrolledDown ? "nav-bg-dark" : "nav-bg-light");
-      this.nav.classList.remove(!this.dark && this.scrolledDown ? "nav-bg-dark" : "nav-bg-light");
-      useHead({
-        bodyAttrs: { "data-bs-theme": this.dark ? "dark" : "light" }
-      });
     }
   }
 };

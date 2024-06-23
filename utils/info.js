@@ -3,7 +3,7 @@ export const INFO = {
   domain: "ahmedrangel.com",
   birthday: "1998-06-15",
   email: "ahmedrangel@outlook.com",
-  dark: "true",
+  dark: true,
   lang: "es",
   resume: {
     es: "Eliezer_Rangel_CV_ES.pdf",

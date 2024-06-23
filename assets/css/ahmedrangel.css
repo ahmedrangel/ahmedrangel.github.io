@@ -5,7 +5,7 @@
   --white2: #ffeef1;
 }
 
-:root [data-bs-theme=light] {
+[data-bs-theme=light] {
   --bs-border-color: var(--dark);
   --bs-body-bg: var(--white);
   --bs-link-color: var(--dark);
@@ -18,7 +18,7 @@
   --bs-link-hover-color: #ea3757;
 }
 
-:root [data-bs-theme=dark] {
+[data-bs-theme=dark] {
   --bs-border-color: var(--white);
   --bs-body-bg: var(--dark);
   --bs-link-color: var(--white);
