@@ -10,6 +10,10 @@
     "lint": "eslint --fix --config .config/eslint.mjs"
   },
   "devDependencies": {
+    "@iconify-json/devicon": "^1.1.44",
+    "@iconify-json/ph": "^1.1.13",
+    "@iconify-json/simple-icons": "^1.1.107",
+    "@iconify-json/skill-icons": "^1.1.8",
     "@nuxt/eslint": "^0.3.13",
     "@nuxtjs/sitemap": "^5.2.0",
     "eslint": "^9.5.0",

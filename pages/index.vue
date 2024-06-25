@@ -4,6 +4,8 @@ definePageMeta({ layout: "site" });
 const projectsOrdered = computed(() => {
   return sortProjects(INFO.projects);
 });
+
+const dark = useCookie("dark");
 </script>
 
 <template>
@@ -87,13 +89,17 @@ const projectsOrdered = computed(() => {
       <table class="table table-borderless m-0 align-middle">
         <tbody>
           <tr v-for="(main_skills, index) of INFO.main_skills" :key="index">
-            <td class="col-3 text-center bg-primary m-2" data-aos="fade-right">
+            <td class="col-3 text-center bg-primary m-2 rounded-2" data-aos="fade-right">
               <span class="fw-bold mb-0 text-color-inverted">{{ t(main_skills.skill_id) }}</span>
             </td>
             <td>
-              <span v-for="(skills, index2) of main_skills.skills" :key="index2" class="sk m-1 px-2 py-1 text-nowrap" data-aos="zoom-in">
-                <Icon class="iconify me-1" :name="skills.icon" />{{ skills.name }}
-              </span>
+              <template v-for="(skills, index2) of main_skills.skills" :key="index2">
+                <div class="d-inline-flex" data-aos="zoom-in">
+                  <span class="sk m-1 px-2 py-1 text-nowrap rounded-2" :class="dark ? 'bg-dark-3' : 'bg-white-3'">
+                    <Icon class="iconify me-1" :name="skills.icon" size="1.2em" />{{ skills.name }}
+                  </span>
+                </div>
+              </template>
             </td>
           </tr>
         </tbody>
