@@ -98,7 +98,7 @@ console.log(SKILLS);
               <template v-for="(skills, index2) of main_skills.skills" :key="index2">
                 <div class="d-inline-flex" data-aos="zoom-in">
                   <span class="sk m-1 px-2 py-1 text-nowrap rounded-2" :class="dark ? 'bg-dark-3' : 'bg-white-3'">
-                    <Icon class="iconify me-1" :name="skills.icon" size="1.2em" />{{ skills.name }}
+                    <Icon class="iconify me-1" :name="skills.icon" size="1.2em" style="width: 1em;" />{{ skills.name }}
                   </span>
                 </div>
               </template>
