@@ -6,8 +6,6 @@ const projectsOrdered = computed(() => {
 });
 
 const dark = useCookie("dark");
-
-console.log(SKILLS);
 </script>
 
 <template>
