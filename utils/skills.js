@@ -8,7 +8,7 @@ export const SKILLS = [
       { name: "PHP", icon: "logos:php" },
       { name: "Bootstrap", icon: "logos:bootstrap" },
       { name: "TailwindCSS", icon: "logos:tailwindcss-icon" },
-      { name: "Cloudflare Pages", icon: "simple-icons:cloudflarepages" },
+      { name: "Cloudflare Pages", icon: "simple-icons:cloudflarepages", color: "#F8AD4C" },
       { name: "GitHub Pages", icon: "simple-icons:github" }
     ]
   },
@@ -43,13 +43,13 @@ export const SKILLS = [
     skills: [
       { name: "GitHub", icon: "simple-icons:github" },
       { name: "VSCode", icon: "logos:visual-studio-code" },
-      { name: "WordPress", icon: "simple-icons:wordpress" },
+      { name: "WordPress", icon: "simple-icons:wordpress", color: "#3057dc" },
       { name: "Git", icon: "logos:git-icon" },
       { name: "GraphQL", icon: "logos:graphql" },
       { name: "PNPM", icon: "logos:pnpm" },
       { name: "ESLint", icon: "logos:eslint" },
       { name: "Postman", icon: "logos:postman-icon" },
-      { name: "Chart.js", icon: "simple-icons:chartdotjs" },
+      { name: "Chart.js", icon: "simple-icons:chartdotjs", color: "#ff6384" },
       { name: "Google Adsense", icon: "logos:google-adsense" }
     ]
   },
@@ -68,6 +68,34 @@ export const SKILLS = [
       { name: "Windows", icon: "logos:microsoft-windows-icon" },
       { name: "Linux", icon: "logos:linux-tux" },
       { name: "Ubuntu", icon: "logos:ubuntu" }
+    ]
+  },
+  {
+    skill_id: "server_administration",
+    skills: [
+      { name: "Domain DNS", icon: "ic:round-dns" },
+      { name: "Domain SSL", icon: "ic:round-https" },
+      { name: "CDN", icon: "ic:baseline-cloud-done" },
+      { name: "Cron Jobs", icon: "ic:baseline-timer" },
+      { name: "Caching", icon: "ic:baseline-cached" },
+      { name: "SSH/SFTP", icon: "ic:baseline-folder" },
+      { name: "Redirects", icon: "ic:baseline-next-plan" },
+      { name: "Websockets", icon: "ic:baseline-web-asset" }
+    ]
+  },
+  {
+    skill_id: "apis",
+    skills: [
+      { name: "Cloudflare", icon: "logos:cloudflare-icon" },
+      { name: "Twitch", icon: "logos:twitch" },
+      { name: "Discord", icon: "logos:discord-icon" },
+      { name: "OpenAI", icon: "simple-icons:openai" },
+      { name: "Spotify", icon: "logos:spotify-icon" },
+      { name: "Riot Games", icon: "simple-icons:riotgames", color: "#d1363a" },
+      { name: "X (Twitter)", icon: "simple-icons:x" },
+      { name: "YouTube", icon: "logos:youtube-icon" },
+      { name: "Cloudinary", icon: "logos:cloudinary-icon" },
+      { name: "Imgur", icon: "simple-icons:imgur", color: "#1bb76e" }
     ]
   }
 ];

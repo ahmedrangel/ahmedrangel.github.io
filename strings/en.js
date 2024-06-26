@@ -40,5 +40,7 @@ export default {
   repository: "Repository",
   download_resume: "Download Resume",
   tools: "Tools",
-  cloud: "Cloud"
+  cloud: "Cloud",
+  apis: "APIs",
+  server_administration: "Server Administration"
 };

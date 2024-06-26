@@ -40,5 +40,7 @@ export default {
   repository: "Repositorio",
   download_resume: "Descargar CV",
   tools: "Herramientas",
-  cloud: "Cloud"
+  cloud: "Cloud",
+  apis: "API",
+  server_administration: "Administración de Servidores"
 };
