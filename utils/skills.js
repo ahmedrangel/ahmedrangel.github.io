@@ -87,7 +87,7 @@ export const SKILLS = [
     skill_id: "apis",
     skills: [
       { name: "Cloudflare", icon: "logos:cloudflare-icon" },
-      { name: "Twitch", icon: "logos:twitch" },
+      { name: "Twitch", icon: "simple-icons:twitch", color: "#a970ff" },
       { name: "Discord", icon: "logos:discord-icon" },
       { name: "OpenAI", icon: "simple-icons:openai" },
       { name: "Spotify", icon: "logos:spotify-icon" },
