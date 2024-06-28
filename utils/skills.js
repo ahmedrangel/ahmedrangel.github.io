@@ -94,6 +94,7 @@ export const SKILLS = [
       { name: "Riot Games", icon: "simple-icons:riotgames", color: "#d1363a" },
       { name: "X (Twitter)", icon: "simple-icons:x" },
       { name: "YouTube", icon: "logos:youtube-icon" },
+      { name: "GitHub", icon: "simple-icons:github" },
       { name: "Cloudinary", icon: "logos:cloudinary-icon" },
       { name: "Imgur", icon: "simple-icons:imgur", color: "#1bb76e" }
     ]
