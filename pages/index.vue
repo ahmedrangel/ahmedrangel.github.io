@@ -8,9 +8,7 @@ const projectsOrdered = computed(() => {
 const dark = useCookie("dark");
 const lang = ref(locale.getLanguage());
 
-watch(() => {
-  lang.value = locale.getLanguage();
-});
+watchEffect(() => lang.value = locale.getLanguage());
 </script>
 
 <template>
