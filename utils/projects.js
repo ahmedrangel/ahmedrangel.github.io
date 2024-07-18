@@ -168,5 +168,27 @@ export const PROJECTS = [
     ],
     tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "GitHub Pages"],
     repository: "https://github.com/ahmedrangel/bayza"
+  },
+  {
+    name: "Expedition (Landing Page) | Event by TRIEX",
+    url: "https://expedition.pesp.gg",
+    desc_es: "Landing Page para el evento Expedition por TRIEX. Organizado por PESP",
+    desc_en: "Landing Page for Expedition event by TRIEX. Organized by PESP",
+    images: ["expedition-website-1.jpg", "expedition-website-2.jpg", "expedition-website-3.jpg", "expedition-website-4.jpg"],
+    start_month: 7,
+    start_year: 2024,
+    end_month: 7,
+    end_year: 2024,
+    desc_li_es: [
+      "Diseñó un landing page e implementó dos registros, uno de inscripciones para participar en el evento y otro para participar un sorteo.",
+      "Desarrolló el landing page utilizando Nuxt.js alojado en Cloudflare Pages.",
+      "Implementó el sistema de registros utilizando Cloudflare D1."
+    ],
+    desc_li_en: [
+      "Designed a landing page and implemented two registrations, one for participating in the event and one for the giveaway.",
+      "Developed the landing page using Nuxt.js hosted on Cloudflare Pages.",
+      "Implemented the registration system using Cloudflare D1."
+    ],
+    tags: ["Nuxt", "Vue.js", "JavaScript", "Typescript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages", "Cloudflare D1"]
   }
 ];

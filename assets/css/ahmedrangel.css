@@ -1,6 +1,7 @@
 :root {
   --white: #f9fafe;
   --dark: #12151c;
+  --dark-rgb: 18, 21, 28;
   --dark2: #0f0f10;
   --white2: #ffeef1;
   --dark3: #252835;
@@ -31,6 +32,8 @@
   --text-color-inverted: var(--dark);
   --navbar-bg: var(--dark2);
   --bs-link-hover-color: #ff93a7;
+  --bs-dark: var(--dark);
+  --bs-dark-rgb: var(--dark-rgb);
 }
 
 .navbar {
@@ -244,4 +247,8 @@ a {
 
 .bg-white-3 {
   background-color: var(--white3);
+}
+
+.carousel-indicators [data-bs-target] {
+  height: 4px;
 }

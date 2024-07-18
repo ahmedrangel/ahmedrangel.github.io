@@ -112,7 +112,19 @@ const dark = useCookie("dark");
       <MasonryWall :items="projectsOrdered" :ssr-columns="1" :gap="12" :max-columns="2" :column-width="400" data-aos="fade-in">
         <template #default="{ item: projects }">
           <div class="card overflow-hidden">
-            <img :src="`/images/${projects.image}`" class="card-img-top" alt="" data-aos="fade-in">
+            <img v-if="projects.image" :src="`/images/${projects.image}`" class="card-img-top" alt="" data-aos="fade-in">
+            <div v-if="projects.images" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-indicators mb-2">
+                <div class="px-2 rounded-2 d-flex" :class="dark ? 'bg-dark' : 'bg-light'">
+                  <button v-for="(image, i) of projects.images" :key="i" type="button" data-bs-target=".carousel" :data-bs-slide-to="i" :class="{ 'active': !i, 'bg-dark': !dark, 'bg-white': dark }" aria-current="true" aria-label="Slide" />
+                </div>
+              </div>
+              <div class="carousel-inner">
+                <div v-for="(image, i) of projects.images" :key="i" class="carousel-item" :class="{ active: !i }" data-bs-interval="8000">
+                  <img :src="`/images/${image}`" class="card-img-top d-block w-100" data-aos="fade-in">
+                </div>
+              </div>
+            </div>
             <div class="card-body" data-aos="fade-right">
               <a :href="projects.url" target="_blank" class="text-primary  fw-bold">
                 <h5 class="m-0 fw-bold">{{ projects.name }}</h5>
