@@ -114,12 +114,12 @@ watchEffect(() => lang.value = locale.getLanguage());
       <h3 class="fw-bold mb-4" data-aos="fade-right">{{ t("projects") }}</h3>
       <MasonryWall :items="projectsOrdered" :ssr-columns="1" :gap="12" :max-columns="2" :column-width="400" data-aos="fade-in">
         <template #default="{ item: projects }">
-          <div class="card overflow-hidden">
+          <div :id="projects.id" class="card overflow-hidden">
             <img v-if="projects.images.length === 1" :src="`/images/${projects.images[0]}`" class="card-img-top" alt="" data-aos="fade-in">
             <div v-else class="carousel slide carousel-fade" data-bs-ride="carousel">
               <div class="carousel-indicators mb-2">
                 <div class="px-2 rounded-2 d-flex" :class="dark ? 'bg-dark' : 'bg-light'">
-                  <button v-for="(image, i) of projects.images" :key="i" type="button" data-bs-target=".carousel" :data-bs-slide-to="i" :class="{ 'active': !i, 'bg-dark': !dark, 'bg-white': dark }" aria-current="true" aria-label="Slide" />
+                  <button v-for="(image, i) of projects.images" :key="i" type="button" :data-bs-target="`#${projects.id} .carousel`" :data-bs-slide-to="i" :class="{ 'active': !i, 'bg-dark': !dark, 'bg-white': dark }" aria-current="true" :aria-label="`${projects.title} ${i + 1}`" />
                 </div>
               </div>
               <div class="carousel-inner">
