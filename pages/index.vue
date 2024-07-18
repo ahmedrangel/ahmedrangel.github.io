@@ -6,6 +6,11 @@ const projectsOrdered = computed(() => {
 });
 
 const dark = useCookie("dark");
+const lang = ref(locale.getLanguage());
+
+watch(() => {
+  lang.value = locale.getLanguage();
+});
 </script>
 
 <template>
@@ -166,25 +171,3 @@ const dark = useCookie("dark");
     </div>
   </main>
 </template>
-
-<script>
-export default {
-  data () {
-    return {
-      scrolledDown: false,
-      lang: INFO.lang
-    };
-  },
-  watch: {
-    lang (val) {
-      locale.setLanguage(val);
-    }
-  },
-  methods: {
-    getLang () {
-      this.lang = locale.getLanguage();
-      return this.lang;
-    }
-  }
-};
-</script>
