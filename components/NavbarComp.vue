@@ -11,9 +11,7 @@ const setLang = (code) => {
 const nav = ref("nav");
 const scrolledDown = ref(false);
 
-const dark = useCookie("dark", { ...cookieMaxAge });
-dark.value = dark.value === undefined ? INFO.dark : dark.value;
-useHead({ htmlAttrs: { "data-bs-theme": dark.value ? "dark" : "light" } });
+const dark = useCookie("dark");
 
 const toggleTheme = () => {
   dark.value = !dark.value;
