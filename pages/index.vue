@@ -125,7 +125,7 @@ watch(() => {
                 </div>
               </div>
               <div class="carousel-inner">
-                <div v-for="(image, i) of projects.images" :key="i" class="carousel-item" :class="{ active: !i }" data-bs-interval="8000">
+                <div v-for="(image, i) of projects.images" :key="i" class="carousel-item" :class="{ active: !i }" data-bs-interval="7000">
                   <img :src="`/images/${image}`" class="card-img-top d-block w-100" data-aos="fade-in">
                 </div>
               </div>
