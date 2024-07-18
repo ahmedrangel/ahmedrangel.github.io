@@ -10,7 +10,11 @@ export default defineNuxtConfig({
     head: {
       title: INFO.name,
       charset: "utf-8",
-      viewport: "width=device-width, initial-scale=1"
+      viewport: "width=device-width, initial-scale=1",
+      meta: [
+        { name: "robots", content: "index, follow" },
+        { name: "darkreader-lock", content: "darkreader" }
+      ]
     }
   },
   modules: ["@nuxtjs/google-fonts", "@nuxt/icon", "nuxt-aos", "@nuxt/eslint", "@nuxtjs/sitemap"],
