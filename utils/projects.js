@@ -1,5 +1,6 @@
 export const PROJECTS = [
   {
+    id: "muelitas-challenge",
     name: "Muelitas Challenge Ranking 2024",
     url: "https://soloqchallenge.pages.dev",
     desc_es: "Sitio web para el evento Muelitas Challenge 2024 que muestra una tabla de clasificación de streamers de Twitch ordenado por su rango de League of Legends.<br><br>El evento tuvo una duración de 1 mes (1 de marzo 2024 - 31 de marzo 2024) y el sitio web obtuvo un tráfico de alrededor de 1,75 millones de solicitudes y 30 mil visitantes únicos en total.",
@@ -23,6 +24,7 @@ export const PROJECTS = [
     repository: "https://github.com/ahmedrangel/muelitaschallenge"
   },
   {
+    id: "animed",
     name: "Animed | TV Anime Web Library",
     url: "https://animed.ahmedrangel.com",
     desc_es: "Cliente web para buscar información relacionada con series de TV anime.",
@@ -38,6 +40,7 @@ export const PROJECTS = [
     repository: "https://github.com/ahmedrangel/animed"
   },
   {
+    id: "unbotme",
     name: "Unbot.me",
     url: "https://unbot.me",
     desc_es: "Unbotme es un bot para Twitch diseñado para banear automáticamente a bots identificados que suelen acechar persistentemente en múltiples canales.",
@@ -53,6 +56,7 @@ export const PROJECTS = [
     repository: "https://github.com/ahmedrangel/unbot.me"
   },
   {
+    id: "drawmond",
     name: "Drawmond",
     url: "https://drawmond.ahmedrangel.com",
     desc_es: "Juego web enfocado a creadores de contenido de Twitch, donde desafían a su audiencia a adivinar los dibujos que el streamer crea.",
@@ -78,6 +82,7 @@ export const PROJECTS = [
     repository: "https://github.com/ahmedrangel/drawmond"
   },
   {
+    id: "kickclips",
     name: "Kick Clips",
     url: "https://kickclips.ahmedrangel.com",
     desc_es: "Herramienta en línea gratuita para descargar clips MP4 de kick.com.",
@@ -93,6 +98,7 @@ export const PROJECTS = [
     repository: "https://github.com/ahmedrangel/kickclips"
   },
   {
+    id: "instagram-scraper",
     name: "Instagram Media Scraper",
     url: "https://github.com/ahmedrangel/instagram-media-scraper",
     desc_es: "Este es un código Node.js simple para obtener información pública y medios (imágenes, videos, carrusel) de cualquier publicación o reel de Instagram sin API. Podrás obtener información, versiones de imágenes, versiones de video y medios carrusel con sus respectivas versiones de imagen y/o versiones de video de cada uno de ellos.",
@@ -108,6 +114,7 @@ export const PROJECTS = [
     repository: "https://github.com/ahmedrangel/instagram-media-scraper"
   },
   {
+    id: "saldometrobus",
     name: "Saldo Metrobus",
     url: "https://saldometrobus.yizack.com",
     desc_es: "Panamá Metrobus Saldo es una app para consultas de saldo y movimientos de todas las tarjetas Metro y Metrobus de la Ciudad de Panamá.",
@@ -122,6 +129,7 @@ export const PROJECTS = [
     tags: ["Android Studio", "Java", "PHP", "PostgreSQL", "AWS Elastic Beanstalk", "Bootstrap 5"]
   },
   {
+    id: "pespgg",
     name: "PESP.GG Website",
     url: "https://pesp.gg",
     desc_es: "El sitio web PESP.GG es un proyecto colaborativo entre programadores, diseñadores gráficos y la empresa Panama Esports Productions para la creación del sitio web oficial de la empresa.",
@@ -149,6 +157,7 @@ export const PROJECTS = [
     repository: "https://github.com/yizack/pesp.gg"
   },
   {
+    id: "bayza",
     name: "Bayza Website",
     url: "https://bayzamusic.com",
     desc_es: "Sitio Web de Artista Musical",
@@ -170,6 +179,7 @@ export const PROJECTS = [
     repository: "https://github.com/ahmedrangel/bayza"
   },
   {
+    id: "expedition",
     name: "Expedition (Landing Page) | Event by TRIEX",
     url: "https://expedition.pesp.gg",
     desc_es: "Landing Page para el evento Expedition por TRIEX. Organizado por PESP",
