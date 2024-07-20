@@ -199,6 +199,6 @@ export const PROJECTS = [
       "Developed the landing page using Nuxt.js hosted on Cloudflare Pages.",
       "Implemented the registration system using Cloudflare D1."
     ],
-    tags: ["Nuxt", "Vue.js", "JavaScript", "Typescript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages", "Cloudflare D1"]
+    tags: ["Nuxt", "Vue.js", "JavaScript", "TypeScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages", "Cloudflare D1"]
   }
 ];
