@@ -52,7 +52,7 @@ export const PROJECTS = [
     end_year: 2024,
     desc_li_es: null,
     desc_li_en: null,
-    tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "TypeScript", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages", "Web Socket", "REST API"],
+    tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "TypeScript", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages", "WebSocket", "REST API"],
     repository: "https://github.com/ahmedrangel/unbot.me"
   },
   {
@@ -78,7 +78,7 @@ export const PROJECTS = [
       "Used a Twitch WebSocket to capture and process the messages coming from the audience and managed all the events that take place during the game, including start, hits, evaluation, transitions, timer.",
       "Manually translated all items from Spanish to English and generated an extensive list of words across various categories, along with their corresponding translations, for use in the game."
     ],
-    tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages", "Web Socket"],
+    tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages", "WebSocket"],
     repository: "https://github.com/ahmedrangel/drawmond"
   },
   {
