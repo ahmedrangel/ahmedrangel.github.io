@@ -20,6 +20,7 @@ export default defineNuxtConfig({
     }
   },
   modules: ["@nuxtjs/google-fonts", "@nuxt/icon", "nuxt-aos", "@nuxt/eslint", "@nuxtjs/sitemap"],
+  icon: { mode: "svg", serverBundle: "remote" },
   features: {
     inlineStyles: false
   },
