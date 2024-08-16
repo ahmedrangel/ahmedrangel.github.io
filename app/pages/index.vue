@@ -13,7 +13,6 @@ watchEffect(() => lang.value = locale.getLanguage());
 
 <template>
   <main class="mt-5 container-lg">
-    <!-- About -->
     <div id="about" class="pt-5">
       <h3 class="fw-bold mb-4" data-aos="fade-right">{{ t("about_me") }}</h3>
       <div class="row justify-content-center g-4">
@@ -129,7 +128,7 @@ watchEffect(() => lang.value = locale.getLanguage());
               </div>
             </div>
             <div class="card-body" data-aos="fade-right">
-              <a :href="projects.url" target="_blank" class="text-primary  fw-bold">
+              <a :href="projects.url" target="_blank" class="text-primary fw-bold">
                 <h5 class="m-0 fw-bold">{{ projects.name }}</h5>
               </a>
               <p class="m-0">{{ t("months")[projects.start_month - 1] }} {{ projects.start_year }} — {{ t("months")[projects.end_month - 1] }} {{ projects.end_year }}</p>

@@ -1,6 +1,8 @@
-import { INFO } from "../utils/info.js";
+import { INFO } from "../app/utils/info.js";
 
 export default defineNuxtConfig({
+  future: { compatibilityVersion: 4 },
+  compatibilityDate: "2024-08-16",
   css: [
     "bootstrap/dist/css/bootstrap.min.css",
     "~/assets/css/ahmedrangel.css"
@@ -27,10 +29,16 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       routes: ["/sitemap.xml"]
-    }
+    },
+    cloudflare: {
+      pages: {
+        routes: {
+          exclude: ["/images/*"]
+        }
+      }
+    },
   },
   sitemap: {
-    dynamicUrlsApiEndpoint: "/__sitemap",
     xslColumns: [
       { label: "URL", width: "65%" },
       { label: "Priority", select: "sitemap:priority", width: "12.5%" },
