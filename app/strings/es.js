@@ -4,7 +4,7 @@ export default {
   name_abreviated: "Eliézer A. Rangel B.",
   about_me: "Sobre Mí",
   about: "Sobre Mí",
-  bio: "Actualmente, me destaco como un desarrollador entusiasta que ha acumulado experiencia a lo largo de los años en varios tipos de tecnologías y frameworks, tanto en el ámbito frontend como en el backend, para la creación de aplicaciones web altamente eficientes y funcionales. Mi pasión desde pequeño por el mundo de las computadoras y las tecnologías emergentes impulsa constantemente mi crecimiento personal y profesional. Cuento con habilidades significativas en el desarrollo de aplicaciones web, automatización de sistemas, administración de bases de datos y la implementación de interfaces de programación de aplicaciones.",
+  bio: "Actualmente, me destaco como un desarrollador entusiasta que se esfuerza constantemente en mejorar sus habilidades y procura aplicar buenas prácticas en cada proyecto. He acumulado experiencia a lo largo de los años en varios tipos de tecnologías y frameworks, tanto en el ámbito frontend como en el backend, para la creación de aplicaciones web altamente eficientes y funcionales. Mi pasión desde pequeño por el mundo de las computadoras y las tecnologías emergentes impulsa constantemente mi crecimiento personal y profesional. Cuento con habilidades sólidas en el desarrollo de aplicaciones web, automatización de sistemas, administración de bases de datos, y desarrollo e integración de APIs.",
   degree: "Lic. Ingeniería en Sistemas y Computación",
   bachelor: "Bachiller en Ciencias",
   years_old: "años",
