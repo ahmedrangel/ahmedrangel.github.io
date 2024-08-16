@@ -200,5 +200,29 @@ export const PROJECTS = [
       "Implemented the registration system using Cloudflare D1."
     ],
     tags: ["Nuxt", "Vue.js", "JavaScript", "TypeScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages", "Cloudflare D1"]
+  },
+  {
+    id: "streamers-queue",
+    name: "Streamers Queue",
+    url: "https://streamersqueue.ahmedrangel.com",
+    desc_es: "Sitio web que recopila datos de partidas clasificatorias de League of Legends utilizando cuentas de streamers para mostrar distintas estadísticas y tablas de calsificación.",
+    desc_en: "Website that collects data from League of Legends ranked matches using streamer accounts to display different statistics and ranking tables.",
+    images: ["streamersqueue-website.jpg", "streamersqueue-website-2.jpg", "streamersqueue-website-3.jpg"],
+    start_month: 4,
+    start_year: 2024,
+    end_month: 13,
+    end_year: null,
+    desc_li_es: [
+      "Desarrolló distintas tablas de estadísticas y de clasificación tomando en cuenta la región de pertenencia agregando una lista de streamers con sus respectivas cuentas de juego y redes sociales. Usando Nuxt.js alojado en Cloudflare Pages.",
+      "Diseñó una base de datos que guarda información sobre Twitch y League of Legends de cada streamer para ser mostradas directamente de manera visual en el sitio web.",
+      "Implementó algunos cron triggers que actualizan periódicamente la información correspondiente a cada streamer para mantener actualizado el sitio web. Usando Cloudflare Workers junto con las API de Riot Games y Twitch."
+    ],
+    desc_li_en: [
+      "Developed different statistics and ranking tables taking into account the region of belonging, adding a list of streamers with their respective game accounts and social media. Using Nuxt.js hosted on Cloudflare Pages.",
+      "Designed a database that stores information about Twitch and League of Legends of each streamer account to be displayed directly on the website.",
+      "Implemented some cron triggers that update periodically the information corresponding to each streamer and region to keep the website updated. Using Cloudflare Workers along with Riot Games API and Twitch API."
+    ],
+    tags: ["Nuxt", "Vue.js", "JavaScript", "TypeScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages", "Cloudflare Workers", "Cloudflare D1", "Cron Triggers", "Riot Games API", "Twitch API"],
+    repository: "https://github.com/ahmedrangel/streamersqueue"
   }
 ];
