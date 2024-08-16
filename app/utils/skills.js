@@ -1,15 +1,12 @@
 export const SKILLS = [
   {
-    skill_id: "web_development",
+    skill_id: "web_design",
     skills: [
       { name: "JavaScript", icon: "logos:javascript" },
       { name: "HTML5", icon: "logos:html-5" },
       { name: "CSS3", icon: "logos:css-3" },
-      { name: "PHP", icon: "logos:php" },
       { name: "Bootstrap", icon: "logos:bootstrap" },
       { name: "TailwindCSS", icon: "logos:tailwindcss-icon" },
-      { name: "Cloudflare Pages", icon: "simple-icons:cloudflarepages", color: "#F8AD4C" },
-      { name: "GitHub Pages", icon: "simple-icons:github" }
     ]
   },
   {
@@ -19,7 +16,9 @@ export const SKILLS = [
       { name: "Typescript", icon: "logos:typescript-icon" },
       { name: "Node.js", icon: "logos:nodejs-icon" },
       { name: "Nuxt", icon: "logos:nuxt-icon" },
-      { name: "Vue.js", icon: "logos:vue" }
+      { name: "Vue.js", icon: "logos:vue" },
+      { name: "PNPM", icon: "logos:pnpm" },
+      { name: "npm", icon: "logos:npm-icon" },
     ]
   },
   {
@@ -28,13 +27,14 @@ export const SKILLS = [
       { name: "MySQL", icon: "devicon:mysql" },
       { name: "PostgreSQL", icon: "logos:postgresql" },
       { name: "SQLite", icon: "devicon:sqlite" },
-      { name: "Cloudflare D1", icon: "logos:cloudflare-icon" }
+      { name: "Cloudflare D1", icon: "logos:cloudflare-icon" },
+      { name: "Drizzle-ORM", icon: "simple-icons:drizzle" }
     ]
   },
   {
     skill_id: "serverless",
     skills: [
-      { name: "Cloudflare Workers", icon: "logos:cloudflare-workers-icon" },
+      { name: "Cloudflare Workers/Pages", icon: "logos:cloudflare-workers-icon" },
       { name: "Vercel", icon: "logos:vercel-icon" }
     ]
   },
@@ -43,13 +43,13 @@ export const SKILLS = [
     skills: [
       { name: "GitHub", icon: "simple-icons:github" },
       { name: "VSCode", icon: "logos:visual-studio-code" },
-      { name: "WordPress", icon: "simple-icons:wordpress", color: "#3057dc" },
       { name: "Git", icon: "logos:git-icon" },
+      { name: "JSON", icon: "logos:json" },
       { name: "GraphQL", icon: "logos:graphql" },
-      { name: "PNPM", icon: "logos:pnpm" },
       { name: "ESLint", icon: "logos:eslint" },
       { name: "Postman", icon: "logos:postman-icon" },
       { name: "Chart.js", icon: "simple-icons:chartdotjs", color: "#ff6384" },
+      { name: "WordPress", icon: "simple-icons:wordpress", color: "#3057dc" },
       { name: "Google Adsense", icon: "logos:google-adsense" }
     ]
   },

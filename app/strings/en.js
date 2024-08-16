@@ -30,7 +30,7 @@ export default {
   advanced: "Advanced",
   skills: "Skills",
   main_skills: "Main Skills",
-  web_development: "Web Development",
+  web_design: "Web Design",
   javascript: "JavaScript",
   serverless: "Serverless",
   databases: "Databases",

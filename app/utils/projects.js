@@ -36,7 +36,7 @@ export const PROJECTS = [
     end_year: null,
     desc_li_es: null,
     desc_li_en: null,
-    tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "TypeScript", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages", "GraphQL", "AniList API"],
+    tags: ["Nuxt", "Vue.js", "JavaScript", "TypeScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages", "GraphQL", "AniList API"],
     repository: "https://github.com/ahmedrangel/animed"
   },
   {
@@ -52,7 +52,7 @@ export const PROJECTS = [
     end_year: 2024,
     desc_li_es: null,
     desc_li_en: null,
-    tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "TypeScript", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages", "WebSocket", "REST API"],
+    tags: ["Nuxt", "Vue.js", "JavaScript", "TypeScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages", "WebSocket", "Twitch API"],
     repository: "https://github.com/ahmedrangel/unbot.me"
   },
   {
@@ -94,15 +94,15 @@ export const PROJECTS = [
     end_year: null,
     desc_li_es: null,
     desc_li_en: null,
-    tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages"],
+    tags: ["Nuxt", "Vue.js", "JavaScript", "TypeScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages"],
     repository: "https://github.com/ahmedrangel/kickclips"
   },
   {
     id: "instagram-scraper",
     name: "Instagram Media Scraper",
     url: "https://github.com/ahmedrangel/instagram-media-scraper",
-    desc_es: "Este es un código Node.js simple para obtener información pública y medios (imágenes, videos, carrusel) de cualquier publicación o reel de Instagram sin API. Podrás obtener información, versiones de imágenes, versiones de video y medios carrusel con sus respectivas versiones de imagen y/o versiones de video de cada uno de ellos.",
-    desc_en: "This is simple Node.js code to get public information and media (images, videos, carousel) from every instagram post or reel URL without API. You can get information, image versions, video versions and carousel media with their respective image versions and/or video versions of each of them.",
+    desc_es: "Este es un repositorio con varios métodos para obtener información pública y medios (imágenes, videos, carrusel) de cualquier publicación o reel de Instagram sin API. Podrás obtener información, versiones de imágenes, versiones de video y medios carrusel con sus respectivas versiones de imagen y/o versiones de video de cada uno de ellos.",
+    desc_en: "This is repository with various methods to get public information and media (images, videos, carousel) from every instagram post or reel URL without API. You can get information, image versions, video versions and carousel media with their respective image versions and/or video versions of each of them.",
     images: ["instagram-scraper.jpg"],
     start_month: 6,
     start_year: 2023,
@@ -153,7 +153,7 @@ export const PROJECTS = [
       "Designed a Database for the website's posts using SQLite in development and Cloudflare D1 in production using Drizzle-ORM for SQL queries.",
       "Implemented an images and posts html content storage system using Cloudflare R2."
     ],
-    tags: ["PHP", "MySQL", "AWS EC2", "Cloudflare D1", "Cloudflare R2", "Nuxt", "Vue.js", "JavaScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages"],
+    tags: ["Cloudflare D1", "Cloudflare R2", "Nuxt", "Vue.js", "JavaScript", "TypeScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages"],
     repository: "https://github.com/yizack/pesp.gg"
   },
   {
@@ -169,13 +169,13 @@ export const PROJECTS = [
     end_year: null,
     desc_li_es: [
       "Diseñó un sitio web enfocado a exhibir la colección completa de canciones del artista,su biografía, videos, detalles e hipervínculos relevantes.",
-      "Desarrolló el sitio utilizando Nuxt.js alojado en GitHub Pages."
+      "Desarrolló el sitio utilizando Nuxt.js alojado en Cloudflare Pages."
     ],
     desc_li_en: [
       "Designed a website focused on showcasing the artist's full collection of songs, biography, videos, details and relevant hyperlinks.",
-      "Developed using Nuxt.js hosted on GitHub Pages."
+      "Developed using Nuxt.js hosted on Cloudflare Pages."
     ],
-    tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "GitHub Pages"],
+    tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages"],
     repository: "https://github.com/ahmedrangel/bayza"
   },
   {

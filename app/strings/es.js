@@ -30,7 +30,7 @@ export default {
   advanced: "Avanzado",
   skills: "Habilidades",
   main_skills: "Habilidades principales",
-  web_development: "Desarrollo Web",
+  web_design: "Diseño Web",
   javascript: "JavaScript",
   databases: "Bases de Datos",
   serverless: "Serverless",
@@ -41,6 +41,6 @@ export default {
   download_resume: "Descargar CV",
   tools: "Herramientas",
   cloud: "Cloud",
-  apis: "API",
+  apis: "APIs",
   server_administration: "Administración de Servidores"
 };
