@@ -6,7 +6,7 @@ export const SKILLS = [
       { name: "HTML5", icon: "logos:html-5" },
       { name: "CSS3", icon: "logos:css-3" },
       { name: "Bootstrap", icon: "logos:bootstrap" },
-      { name: "TailwindCSS", icon: "logos:tailwindcss-icon" },
+      { name: "TailwindCSS", icon: "logos:tailwindcss-icon" }
     ]
   },
   {
@@ -18,7 +18,7 @@ export const SKILLS = [
       { name: "Nuxt", icon: "logos:nuxt-icon" },
       { name: "Vue.js", icon: "logos:vue" },
       { name: "PNPM", icon: "logos:pnpm" },
-      { name: "npm", icon: "logos:npm-icon" },
+      { name: "npm", icon: "logos:npm-icon" }
     ]
   },
   {

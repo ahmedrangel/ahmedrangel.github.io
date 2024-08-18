@@ -37,7 +37,7 @@ export default defineNuxtConfig({
           exclude: ["/images/*"]
         }
       }
-    },
+    }
   },
   sitemap: {
     xslColumns: [
