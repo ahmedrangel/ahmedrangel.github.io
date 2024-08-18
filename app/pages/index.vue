@@ -5,10 +5,13 @@ const projectsOrdered = computed(() => {
   return sortProjects(PROJECTS);
 });
 
-const dark = useCookie("dark");
-const lang = ref(locale.getLanguage());
+const lang = ref(locale.lang.get());
+const dark = ref(locale.dark.get());
 
-watchEffect(() => lang.value = locale.getLanguage());
+watchEffect(() => {
+  lang.value = locale.lang.get();
+  dark.value = locale.dark.get();
+});
 </script>
 
 <template>
