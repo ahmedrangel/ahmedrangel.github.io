@@ -12,8 +12,6 @@ const scrolledDown = ref(false);
 const toggleTheme = () => {
   locale.dark.set(!dark.value);
   dark.value = locale.dark.get();
-  nav.value.classList.add(dark.value && scrolledDown.value ? "nav-bg-dark" : "nav-bg-light");
-  nav.value.classList.remove(!dark.value && scrolledDown.value ? "nav-bg-dark" : "nav-bg-light");
 };
 
 onMounted(() => {
