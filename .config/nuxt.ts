@@ -19,7 +19,7 @@ export default defineNuxtConfig({
       ]
     }
   },
-  modules: ["@nuxtjs/google-fonts", "@nuxt/icon", "nuxt-aos", "@nuxt/eslint", "@nuxtjs/sitemap"],
+  modules: ["@nuxtjs/google-fonts", "@nuxt/icon", "nuxt-aos", "@nuxt/eslint", "@nuxtjs/sitemap", "@nuxtjs/color-mode"],
   icon: { mode: "svg", serverBundle: "remote" },
   features: {
     inlineStyles: false
@@ -67,5 +67,11 @@ export default defineNuxtConfig({
       autoInit: false,
       stylistic: true
     }
+  },
+  colorMode: {
+    preference: "dark",
+    fallback: "dark",
+    dataValue: "bs-theme",
+    storageKey: "nuxt-color-mode"
   }
 });

@@ -30,31 +30,8 @@ class LocaleLang {
   }
 }
 
-class LocaleColorMode {
-  constructor (value) {
-    this.dark = ref(Boolean(value));
-  }
-
-  set (value = INFO.dark) {
-    this.dark.value = value;
-    useCookie("dark", { ...cookieMaxAge }).value = this.dark.value;
-    useHead({ htmlAttrs: { "data-bs-theme": this.dark.value ? "dark" : "light" } });
-  }
-
-  get () {
-    return this.dark.value;
-  }
-
-  init () {
-    const dark = useCookie("dark", { ...cookieMaxAge });
-    this.dark.value = dark.value === undefined ? INFO.dark : dark.value;
-    locale.dark.set(this.dark.value);
-  }
-}
-
 export const locale = {
-  lang: new LocaleLang(INFO.lang),
-  dark: new LocaleColorMode(INFO.dark)
+  lang: new LocaleLang(INFO.lang)
 };
 
 export const t = (key) => {

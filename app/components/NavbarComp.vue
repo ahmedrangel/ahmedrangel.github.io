@@ -1,6 +1,8 @@
 <script setup>
 const lang = locale.lang.get();
-const dark = ref(locale.dark.get());
+
+const colorMode = useColorMode();
+const dark = ref(colorMode.preference === "dark");
 
 const setLang = (code) => {
   locale.lang.set(code);
@@ -10,11 +12,12 @@ const nav = ref("nav");
 const scrolledDown = ref(false);
 
 const toggleTheme = () => {
-  locale.dark.set(!dark.value);
-  dark.value = locale.dark.get();
+  colorMode.preference = colorMode.preference === "dark" ? "light" : "dark";
+  dark.value = colorMode.preference === "dark";
 };
 
 onMounted(() => {
+  dark.value = colorMode.preference === "dark";
   const scrollFunction = () => {
     scrolledDown.value = ((document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) || (window.innerWidth < 767));
   };
@@ -63,7 +66,7 @@ onMounted(() => {
         </li>
         <li class="nav-item align-self-center mx-2">
           <div class="form-check form-switch p-0 m-0">
-            <input id="flexSwitchCheckChecked" class="form-check-input p-0 m-0 dark-mode-input" :class="dark ? 'dark' : ''" type="checkbox" role="button" :checked="Boolean(dark)" @click="toggleTheme()">
+            <input id="flexSwitchCheckChecked" v-model="dark" class="form-check-input p-0 m-0 dark-mode-input" type="checkbox" role="button" @change="toggleTheme()">
             <span class="slider" />
             <label class="form-check-label" for="flexSwitchCheckChecked" />
           </div>

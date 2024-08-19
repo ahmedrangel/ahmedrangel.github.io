@@ -6,11 +6,9 @@ const projectsOrdered = computed(() => {
 });
 
 const lang = ref(locale.lang.get());
-const dark = ref(locale.dark.get());
 
 watchEffect(() => {
   lang.value = locale.lang.get();
-  dark.value = locale.dark.get();
 });
 </script>
 
@@ -100,7 +98,7 @@ watchEffect(() => {
             <td>
               <template v-for="(skills, index2) of main_skills.skills" :key="index2">
                 <div class="d-inline-flex" data-aos="zoom-in">
-                  <span class="sk m-1 px-2 py-1 text-nowrap rounded-2" :class="dark ? 'bg-dark-3' : 'bg-white-3'">
+                  <span class="sk m-1 px-2 py-1 text-nowrap rounded-2 bg-skills">
                     <Icon class="iconify me-1" :name="skills.icon" size="1.2em" :style="{ width: '1em', color: skills?.color }" />{{ skills.name }}
                   </span>
                 </div>
@@ -120,8 +118,8 @@ watchEffect(() => {
             <img v-if="projects.images.length === 1" :src="`/images/${projects.images[0]}`" class="card-img-top" alt="" data-aos="fade-in">
             <div v-else class="carousel slide carousel-fade" data-bs-ride="carousel">
               <div class="carousel-indicators mb-2">
-                <div class="px-2 rounded-2 d-flex" :class="dark ? 'bg-dark' : 'bg-light'">
-                  <button v-for="(image, i) of projects.images" :key="i" type="button" :data-bs-target="`#${projects.id} .carousel`" :data-bs-slide-to="i" :class="{ 'active': !i, 'bg-dark': !dark, 'bg-white': dark }" aria-current="true" :aria-label="`${projects.title} ${i + 1}`" />
+                <div class="px-2 rounded-2 d-flex bg-indicator">
+                  <button v-for="(image, i) of projects.images" :key="i" type="button" class="btn-indicator" :data-bs-target="`#${projects.id} .carousel`" :data-bs-slide-to="i" :class="{ active: !i }" aria-current="true" :aria-label="`${projects.title} ${i + 1}`" />
                 </div>
               </div>
               <div class="carousel-inner">
