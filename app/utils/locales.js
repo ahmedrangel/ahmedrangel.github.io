@@ -15,11 +15,18 @@ class LocaleLang {
 
   set (code = INFO.lang) {
     this.code.value = String(code).toLowerCase();
+    useCookie("lang").value = this.code.value;
     useHead({ htmlAttrs: { lang: this.code.value } });
   }
 
   get () {
     return this.code.value;
+  }
+
+  init () {
+    const lang = useCookie("lang", { ...cookieMaxAge });
+    this.code.value = lang.value = lang.value ? lang.value : locale.lang.get();
+    locale.lang.set(this.code.value);
   }
 }
 
@@ -30,11 +37,18 @@ class LocaleColorMode {
 
   set (value = INFO.dark) {
     this.dark.value = value;
+    useCookie("dark").value = this.dark.value;
     useHead({ htmlAttrs: { "data-bs-theme": this.dark.value ? "dark" : "light" } });
   }
 
   get () {
     return this.dark.value;
+  }
+
+  init () {
+    const dark = useCookie("dark", { ...cookieMaxAge });
+    this.dark.value = dark.value === undefined ? INFO.dark : dark.value;
+    locale.dark.set(this.dark.value);
   }
 }
 

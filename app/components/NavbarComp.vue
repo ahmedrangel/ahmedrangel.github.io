@@ -4,8 +4,6 @@ const dark = ref(locale.dark.get());
 
 const setLang = (code) => {
   locale.lang.set(code);
-  const lang_cookie = useCookie("lang");
-  lang_cookie.value = code;
 };
 
 const nav = ref("nav");
@@ -14,10 +12,8 @@ const scrolledDown = ref(false);
 const toggleTheme = () => {
   locale.dark.set(!dark.value);
   dark.value = locale.dark.get();
-  useCookie("dark").value = dark.value;
   nav.value.classList.add(dark.value && scrolledDown.value ? "nav-bg-dark" : "nav-bg-light");
   nav.value.classList.remove(!dark.value && scrolledDown.value ? "nav-bg-dark" : "nav-bg-light");
-  useHead({ htmlAttrs: { "data-bs-theme": dark.value ? "dark" : "light" } });
 };
 
 onMounted(() => {
