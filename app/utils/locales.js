@@ -15,7 +15,7 @@ class LocaleLang {
 
   set (code = INFO.lang) {
     this.code.value = String(code).toLowerCase();
-    useCookie("lang").value = this.code.value;
+    useCookie("lang", { ...cookieMaxAge }).value = this.code.value;
     useHead({ htmlAttrs: { lang: this.code.value } });
   }
 
@@ -37,7 +37,7 @@ class LocaleColorMode {
 
   set (value = INFO.dark) {
     this.dark.value = value;
-    useCookie("dark").value = this.dark.value;
+    useCookie("dark", { ...cookieMaxAge }).value = this.dark.value;
     useHead({ htmlAttrs: { "data-bs-theme": this.dark.value ? "dark" : "light" } });
   }
 
