@@ -1,6 +1,7 @@
 export const PROJECTS = [
   {
     id: "muelitas-challenge",
+    type: "web",
     name: "Muelitas Challenge Ranking 2024",
     url: "https://soloqchallenge.pages.dev",
     desc_es: "Sitio web para el evento Muelitas Challenge 2024 que muestra una tabla de clasificación de streamers de Twitch ordenado por su rango de League of Legends.<br><br>El evento tuvo una duración de 1 mes (1 de marzo 2024 - 31 de marzo 2024) y el sitio web obtuvo un tráfico de alrededor de 1,75 millones de solicitudes y 30 mil visitantes únicos en total.",
@@ -25,6 +26,7 @@ export const PROJECTS = [
   },
   {
     id: "animed",
+    type: "web",
     name: "Animed | TV Anime Web Library",
     url: "https://animed.ahmedrangel.com",
     desc_es: "Cliente web para buscar información relacionada con series de TV anime.",
@@ -41,6 +43,7 @@ export const PROJECTS = [
   },
   {
     id: "unbotme",
+    type: "web",
     name: "Unbot.me",
     url: "https://unbot.me",
     desc_es: "Unbotme es un bot para Twitch diseñado para banear automáticamente a bots identificados que suelen acechar persistentemente en múltiples canales.",
@@ -57,6 +60,7 @@ export const PROJECTS = [
   },
   {
     id: "drawmond",
+    type: "web",
     name: "Drawmond",
     url: "https://drawmond.ahmedrangel.com",
     desc_es: "Juego web enfocado a creadores de contenido de Twitch, donde desafían a su audiencia a adivinar los dibujos que el streamer crea.",
@@ -83,6 +87,7 @@ export const PROJECTS = [
   },
   {
     id: "kickclips",
+    type: "web",
     name: "Kick Clips",
     url: "https://kickclips.ahmedrangel.com",
     desc_es: "Herramienta en línea gratuita para descargar clips MP4 de kick.com.",
@@ -99,6 +104,7 @@ export const PROJECTS = [
   },
   {
     id: "instagram-scraper",
+    type: "node",
     name: "Instagram Media Scraper",
     url: "https://github.com/ahmedrangel/instagram-media-scraper",
     desc_es: "Este es un repositorio con varios métodos para obtener información pública y medios (imágenes, videos, carrusel) de cualquier publicación o reel de Instagram sin API. Podrás obtener información, versiones de imágenes, versiones de video y medios carrusel con sus respectivas versiones de imagen y/o versiones de video de cada uno de ellos.",
@@ -130,6 +136,7 @@ export const PROJECTS = [
   },
   {
     id: "pespgg",
+    type: "web",
     name: "PESP.GG Website",
     url: "https://pesp.gg",
     desc_es: "El sitio web PESP.GG es un proyecto colaborativo entre programadores, diseñadores gráficos y la empresa Panama Esports Productions para la creación del sitio web oficial de la empresa.",
@@ -158,6 +165,7 @@ export const PROJECTS = [
   },
   {
     id: "bayza",
+    type: "web",
     name: "Bayza Website",
     url: "https://bayzamusic.com",
     desc_es: "Sitio Web de Artista Musical",
@@ -180,6 +188,7 @@ export const PROJECTS = [
   },
   {
     id: "expedition",
+    type: "web",
     name: "Expedition (Landing Page) | Event by TRIEX",
     url: "https://expedition.pesp.gg",
     desc_es: "Landing Page para el evento Expedition por TRIEX. Organizado por PESP",
@@ -203,6 +212,7 @@ export const PROJECTS = [
   },
   {
     id: "streamers-queue",
+    type: "web",
     name: "Streamers Queue",
     url: "https://streamersqueue.ahmedrangel.com",
     desc_es: "Sitio web que recopila datos de partidas clasificatorias de League of Legends utilizando cuentas de streamers para mostrar distintas estadísticas y tablas de calsificación.",
@@ -224,5 +234,21 @@ export const PROJECTS = [
     ],
     tags: ["Nuxt", "Vue.js", "JavaScript", "TypeScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages", "Cloudflare Workers", "Cloudflare D1", "Cron Triggers", "Riot Games API", "Twitch API"],
     repository: "https://github.com/ahmedrangel/streamersqueue"
+  },
+  {
+    id: "gql-payload",
+    type: "npm",
+    name: "GraphQL Payload",
+    url: "https://www.npmjs.com/package/gql-payload",
+    desc_es: "Este es un fork optimizado de <a href='https://github.com/atulmy/gql-query-builder' target='_blank'>gql-query-builder</a> con características adicionales para generar payloads GraphQL utilizando objetos JavaScript simples (JSON).",
+    desc_en: "This is an optimized fork of <a href='https://github.com/atulmy/gql-query-builder' target='_blank'>gql-query-builder</a> with extra features for generating GraphQL payloads using plain JavaScript Objects (JSON).",
+    start_month: 8,
+    start_year: 2024,
+    end_month: 13,
+    end_year: null,
+    desc_li_es: null,
+    desc_li_en: null,
+    tags: ["TypeScript", "Node.js", "NPM", "GraphQL"],
+    repository: "https://github.com/ahmedrangel/gql-payload"
   }
 ];

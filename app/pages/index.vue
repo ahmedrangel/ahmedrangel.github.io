@@ -115,7 +115,7 @@ watchEffect(() => {
       <MasonryWall :items="projectsOrdered" :ssr-columns="1" :gap="12" :max-columns="2" :column-width="400" data-aos="fade-in">
         <template #default="{ item: projects }">
           <div :id="projects.id" class="card overflow-hidden">
-            <img v-if="projects.images.length === 1" :src="`/images/${projects.images[0]}`" class="card-img-top" alt="" data-aos="fade-in">
+            <img v-if="projects?.images?.length === 1" :src="`/images/${projects.images[0]}`" class="card-img-top" alt="" data-aos="fade-in">
             <div v-else class="carousel slide carousel-fade" data-bs-ride="carousel">
               <div class="carousel-indicators mb-2">
                 <div class="px-2 rounded-2 d-flex bg-indicator">
@@ -130,7 +130,10 @@ watchEffect(() => {
             </div>
             <div class="card-body" data-aos="fade-right">
               <a :href="projects.url" target="_blank" class="text-primary fw-bold">
-                <h5 class="m-0 fw-bold">{{ projects.name }}</h5>
+                <h5 class="m-0 fw-bold">
+                  <Icon v-if="projects.type" class="pb-1" :name="projectTypes.find(el => el.value === projects.type).icon"/>
+                  {{ projects.name }}
+                </h5>
               </a>
               <p class="m-0">{{ t("months")[projects.start_month - 1] }} {{ projects.start_year }} — {{ t("months")[projects.end_month - 1] }} {{ projects.end_year }}</p>
             </div>
