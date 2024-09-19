@@ -236,6 +236,22 @@ export const PROJECTS = [
     repository: "https://github.com/ahmedrangel/streamersqueue"
   },
   {
+    id: "snapsasve-media-downloader",
+    type: "npm",
+    name: "Snapsave Media Downloader",
+    url: "https://www.npmjs.com/package/snapsave-media-downloader",
+    desc_es: "Descarga media de Instagram y Facebook utilizando snapsave.app",
+    desc_en: "Download Instagram and Facebook Media using snapsave.app downloader",
+    start_month: 4,
+    start_year: 2024,
+    end_month: 13,
+    end_year: null,
+    desc_li_es: null,
+    desc_li_en: null,
+    tags: ["TypeScript", "Node.js", "NPM"],
+    repository: "https://github.com/ahmedrangel/snapsave-media-downloader"
+  },
+  {
     id: "gql-payload",
     type: "npm",
     name: "GraphQL Payload",
