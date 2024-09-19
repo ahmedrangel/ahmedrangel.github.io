@@ -250,5 +250,21 @@ export const PROJECTS = [
     desc_li_en: null,
     tags: ["TypeScript", "Node.js", "NPM", "GraphQL"],
     repository: "https://github.com/ahmedrangel/gql-payload"
+  },
+  {
+    id: "tetrio-bot",
+    type: "node",
+    name: "Tetrio-Bot",
+    url: "https://github.com/ahmedrangel/tetrio-bot",
+    desc_es: "Un bot de Tetris capaz de jugar automáticamente partidas multijugador personalizadas en TETR.IO. Utiliza una versión modificada de ElTetris para analizar el tablero actual y realizar movimientos óptimos, y la biblioteca @haelp/teto para interactuar con la API del juego principal.",
+    desc_en: "A Tetris bot capable of automatically playing custom multiplayer matches in TETR.IO. It uses a modified version of ElTetris to analyze the current board for optimal moves and the @haelp/teto library to interact with main game API.",
+    start_month: 9,
+    start_year: 2024,
+    end_month: 13,
+    end_year: null,
+    desc_li_es: null,
+    desc_li_en: null,
+    tags: ["TypeScript", "Node.js", "TETR.IO"],
+    repository: "https://github.com/ahmedrangel/tetrio-bot"
   }
 ];
