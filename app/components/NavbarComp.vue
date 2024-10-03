@@ -1,11 +1,12 @@
 <script setup>
-const lang = locale.lang.get();
+const lang = ref(locale.lang.get());
 
 const colorMode = useColorMode();
 const dark = ref(colorMode.preference === "dark");
 
 const setLang = (code) => {
   locale.lang.set(code);
+  lang.value = code;
 };
 
 const nav = ref("nav");
