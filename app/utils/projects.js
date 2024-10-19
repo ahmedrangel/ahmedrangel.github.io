@@ -12,12 +12,12 @@ export const PROJECTS = [
     end_month: 4,
     end_year: 2024,
     desc_li_es: [
-      "Desarrolló una tabla de clasificación para el juego League of Legends agregando una lista de streamers con sus respectivas cuentas de juego y redes sociales. Usando Nuxt.js alojado en Cloudflare Pages.",
+      "Desarrolló una tabla de clasificación para el juego League of Legends agregando una lista de streamers con sus respectivas cuentas de juego y redes sociales. Usando Nuxt alojado en Cloudflare Pages.",
       "Diseñó una base de datos que guarda información sobre Twitch y League of Legends de cada streamer para ser mostradas directamente de manera visual en el sitio web.",
       "Implementó algunos cron triggers que actualizan periódicamente la información correspondiente a cada streamer para mantener actualizado el sitio web. Usando Cloudflare Workers junto con las API de Riot Games y Twitch."
     ],
     desc_li_en: [
-      "Developed a leaderboard for the game League of Legends by adding a list of streamers with their respective game accounts and social media. Using Nuxt.js hosted on Cloudflare Pages.",
+      "Developed a leaderboard for the game League of Legends by adding a list of streamers with their respective game accounts and social media. Using Nuxt hosted on Cloudflare Pages.",
       "Designed a database that stores information about Twitch and League of Legends for each streamer to be displayed visually on the website.",
       "Implemented some cron triggers that periodically update the information corresponding to each streamer to keep the website up-to-date. Using Cloudflare Workers in conjunction with the Riot Games and Twitch APIs."
     ],
@@ -71,13 +71,13 @@ export const PROJECTS = [
     end_month: 8,
     end_year: 2023,
     desc_li_es: [
-      "Desarrolló un juego web enfocado a creadores de contenido de Twitch, donde éstos desafían a su audiencia a descifrar los dibujos que este crea. Usando Nuxt.js alojado en Cloudflare Pages.",
+      "Desarrolló un juego web enfocado a creadores de contenido de Twitch, donde éstos desafían a su audiencia a descifrar los dibujos que este crea. Usando Nuxt alojado en Cloudflare Pages.",
       "Implementó un lienzo con todas las herramientas básicas para el proceso de dibujo.",
       "Empleó un WebSocket de Twitch para capturar y procesar los mensajes provenientes de la audiencia y gestionó todos los eventos que tienen lugar durante el juego, incluyendo inicio, aciertos, puntuaciones, transiciones, temporizador.",
       "Realizó una traducción manual al inglés de todos los elementos y generó una extensa lista de palabras sobre diversas categorías, junto con sus correspondientes traducciones, para su uso en el juego."
     ],
     desc_li_en: [
-      "Developed a web game focused on Twitch content creators, where they challenge their audience to guess the drawings that the streamer creates. Using Nuxt.js hosted on Cloudflare Pages.",
+      "Developed a web game focused on Twitch content creators, where they challenge their audience to guess the drawings that the streamer creates. Using Nuxt hosted on Cloudflare Pages.",
       "Implemented a canvas with all the basic tools for the drawing process.",
       "Used a Twitch WebSocket to capture and process the messages coming from the audience and managed all the events that take place during the game, including start, hits, evaluation, transitions, timer.",
       "Manually translated all items from Spanish to English and generated an extensive list of words across various categories, along with their corresponding translations, for use in the game."
@@ -177,11 +177,11 @@ export const PROJECTS = [
     end_year: null,
     desc_li_es: [
       "Diseñó un sitio web enfocado a exhibir la colección completa de canciones del artista,su biografía, videos, detalles e hipervínculos relevantes.",
-      "Desarrolló el sitio utilizando Nuxt.js alojado en Cloudflare Pages."
+      "Desarrolló el sitio utilizando Nuxt alojado en Cloudflare Pages."
     ],
     desc_li_en: [
       "Designed a website focused on showcasing the artist's full collection of songs, biography, videos, details and relevant hyperlinks.",
-      "Developed using Nuxt.js hosted on Cloudflare Pages."
+      "Developed using Nuxt hosted on Cloudflare Pages."
     ],
     tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages"],
     repository: "https://github.com/ahmedrangel/bayza"
@@ -200,12 +200,12 @@ export const PROJECTS = [
     end_year: 2024,
     desc_li_es: [
       "Diseñó un landing page e implementó dos registros, uno de inscripciones para participar en el evento y otro para participar un sorteo.",
-      "Desarrolló el landing page utilizando Nuxt.js alojado en Cloudflare Pages.",
+      "Desarrolló el landing page utilizando Nuxt alojado en Cloudflare Pages.",
       "Implementó el sistema de registros utilizando Cloudflare D1."
     ],
     desc_li_en: [
       "Designed a landing page and implemented two registrations, one for participating in the event and one for the giveaway.",
-      "Developed the landing page using Nuxt.js hosted on Cloudflare Pages.",
+      "Developed the landing page using Nuxt hosted on Cloudflare Pages.",
       "Implemented the registration system using Cloudflare D1."
     ],
     tags: ["Nuxt", "Vue.js", "JavaScript", "TypeScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages", "Cloudflare D1"]
@@ -223,12 +223,12 @@ export const PROJECTS = [
     end_month: 13,
     end_year: null,
     desc_li_es: [
-      "Desarrolló distintas tablas de estadísticas y de clasificación tomando en cuenta la región de pertenencia agregando una lista de streamers con sus respectivas cuentas de juego y redes sociales. Usando Nuxt.js alojado en Cloudflare Pages.",
+      "Desarrolló distintas tablas de estadísticas y de clasificación tomando en cuenta la región de pertenencia agregando una lista de streamers con sus respectivas cuentas de juego y redes sociales. Usando Nuxt alojado en Cloudflare Pages.",
       "Diseñó una base de datos que guarda información sobre Twitch y League of Legends de cada streamer para ser mostradas directamente de manera visual en el sitio web.",
       "Implementó algunos cron triggers que actualizan periódicamente la información correspondiente a cada streamer para mantener actualizado el sitio web. Usando Cloudflare Workers junto con las API de Riot Games y Twitch."
     ],
     desc_li_en: [
-      "Developed different statistics and ranking tables taking into account the region of belonging, adding a list of streamers with their respective game accounts and social media. Using Nuxt.js hosted on Cloudflare Pages.",
+      "Developed different statistics and ranking tables taking into account the region of belonging, adding a list of streamers with their respective game accounts and social media. Using Nuxt hosted on Cloudflare Pages.",
       "Designed a database that stores information about Twitch and League of Legends of each streamer account to be displayed directly on the website.",
       "Implemented some cron triggers that update periodically the information corresponding to each streamer and region to keep the website updated. Using Cloudflare Workers along with Riot Games API and Twitch API."
     ],
