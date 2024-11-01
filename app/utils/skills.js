@@ -17,6 +17,7 @@ export const SKILLS = [
       { name: "Node.js", icon: "logos:nodejs-icon" },
       { name: "Nuxt", icon: "logos:nuxt-icon" },
       { name: "Vue.js", icon: "logos:vue" },
+      { name: "React", icon: "logos:react" },
       { name: "PNPM", icon: "logos:pnpm" },
       { name: "npm", icon: "logos:npm-icon" }
     ]
