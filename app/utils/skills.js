@@ -81,7 +81,8 @@ export const SKILLS = [
       { name: "Caching", icon: "ic:baseline-cached" },
       { name: "SSH/SFTP", icon: "ic:baseline-folder" },
       { name: "Redirects", icon: "ic:baseline-next-plan" },
-      { name: "WebSockets", icon: "ic:baseline-web-asset" }
+      { name: "WebSockets", icon: "ic:baseline-web-asset" },
+      { name: "Webhooks", icon: "ic:round-webhook" }
     ]
   },
   {
