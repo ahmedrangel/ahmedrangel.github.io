@@ -19,7 +19,7 @@ export default defineNuxtConfig({
       ]
     }
   },
-  modules: ["@nuxtjs/google-fonts", "@nuxt/icon", "nuxt-aos", "@nuxt/eslint", "@nuxtjs/sitemap", "@nuxtjs/color-mode"],
+  modules: ["@nuxt/fonts", "@nuxt/icon", "nuxt-aos", "@nuxt/eslint", "@nuxtjs/sitemap", "@nuxtjs/color-mode"],
   icon: {
     mode: "svg",
     clientBundle: {
@@ -57,12 +57,13 @@ export default defineNuxtConfig({
     "/*/**": { sitemap: { priority: 0.8, lastmod: new Date().toISOString() } },
     "/api/_nuxt_icon/**": { cache: { maxAge: 1.577e+7 } }
   },
-  googleFonts: {
-    display: "swap",
-    download: true,
-    families: {
-      "Zen Kaku Gothic New": [300, 400, 500, 700]
-    }
+  fonts: {
+    defaults: {
+      weights: [300, 400, 500, 700]
+    },
+    families: [
+      { name: "Zen Kaku Gothic New", provider: "google" }
+    ]
   },
   aos: {
     easing: "ease-in-sine",
