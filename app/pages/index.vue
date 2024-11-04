@@ -128,8 +128,8 @@ watch(lang, () => {
                 </div>
               </div>
             </div>
-            <div class="card-body" data-aos="fade-right">
-              <a :href="projects.url || projects.repository" target="_blank" class="text-primary fw-bold d-inline-block">
+            <div class="card-body">
+              <a :href="projects.url || projects.repository" target="_blank" class="text-primary fw-bold d-inline-block" data-aos="fade-right">
                 <h5 class="m-0 fw-bold">
                   <Icon v-if="projects.type" class="pb-1" :name="projectTypes.find(el => el.value === projects.type).icon" />
                   {{ projects.name }}
@@ -139,7 +139,7 @@ watch(lang, () => {
               <div class="my-2" data-aos="fade-left">
                 <!-- eslint-disable-next-line vue/no-v-html, vue/no-v-html -->
                 <p v-html="lang === 'en' ? projects.desc_en : projects.desc_es" />
-                <ul>
+                <ul v-if="projects?.desc_li_en?.length || projects?.desc_li_es?.length">
                   <li v-for="(li, index2) of lang === 'en' ? projects.desc_li_en : projects.desc_li_es" :key="index2">
                     <!-- eslint-disable-next-line vue/no-v-html, vue/no-v-html -->
                     <span v-html="li" />
