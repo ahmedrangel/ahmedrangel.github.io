@@ -4,7 +4,7 @@ export const INFO = {
   birthday: "1998-06-15",
   email: "ahmedrangel@outlook.com",
   dark: true,
-  lang: "es",
+  lang: "en",
   resume: {
     es: "Eliezer_Rangel_CV_ES.pdf",
     en: "Eliezer_Rangel_CV_EN.pdf"
