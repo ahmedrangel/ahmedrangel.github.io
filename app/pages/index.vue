@@ -13,7 +13,7 @@ watch(lang, () => {
 </script>
 
 <template>
-  <main v-if="lang" class="mt-5 container-lg">
+  <main class="mt-5 container-lg">
     <div id="about" class="pt-5">
       <h3 class="fw-bold mb-4" data-aos="fade-right">{{ t("about_me") }}</h3>
       <div class="row justify-content-center g-4">
