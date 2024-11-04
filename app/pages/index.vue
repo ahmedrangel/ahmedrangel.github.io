@@ -147,7 +147,7 @@ watchEffect(() => {
                 </ul>
               </div>
               <div class="d-flex gap-2 flex-wrap" data-aos="fade-right">
-                <small v-for="(tags, index3) of projects.tags" :key="index3" class="border p-2 text-nowrap rounded-2">
+                <small v-for="(tags, index3) of projects.tags" :key="index3" class="border px-2 py-1 text-nowrap rounded-2">
                   {{ tags }}
                 </small>
               </div>
