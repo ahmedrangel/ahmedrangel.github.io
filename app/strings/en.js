@@ -42,5 +42,6 @@ export default {
   tools: "Tools",
   cloud: "Cloud",
   apis: "APIs",
-  server_administration: "Server Administration"
+  server_administration: "Server Administration",
+  view: "View"
 };

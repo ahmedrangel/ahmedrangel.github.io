@@ -34,4 +34,4 @@ export const projectTypes = [
   { value: "web", icon: "twemoji:globe-with-meridians" },
   { value: "node", icon: "logos:nodejs-icon" },
   { value: "npm", icon: "logos:npm-icon" }
-]
+];

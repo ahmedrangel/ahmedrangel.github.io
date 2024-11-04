@@ -98,7 +98,7 @@ watchEffect(() => {
             <td>
               <template v-for="(skills, index2) of main_skills.skills" :key="index2">
                 <div class="d-inline-flex" data-aos="zoom-in">
-                  <span class="sk m-1 px-2 py-1 text-nowrap rounded-2 bg-skills">
+                  <span class="d-inline-flex align-items-center shadow m-1 px-2 py-1 text-nowrap rounded-2 bg-card">
                     <Icon class="iconify me-1" :name="skills.icon" size="1.2em" :style="{ width: '1em', color: skills?.color }" />{{ skills.name }}
                   </span>
                 </div>
@@ -112,13 +112,13 @@ watchEffect(() => {
     <!-- Projects -->
     <div id="projects" class="py-5">
       <h3 class="fw-bold mb-4" data-aos="fade-right">{{ t("projects") }}</h3>
-      <MasonryWall :items="projectsOrdered" :ssr-columns="1" :gap="12" :max-columns="2" :column-width="400" data-aos="fade-in">
+      <MasonryWall :items="projectsOrdered" :ssr-columns="1" :gap="16" :max-columns="2" :column-width="400" data-aos="fade-in">
         <template #default="{ item: projects }">
-          <div :id="projects.id" class="card overflow-hidden">
+          <div :id="projects.id" class="card overflow-hidden bg-card shadow">
             <img v-if="projects?.images?.length === 1" :src="`/images/${projects.images[0]}`" class="card-img-top" alt="" data-aos="fade-in">
             <div v-else class="carousel slide carousel-fade" data-bs-ride="carousel">
               <div class="carousel-indicators mb-2">
-                <div class="px-2 rounded-2 d-flex bg-indicator">
+                <div class="px-2 rounded-1 d-flex bg-indicator">
                   <button v-for="(image, i) of projects.images" :key="i" type="button" class="btn-indicator" :data-bs-target="`#${projects.id} .carousel`" :data-bs-slide-to="i" :class="{ active: !i }" aria-current="true" :aria-label="`${projects.title} ${i + 1}`" />
                 </div>
               </div>
@@ -129,43 +129,39 @@ watchEffect(() => {
               </div>
             </div>
             <div class="card-body" data-aos="fade-right">
-              <a :href="projects.url" target="_blank" class="text-primary fw-bold">
+              <a :href="projects.url || projects.repository" target="_blank" class="text-primary fw-bold d-inline-block">
                 <h5 class="m-0 fw-bold">
-                  <Icon v-if="projects.type" class="pb-1" :name="projectTypes.find(el => el.value === projects.type).icon"/>
+                  <Icon v-if="projects.type" class="pb-1" :name="projectTypes.find(el => el.value === projects.type).icon" />
                   {{ projects.name }}
                 </h5>
               </a>
-              <p class="m-0">{{ t("months")[projects.start_month - 1] }} {{ projects.start_year }} — {{ t("months")[projects.end_month - 1] }} {{ projects.end_year }}</p>
+              <p class="m-0 small">{{ t("months")[projects.start_month - 1] }} {{ projects.start_year }} — {{ t("months")[projects.end_month - 1] }} {{ projects.end_year }}</p>
+              <div class="my-2" data-aos="fade-left">
+                <!-- eslint-disable-next-line vue/no-v-html, vue/no-v-html -->
+                <p v-html="lang === 'en' ? projects.desc_en : projects.desc_es" />
+                <ul>
+                  <li v-for="(li, index2) of lang === 'en' ? projects.desc_li_en : projects.desc_li_es" :key="index2">
+                    <!-- eslint-disable-next-line vue/no-v-html, vue/no-v-html -->
+                    <span v-html="li" />
+                  </li>
+                </ul>
+              </div>
+              <div class="d-flex gap-2 flex-wrap" data-aos="fade-right">
+                <small v-for="(tags, index3) of projects.tags" :key="index3" class="border p-2 text-nowrap rounded-2">
+                  {{ tags }}
+                </small>
+              </div>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <div class="my-2" data-aos="fade-left">
-                  <!-- eslint-disable-next-line vue/no-v-html, vue/no-v-html -->
-                  <p v-html="lang === 'en' ? projects.desc_en : projects.desc_es" />
-                  <ul>
-                    <li v-for="(li, index2) of lang === 'en' ? projects.desc_li_en : projects.desc_li_es" :key="index2">
-                      <!-- eslint-disable-next-line vue/no-v-html, vue/no-v-html -->
-                      <span v-html="li" />
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="list-group-item">
-                <div class="my-1" data-aos="fade-right">
-                  <span v-for="(tags, index3) of projects.tags" :key="index3" class="sk m-1 px-2 py-1 text-nowrap">
-                    {{ tags }}
-                  </span>
-                  <span class="lnks m-1 text-nowrap">
-                    <a v-if="projects.repository" :href="projects.repository" target="_blank" class="d-inline-flex align-items-center">
-                      <Icon class="iconify me-1" name="simple-icons:github" />
-                      <span class="card-foot">
-                        <b>{{ t("repository") }}</b>
-                      </span>
-                    </a>
-                  </span>
-                </div>
-              </li>
-            </ul>
+            <div class="card-footer p-0 d-flex gap-1 border-0">
+              <a v-if="projects.repository" class="btn rounded-0 btn-secondary w-100 fw-bold text-white d-flex gap-1 justify-content-center align-items-center" target="_blank" :href="projects.repository">
+                <Icon name="simple-icons:github" />
+                {{ t("repository") }}
+              </a>
+              <a v-if="projects.url" class="btn rounded-0 bg-primary w-100 fw-bold text-color-inverted d-flex gap-1 justify-content-center align-items-center" target="_blank" :href="projects.url">
+                <Icon name="ic:round-launch" />
+                {{ t("view") }}
+              </a>
+            </div>
           </div>
         </template>
       </MasonryWall>

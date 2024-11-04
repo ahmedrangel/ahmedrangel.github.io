@@ -29,7 +29,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <nav id="navbar" ref="nav" class="navbar navbar-expand-lg px-4 py-2 fixed-top smart-scroll fw-bold" :class="scrolledDown ? dark ? 'nav-bg-dark' : 'nav-bg-light' : ''">
+  <nav id="navbar" ref="nav" class="navbar navbar-expand-lg px-4 py-2 fixed-top smart-scroll fw-bold" :class="scrolledDown ? 'nav-bg' : ''">
     <NuxtLink class="navbar-brand py-0" to="/">
       <span>{{ t("name_abreviated") }}</span>
     </NuxtLink>
