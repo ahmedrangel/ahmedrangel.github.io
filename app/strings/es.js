@@ -11,7 +11,7 @@ export default {
   address: "Ciudad de Panamá, Panamá",
   address2: "La Chorrera, Panamá",
   education: "Eduación",
-  utp: "Universidad Tecnolónica de Panamá",
+  utp: "Universidad Tecnológica de Panamá",
   pps: "Escuela Secundaria Pedro Pablo Sánchez",
   at: "en",
   panama: "Panamá",

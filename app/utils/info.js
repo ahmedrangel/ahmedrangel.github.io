@@ -33,7 +33,7 @@ export const INFO = {
   ],
   education: [
     {
-      institution_es: "Universidad Tecnolónica de Panamá",
+      institution_es: "Universidad Tecnológica de Panamá",
       institution_en: "Technological University of Panama",
       location_es: "Ciudad de Panamá, Panamá",
       location_en: "Panama City, Panama",
