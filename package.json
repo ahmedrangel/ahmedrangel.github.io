@@ -28,5 +28,6 @@
     "@yeger/vue-masonry-wall": "^5.0.16",
     "bootstrap": "^5.3.3",
     "nuxt-aos": "^1.2.5"
-  }
+  },
+  "packageManager": "pnpm@9.12.3"
 }
