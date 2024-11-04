@@ -66,8 +66,7 @@ export default defineNuxtConfig({
     ]
   },
   aos: {
-    easing: "ease-in-sine",
-    duration: 500
+    easing: "ease-in-sine"
   },
   eslint: {
     config: {
