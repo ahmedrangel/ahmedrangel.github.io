@@ -15,7 +15,7 @@ class LocaleLang {
 
   set (code = INFO.lang) {
     this.code.value = String(code).toLowerCase();
-    useCookie("lang", { ...cookieMaxAge }).value = this.code.value;
+    localStorage.setItem("lang", this.code.value);
     useHead({ htmlAttrs: { lang: this.code.value } });
   }
 
@@ -24,8 +24,8 @@ class LocaleLang {
   }
 
   init () {
-    const lang = useCookie("lang", { ...cookieMaxAge });
-    this.code.value = lang.value = lang.value ? lang.value : locale.lang.get();
+    const lang = localStorage.getItem("lang", this.code.value);
+    this.code.value = lang ? lang : locale.lang.get();
     locale.lang.set(this.code.value);
   }
 }

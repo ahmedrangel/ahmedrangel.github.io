@@ -1,5 +1,5 @@
 <script setup>
-const lang = ref(locale.lang.get());
+const lang = useState("lang");
 
 const colorMode = useColorMode();
 const dark = ref(colorMode.preference === "dark");
@@ -18,6 +18,8 @@ const toggleTheme = () => {
 };
 
 onMounted(() => {
+  locale.lang.init();
+  lang.value = locale.lang.get();
   dark.value = colorMode.preference === "dark";
   const scrollFunction = () => {
     scrolledDown.value = ((document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) || (window.innerWidth < 767));
@@ -29,7 +31,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <nav id="navbar" ref="nav" class="navbar navbar-expand-lg px-4 py-2 fixed-top smart-scroll fw-bold" :class="scrolledDown ? 'nav-bg' : ''">
+  <nav v-if="lang" id="navbar" ref="nav" class="navbar navbar-expand-lg px-4 py-2 fixed-top smart-scroll fw-bold" :class="scrolledDown ? 'nav-bg' : ''">
     <NuxtLink class="navbar-brand py-0" to="/">
       <span>{{ t("name_abreviated") }}</span>
     </NuxtLink>
