@@ -153,11 +153,11 @@ watch(lang, () => {
               </div>
             </div>
             <div class="card-footer p-0 d-flex gap-1 border-0">
-              <a v-if="projects.repository" class="btn rounded-0 btn-secondary w-100 fw-bold text-white d-flex gap-1 justify-content-center align-items-center" target="_blank" :href="projects.repository">
+              <a v-if="projects.repository" class="btn rounded-0 btn-secondary w-100 fw-bold text-white d-flex gap-1 justify-content-center align-items-center border-0 border-bottom" target="_blank" :href="projects.repository">
                 <Icon name="simple-icons:github" />
                 {{ t("repository") }}
               </a>
-              <a v-if="projects.url" class="btn rounded-0 bg-primary w-100 fw-bold text-color-inverted d-flex gap-1 justify-content-center align-items-center" target="_blank" :href="projects.url">
+              <a v-if="projects.url" class="btn rounded-0 bg-primary w-100 fw-bold text-color-inverted d-flex gap-1 justify-content-center align-items-center border-0 border-bottom" target="_blank" :href="projects.url">
                 <Icon name="ic:round-launch" />
                 {{ t("view") }}
               </a>
