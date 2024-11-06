@@ -114,7 +114,7 @@ watch(lang, () => {
       <h3 class="fw-bold mb-4" data-aos="fade-right">{{ t("projects") }}</h3>
       <MasonryWall :items="projectsOrdered" :ssr-columns="1" :gap="16" :max-columns="2" :column-width="400" data-aos="fade-in">
         <template #default="{ item: projects }">
-          <div :id="projects.id" class="card overflow-hidden bg-card shadow">
+          <div :id="projects.id" class="card overflow-hidden bg-card shadow border-top border-start border-end">
             <img v-if="projects?.images?.length === 1" :src="`/images/${projects.images[0]}`" class="card-img-top" alt="" data-aos="fade-in">
             <div v-else class="carousel slide carousel-fade" data-bs-ride="carousel">
               <div class="carousel-indicators mb-2">
