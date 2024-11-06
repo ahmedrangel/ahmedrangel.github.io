@@ -92,7 +92,7 @@ body, html {
 }
 @media only screen and (max-width: 991px) {
   #navbar {
-    background: var(--navbar-bg)!important;
+    background-color: var(--navbar-bg)!important;
     font-size: 1rem;
   }
   .nav-item {
@@ -110,7 +110,8 @@ body, html {
 }
 
 #navbar {
-  background: transparent;
+  background-color: transparent;
+  transition: background-color .3s ease-in-out;
 }
 
 .form-check-input {
@@ -143,7 +144,7 @@ body, html {
 }
 
 .nav-bg {
-  background: var(--navbar-bg)!important;
+  background-color: var(--navbar-bg)!important;
 }
 
 .nav-item .dropdown-item:hover, #navbardrop:hover, .dropdown {
