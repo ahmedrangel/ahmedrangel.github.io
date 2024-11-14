@@ -51,7 +51,9 @@ export const SKILLS = [
       { name: "Postman", icon: "logos:postman-icon" },
       { name: "Chart.js", icon: "simple-icons:chartdotjs", color: "#ff6384" },
       { name: "WordPress", icon: "simple-icons:wordpress", color: "#3057dc" },
-      { name: "Google Adsense", icon: "logos:google-adsense" }
+      { name: "Google Adsense", icon: "logos:google-adsense" },
+      { name: "Jest", icon: "logos:jest" },
+      { name: "Vitest", icon: "logos:vitest" }
     ]
   },
   {
