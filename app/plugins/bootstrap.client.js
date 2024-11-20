@@ -1,5 +1,6 @@
 import Collapse from "bootstrap/js/dist/collapse";
 import Carousel from "bootstrap/js/dist/carousel";
+import Tab from "bootstrap/js/dist/tab";
 
 class Bootstrap {
   toogleCollapse (el) {
@@ -13,6 +14,11 @@ class Bootstrap {
       const carouselInstance = new Carousel(carousel);
       carouselInstance.cycle();
     }
+  }
+
+  initializeTab () {
+    const tab = new Tab(".nav-tabs");
+    tab.show();
   }
 }
 

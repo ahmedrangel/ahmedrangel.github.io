@@ -43,5 +43,6 @@ export default {
   cloud: "Cloud",
   apis: "APIs",
   server_administration: "Administración de Servidores",
-  view: "Ver"
+  view: "Ver",
+  recent_github_contributions: "Contribuciones Recientes en GitHub"
 };

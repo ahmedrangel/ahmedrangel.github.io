@@ -2,7 +2,7 @@ import { INFO } from "../app/utils/info.js";
 
 export default defineNuxtConfig({
   future: { compatibilityVersion: 4 },
-  compatibilityDate: "2024-08-16",
+  compatibilityDate: "2024-11-19",
   css: [
     "bootstrap/dist/css/bootstrap.min.css",
     "~/assets/css/ahmedrangel.css"
@@ -19,7 +19,7 @@ export default defineNuxtConfig({
       ]
     }
   },
-  modules: ["@nuxt/fonts", "@nuxt/icon", "nuxt-aos", "@nuxt/eslint", "@nuxtjs/sitemap", "@nuxtjs/color-mode"],
+  modules: ["@nuxt/fonts", "@nuxt/icon", "nuxt-aos", "@nuxt/eslint", "@nuxtjs/sitemap", "@nuxtjs/color-mode", "@vueuse/nuxt"],
   icon: {
     mode: "svg",
     clientBundle: {

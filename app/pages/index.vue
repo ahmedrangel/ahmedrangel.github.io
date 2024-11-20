@@ -42,13 +42,13 @@ watch(lang, () => {
             </div>
             <div class="col-lg-6 col-md-6 d-flex align-items-center">
               <Icon class="iconify me-2" name="ph:envelope-simple-duotone" />
-              <a :href="`mailto:${INFO.email}`" target="_blank">{{ INFO.email }}</a>
+              <NuxtLink :to="`mailto:${INFO.email}`" target="_blank">{{ INFO.email }}</NuxtLink>
             </div>
             <div class="col-lg-6 col-md-6 d-flex align-items-center">
               <div v-for="(socials, index) of INFO.socials" :key="index">
-                <a :href="socials.url" target="_blank" class="socials-icons">
+                <NuxtLink :to="socials.url" target="_blank" class="socials-icons">
                   <Icon class="iconify me-2" :name="socials.icon" />
-                </a>
+                </NuxtLink>
               </div>
             </div>
           </div>
@@ -98,7 +98,7 @@ watch(lang, () => {
             <td>
               <template v-for="(skills, index2) of main_skills.skills" :key="index2">
                 <div class="d-inline-flex" data-aos="zoom-in">
-                  <span class="d-inline-flex align-items-center shadow m-1 px-2 py-1 text-nowrap rounded-2 bg-card">
+                  <span class="d-inline-flex align-items-center shadow m-1 px-2 py-2 text-nowrap rounded-2 bg-card h6 fw-normal">
                     <Icon class="iconify me-1" :name="skills.icon" size="1.2em" :style="{ width: '1em', color: skills?.color }" />{{ skills.name }}
                   </span>
                 </div>
@@ -110,7 +110,7 @@ watch(lang, () => {
     </div>
     <hr class="mt-5 mb-0">
     <!-- Projects -->
-    <div id="projects" class="py-5">
+    <div id="projects" class="pt-5">
       <h3 class="fw-bold mb-4" data-aos="fade-right">{{ t("projects") }}</h3>
       <MasonryWall :items="projectsOrdered" :ssr-columns="1" :gap="16" :max-columns="2" :column-width="400" data-aos="fade-in">
         <template #default="{ item: projects }">
@@ -129,12 +129,12 @@ watch(lang, () => {
               </div>
             </div>
             <div class="card-body">
-              <a :href="projects.url || projects.repository" target="_blank" class="text-primary fw-bold d-inline-block" data-aos="fade-right">
+              <NuxtLink :to="projects.url || projects.repository" target="_blank" class="text-primary fw-bold d-inline-block" data-aos="fade-right">
                 <h5 class="m-0 fw-bold">
                   <Icon v-if="projects.type" class="pb-1" :name="projectTypes.find(el => el.value === projects.type).icon" />
                   {{ projects.name }}
                 </h5>
-              </a>
+              </NuxtLink>
               <p class="m-0 small">{{ t("months")[projects.start_month - 1] }} {{ projects.start_year }} — {{ t("months")[projects.end_month - 1] }} {{ projects.end_year }}</p>
               <div class="my-2" data-aos="fade-left">
                 <!-- eslint-disable-next-line vue/no-v-html, vue/no-v-html -->
@@ -153,18 +153,24 @@ watch(lang, () => {
               </div>
             </div>
             <div class="card-footer p-0 d-flex gap-1 border-0">
-              <a v-if="projects.repository" class="btn rounded-0 btn-secondary w-100 fw-bold text-white d-flex gap-1 justify-content-center align-items-center border-0 border-bottom" target="_blank" :href="projects.repository">
-                <Icon name="simple-icons:github" />
+              <NuxtLink v-if="projects.repository" class="rounded-0 bg-secondary w-100 fw-bold text-white d-flex gap-1 justify-content-center align-items-center border-0 border-bottom h6 m-0 py-2" target="_blank" :to="projects.repository">
+                <Icon name="simple-icons:github" size="1.2em" />
                 {{ t("repository") }}
-              </a>
-              <a v-if="projects.url" class="btn rounded-0 bg-primary w-100 fw-bold text-color-inverted d-flex gap-1 justify-content-center align-items-center border-0 border-bottom" target="_blank" :href="projects.url">
-                <Icon name="ic:round-launch" />
-                {{ t("view") }}
-              </a>
+              </NuxtLink>
+              <NuxtLink v-if="projects.url" class="rounded-0 bg-primary w-100 fw-bold text-color-inverted d-flex gap-1 justify-content-center align-items-center border-0 border-bottom h6 m-0 py-2" target="_blank" :to="projects.url">
+                <Icon name="ic:round-launch" size="1.2em" />
+                <span>{{ t("view") }}</span>
+              </NuxtLink>
             </div>
           </div>
         </template>
       </MasonryWall>
+    </div>
+    <hr class="mt-5 mb-0">
+    <!-- GitHub Contributions -->
+    <div id="github-contributions" class="py-5">
+      <h3 class="fw-bold mb-4" data-aos="fade-right">{{ t("recent_github_contributions") }}</h3>
+      <GitHubContributions />
     </div>
   </main>
 </template>

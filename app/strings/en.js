@@ -4,7 +4,7 @@ export default {
   name_abreviated: "Eliezer A. Rangel B.",
   about_me: "About Me",
   about: "About",
-  bio: "Currently, I stand out as an enthusiastic developer who constantly strives to improve their skills and aims to apply best practices in every project. With years of experience across various technologies and frameworks, both in frontend and backend, for creating highly efficient and functional web applications. My lifelong passion for the world of computing and emerging technologies continually drives my personal and professional growth. I possess strong skills in web application development, system automation, database management, and API development and integration.",
+  bio: "I stand out as an enthusiastic developer who constantly strives to improve their skills and aims to apply best practices in every project. With years of experience across various technologies and frameworks, both in frontend and backend, for creating highly efficient and functional web applications. My lifelong passion for the world of computing and emerging technologies continually drives my personal and professional growth. I possess strong skills in web application development, system automation, database management, and API development and integration.",
   degree: "Computer and Systems Engineering",
   bachelor: "High School Diploma, Science",
   years_old: "years old",
@@ -43,5 +43,6 @@ export default {
   cloud: "Cloud",
   apis: "APIs",
   server_administration: "Server Administration",
-  view: "View"
+  view: "View",
+  recent_github_contributions: "Recent GitHub Contributions"
 };

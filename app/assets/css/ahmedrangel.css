@@ -23,6 +23,10 @@
   --bs-link-hover-color: #ea3757;
   --bg-card: white;
   --dark-mode-icon: var(--sun);
+  --bs-indigo: #8540f5;
+  --bs-green: #1aa179;
+  --bs-gray: #6c757d;
+  --bs-red: #dc3545;
 }
 
 [data-bs-theme=dark] {
@@ -40,6 +44,10 @@
   --bs-dark-rgb: var(--dark-rgb);
   --bg-card: var(--dark3);
   --dark-mode-icon: var(--moon);
+  --bs-indigo: #c29ffa;
+  --bs-green: #20c997;
+  --bs-gray: #adb5bd;
+  --bs-red: #ea868f;
 }
 
 .navbar {
@@ -48,7 +56,6 @@
 
 body, html {
   font-family: Zen Kaku Gothic New;
-  font-size: 18px;
   line-height: inherit;
 }
 
@@ -119,7 +126,7 @@ body, html {
   font-size: 32px;
   border: 2px solid var(--bs-primary)!important;
   background-color: var(--navbar-bg)!important;
-  transition: background-position .15s ease-in-out, background-color .3s ease-in-out!important;
+  transition: background-position .2s ease-in-out, background-color .2s ease-in-out!important;
 }
 
 .form-check-input:focus {
@@ -198,8 +205,15 @@ body, html {
   text-decoration: underline!important;
 }
 
-a {
+#github-contributions a:hover {
+  color: var(--bs-link-hover-color)!important;
+}
+
+#about a, #navbar a, .card-body a, .socials-icons .iconify {
   color: var(--bs-primary);
+}
+
+a {
   text-decoration: none;
 }
 
@@ -225,4 +239,34 @@ a {
 
 .btn.bg-primary:hover {
   background-color: var(--bs-link-hover-color)!important;
+}
+
+.text-indigo {
+  color: var(--bs-indigo);
+}
+
+.text-green {
+  color: var(--bs-green);
+}
+
+.text-gray {
+  color: var(--bs-gray);
+}
+
+.text-red {
+  color: var(--bs-red);
+}
+
+.nav-pills .nav-link {
+  background-color: var(--bs-secondary);
+  color: var(--white)
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: var(--bs-primary);
+  color: var(--text-color-inverted);
+}
+
+#github-contributions a {
+  color: var(--text-color);
 }

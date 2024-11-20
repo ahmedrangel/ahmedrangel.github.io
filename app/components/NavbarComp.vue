@@ -56,9 +56,9 @@ onMounted(() => {
           </NuxtLink>
         </li>
         <li class="nav-item mx-3">
-          <a :href="lang === 'es' ? INFO.resume.es : INFO.resume.en " target="_blank" @click="collapseNav()">
+          <NuxtLink :to="lang === 'es' ? INFO.resume.es : INFO.resume.en " target="_blank" @click="collapseNav()">
             <span>{{ t("download_resume") }}</span>
-          </a>
+          </NuxtLink>
         </li>
         <li class="nav-item dropdown ms-2 me-1 text-center">
           <span id="navbardrop" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">{{ t("lang").toUpperCase() }}</span>
