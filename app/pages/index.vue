@@ -6,10 +6,6 @@ const projectsOrdered = computed(() => {
 });
 
 const lang = useState("lang");
-
-watch(lang, () => {
-  lang.value = locale.lang.get();
-});
 </script>
 
 <template>
