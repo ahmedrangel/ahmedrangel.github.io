@@ -149,11 +149,11 @@ const lang = useState("lang");
               </div>
             </div>
             <div class="card-footer p-0 d-flex gap-1 border-0">
-              <NuxtLink v-if="projects.repository" class="rounded-0 bg-secondary w-100 fw-bold text-white d-flex gap-1 justify-content-center align-items-center border-0 border-bottom h6 m-0 py-2" target="_blank" :to="projects.repository">
+              <NuxtLink v-if="projects.repository" class="rounded-0 bg-secondary w-100 fw-bold text-white d-flex gap-1 justify-content-center align-items-center border-0 border-bottom border-top h6 m-0 py-2" target="_blank" :to="projects.repository">
                 <Icon name="simple-icons:github" size="1.2em" />
                 {{ t("repository") }}
               </NuxtLink>
-              <NuxtLink v-if="projects.url" class="rounded-0 bg-primary w-100 fw-bold text-color-inverted d-flex gap-1 justify-content-center align-items-center border-0 border-bottom h6 m-0 py-2" target="_blank" :to="projects.url">
+              <NuxtLink v-if="projects.url" class="rounded-0 bg-primary w-100 fw-bold text-color-inverted d-flex gap-1 justify-content-center align-items-center border-0 border-bottom border-top h6 m-0 py-2" target="_blank" :to="projects.url">
                 <Icon name="ic:round-launch" size="1.2em" />
                 <span>{{ t("view") }}</span>
               </NuxtLink>
