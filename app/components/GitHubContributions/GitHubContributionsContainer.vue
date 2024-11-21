@@ -23,9 +23,8 @@ const formatStars = (stars: number) => {
       target="_blank"
       relative
       :class="['overflow-hidden shadow-sm flex-shrink-0', data.type === 'Organization' ? 'rounded-3' : 'rounded-circle']"
-      style="width: 46px;"
     >
-      <img :src="`https://github.com/${data.repo.split('/')[0]}.png`" :alt="data.repo" style="max-width: 46px; min-width: 46px;">
+      <img :src="`https://github.com/${data.repo.split('/')[0]}.png`" :alt="data.repo" style="max-width: 42px;">
     </NuxtLink>
     <div class="d-flex justify-content-between gap-2 gap-lg-3" style="min-width: 0%; flex: 1 1 0;">
       <div class="d-flex flex-column gap-1 text-truncate">
