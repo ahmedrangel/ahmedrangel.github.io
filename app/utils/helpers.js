@@ -1,3 +1,5 @@
+import { differenceInDays, formatDistanceToNowStrict } from "date-fns";
+
 export const ageCalc = (date) => {
   const now = new Date(); // fecha actual
   const birth = new Date(date); // fecha de nacimiento
@@ -35,3 +37,24 @@ export const projectTypes = [
   { value: "node", icon: "logos:nodejs-icon" },
   { value: "npm", icon: "logos:npm-icon" }
 ];
+
+export const distanceToNowStrict = (date, options = {}) => {
+  const { addSuffix, locale } = options;
+  const daysDifference = differenceInDays(new Date(), date);
+  if (daysDifference >= 7 && daysDifference <= 30) {
+    const week = Math.floor(daysDifference / 7);
+    return (() => {
+      const esString = `${week} semana${week === 1 ? "" : "s"}`;
+      const enString = `${week} week${week === 1 ? "" : "s"}`;
+      if (addSuffix) {
+        if (locale && locale.code === "es")
+          return `hace ${esString}`;
+        return `${enString} ago`;
+      }
+      if (locale && locale.code === "es")
+        return esString;
+      return enString;
+    })();
+  }
+  return formatDistanceToNowStrict(date, options);
+};

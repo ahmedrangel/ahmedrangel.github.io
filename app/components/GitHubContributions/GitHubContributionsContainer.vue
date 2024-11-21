@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { formatDistanceToNowStrict } from "date-fns";
 import { enUS, es } from "date-fns/locale";
+
 const lang = useState("lang");
 const locale = computed(() => (lang.value === "es" ? es : enUS));
 
@@ -58,7 +58,7 @@ const formatStars = (stars: number) => {
           #{{ data.number }}
         </NuxtLink>
 
-        <time :datatime="data.created_at" class="small text-muted text-nowrap">{{ formatDistanceToNowStrict(new Date(data.created_at), { locale, addSuffix: true }) }}</time>
+        <time :datatime="data.created_at" class="small text-muted text-nowrap">{{ distanceToNowStrict(new Date(data.created_at), { locale, addSuffix: true }) }}</time>
       </div>
     </div>
   </div>
