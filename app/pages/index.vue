@@ -163,9 +163,9 @@ const lang = useState("lang");
       </MasonryWall>
     </div>
     <hr class="mt-5 mb-0">
-    <!-- GitHub Contributions -->
-    <div id="github-contributions" class="py-5">
-      <h3 class="fw-bold mb-4" data-aos="fade-right">{{ t("recent_github_contributions") }}</h3>
+    <!-- Open Source Contributions -->
+    <div id="open-source-contributions" class="py-5">
+      <h3 class="fw-bold mb-4" data-aos="fade-right">{{ t("open_source_contributions") }}</h3>
       <GitHubContributions />
     </div>
   </main>

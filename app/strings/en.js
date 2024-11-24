@@ -44,5 +44,5 @@ export default {
   apis: "APIs",
   server_administration: "Server Administration",
   view: "View",
-  recent_github_contributions: "Recent GitHub Contributions"
+  open_source_contributions: "Open Source Contributions"
 };
