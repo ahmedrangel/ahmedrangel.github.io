@@ -51,7 +51,7 @@ export const PROJECTS = [
     images: ["unbotme-website.jpg"],
     start_month: 1,
     start_year: 2024,
-    end_month: 4,
+    end_month: 11,
     end_year: 2024,
     desc_li_es: null,
     desc_li_en: null,
@@ -73,14 +73,12 @@ export const PROJECTS = [
     desc_li_es: [
       "Desarrolló un juego web enfocado a creadores de contenido de Twitch, donde éstos desafían a su audiencia a descifrar los dibujos que este crea. Usando Nuxt alojado en Cloudflare Pages.",
       "Implementó un lienzo con todas las herramientas básicas para el proceso de dibujo.",
-      "Empleó un WebSocket de Twitch para capturar y procesar los mensajes provenientes de la audiencia y gestionó todos los eventos que tienen lugar durante el juego, incluyendo inicio, aciertos, puntuaciones, transiciones, temporizador.",
-      "Realizó una traducción manual al inglés de todos los elementos y generó una extensa lista de palabras sobre diversas categorías, junto con sus correspondientes traducciones, para su uso en el juego."
+      "Empleó un WebSocket de Twitch para capturar y procesar los mensajes provenientes de la audiencia y gestionó todos los eventos que tienen lugar durante el juego, incluyendo inicio, aciertos, puntuaciones, transiciones, temporizador."
     ],
     desc_li_en: [
       "Developed a web game focused on Twitch content creators, where they challenge their audience to guess the drawings that the streamer creates. Using Nuxt hosted on Cloudflare Pages.",
       "Implemented a canvas with all the basic tools for the drawing process.",
-      "Used a Twitch WebSocket to capture and process the messages coming from the audience and managed all the events that take place during the game, including start, hits, evaluation, transitions, timer.",
-      "Manually translated all items from Spanish to English and generated an extensive list of words across various categories, along with their corresponding translations, for use in the game."
+      "Used a Twitch WebSocket to capture and process the messages coming from the audience and managed all the events that take place during the game, including start, hits, evaluation, transitions, timer."
     ],
     tags: ["Nuxt", "Vue.js", "JavaScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages", "WebSocket"],
     repository: "https://github.com/ahmedrangel/drawmond"
@@ -236,7 +234,7 @@ export const PROJECTS = [
   {
     id: "snapsasve-media-downloader",
     type: "npm",
-    name: "Snapsave Media Downloader",
+    name: "snapsasve-media-downloader",
     url: "https://www.npmjs.com/package/snapsave-media-downloader",
     desc_es: "Descarga media de Instagram, Facebook y TikTok utilizando snapsave.app",
     desc_en: "Download Instagram, Facebook and TikTok media using snapsave.app downloader",
@@ -252,7 +250,7 @@ export const PROJECTS = [
   {
     id: "gql-payload",
     type: "npm",
-    name: "GraphQL Payload",
+    name: "gql-payload",
     url: "https://www.npmjs.com/package/gql-payload",
     desc_es: "Este es un fork optimizado de <a href='https://github.com/atulmy/gql-query-builder' target='_blank'>gql-query-builder</a> con características adicionales para generar payloads GraphQL utilizando objetos JavaScript simples (JSON).",
     desc_en: "This is an optimized fork of <a href='https://github.com/atulmy/gql-query-builder' target='_blank'>gql-query-builder</a> with extra features for generating GraphQL payloads using plain JavaScript Objects (JSON).",
@@ -268,7 +266,7 @@ export const PROJECTS = [
   {
     id: "tetrio-bot",
     type: "node",
-    name: "Tetrio-Bot",
+    name: "tetrio-bot",
     desc_es: "Un bot de Tetris capaz de jugar automáticamente partidas multijugador personalizadas en TETR.IO. Utiliza una versión modificada de ElTetris para analizar el tablero actual y realizar movimientos óptimos, y la biblioteca @haelp/teto para interactuar con la API del juego principal.",
     desc_en: "A Tetris bot capable of automatically playing custom multiplayer matches in TETR.IO. It uses a modified version of ElTetris to analyze the current board for optimal moves and the @haelp/teto library to interact with main game API.",
     start_month: 9,
@@ -285,8 +283,8 @@ export const PROJECTS = [
     type: "npm",
     name: "nuxt-ripple",
     url: "https://nuxt-ripple.pages.dev",
-    desc_es: "Add simple ripple animation effects to your elements.",
-    desc_en: "Añade efectos de animación de ondas simples a tus elementos.",
+    desc_es: "Añade efectos de animación de ondas simples a tus elementos.",
+    desc_en: "Add simple ripple animation effects to your elements.",
     start_month: 11,
     start_year: 2025,
     end_month: 13,
