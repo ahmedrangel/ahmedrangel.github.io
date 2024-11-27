@@ -279,5 +279,21 @@ export const PROJECTS = [
     desc_li_en: null,
     tags: ["TypeScript", "Node.js", "TETR.IO"],
     repository: "https://github.com/ahmedrangel/tetrio-bot"
+  },
+  {
+    id: "nuxt-ripple",
+    type: "npm",
+    name: "nuxt-ripple",
+    url: "https://nuxt-ripple.pages.dev",
+    desc_es: "Add simple ripple animation effects to your elements.",
+    desc_en: "Añade efectos de animación de ondas simples a tus elementos.",
+    start_month: 11,
+    start_year: 2025,
+    end_month: 13,
+    end_year: null,
+    desc_li_es: null,
+    desc_li_en: null,
+    tags: ["Nuxt", "Vue.js", "TypeScript", "Node.js"],
+    repository: "https://github.com/ahmedrangel/nuxt-ripple"
   }
 ];
