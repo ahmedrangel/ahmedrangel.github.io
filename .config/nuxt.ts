@@ -15,7 +15,8 @@ export default defineNuxtConfig({
       viewport: "width=device-width, initial-scale=1",
       meta: [
         { name: "robots", content: "index, follow" },
-        { name: "darkreader-lock", content: "darkreader" }
+        { name: "darkreader-lock", content: "darkreader" },
+        { property: "og:site_name", content: INFO.name }
       ]
     }
   },

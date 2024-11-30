@@ -1,6 +1,9 @@
+const domain = "ahmedrangel.com";
+
 export const INFO = {
   name: "Ahmed Rangel",
-  domain: "ahmedrangel.com",
+  domain,
+  url: `https://${domain}`,
   birthday: "1998-06-15",
   email: "ahmedrangel@outlook.com",
   dark: true,

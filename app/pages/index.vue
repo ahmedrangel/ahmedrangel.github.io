@@ -6,6 +6,18 @@ const projectsOrdered = computed(() => {
 });
 
 const lang = useState("lang");
+
+useSeoMeta({
+  title: SITE.name,
+  ogType: "website",
+  ogTitle: SITE.name,
+  ogUrl: SITE.url,
+  twitterTitle: SITE.name
+});
+
+useHead({
+  link: [{ rel: "canonical", href: INFO.url }]
+});
 </script>
 
 <template>
