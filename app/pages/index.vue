@@ -8,14 +8,15 @@ const projectsOrdered = computed(() => {
 const lang = useState("lang");
 
 useSeoMeta({
-  title: SITE.name,
+  title: INFO.name,
   ogType: "website",
-  ogTitle: SITE.name,
-  ogUrl: SITE.url,
-  twitterTitle: SITE.name
+  ogTitle: INFO.name,
+  ogUrl: INFO.url,
+  twitterTitle: INFO.name
 });
 
 useHead({
+  title: INFO.name,
   link: [{ rel: "canonical", href: INFO.url }]
 });
 </script>

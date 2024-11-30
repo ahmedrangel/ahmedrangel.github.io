@@ -32,7 +32,7 @@ export default defineNuxtConfig({
     inlineStyles: false
   },
   site: {
-    url: "https://" + INFO.domain
+    url: INFO.url
   },
   nitro: {
     prerender: {
