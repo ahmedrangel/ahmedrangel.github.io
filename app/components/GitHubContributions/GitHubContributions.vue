@@ -25,9 +25,4 @@ onMounted(async () => {
       </div>
     </div>
   </div>
-  <div class="pt-3 text-center">
-    <NuxtLink to="https://contribs.ahmedrangel.com" target="_blank">
-      <span class="text-muted">contribs.ahmedrangel.com</span>
-    </NuxtLink>
-  </div>
 </template>
