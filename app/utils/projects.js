@@ -286,12 +286,28 @@ export const PROJECTS = [
     desc_es: "Añade efectos de animación de ondas simples a tus elementos.",
     desc_en: "Add simple ripple animation effects to your elements.",
     start_month: 11,
-    start_year: 2025,
+    start_year: 2024,
     end_month: 13,
     end_year: null,
     desc_li_es: null,
     desc_li_en: null,
     tags: ["Nuxt", "Vue.js", "TypeScript", "Node.js"],
     repository: "https://github.com/ahmedrangel/nuxt-ripple"
+  },
+  {
+    id: "vuetracker",
+    type: "web",
+    name: "VueTracker",
+    url: "https://vuetracker.nuxt.dev",
+    desc_es: "Descubre los plugins y tecnologías que potencian aplicaciones web hechas con Vue",
+    desc_en: "Discover the plugins and technologies powering websites made with Vue.",
+    start_month: 12,
+    start_year: 2024,
+    end_month: 13,
+    end_year: null,
+    desc_li_es: null,
+    desc_li_en: null,
+    tags: ["Nuxt", "Vue.js", "TypeScript", "HTML", "CSS", "TailwindCSS", "Cloudflare Pages", "Cloudflare D1"],
+    repository: "https://github.com/ahmedrangel/vuetracker"
   }
 ];
