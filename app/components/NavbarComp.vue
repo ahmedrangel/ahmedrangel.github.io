@@ -39,35 +39,40 @@ onMounted(() => {
       <span class="navbar-toggler-icon" />
     </button>
     <div id="collapsibleNavbar" ref="collapsibleNav" class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto align-items-center">
-        <li class="nav-item mx-3">
+      <ul class="navbar-nav ms-auto align-items-center d-flex gap-4">
+        <li class="nav-item">
           <NuxtLink to="/#about" @click="collapseNav()">
             <span>{{ t("about") }}</span>
           </NuxtLink>
         </li>
-        <li class="nav-item mx-3">
+        <li class="nav-item">
           <NuxtLink to="/#skills" @click="collapseNav()">
             <span>{{ t("skills") }}</span>
           </NuxtLink>
         </li>
-        <li class="nav-item mx-3">
+        <li class="nav-item">
           <NuxtLink to="/#projects" @click="collapseNav()">
             <span>{{ t("projects") }}</span>
           </NuxtLink>
         </li>
-        <li class="nav-item mx-3">
+        <li class="nav-item">
+          <NuxtLink to="/#open-source-contributions" @click="collapseNav()">
+            <span>{{ t("contributions") }}</span>
+          </NuxtLink>
+        </li>
+        <li class="nav-item">
           <NuxtLink :to="lang === 'es' ? INFO.resume.es : INFO.resume.en " target="_blank" @click="collapseNav()">
             <span>{{ t("download_resume") }}</span>
           </NuxtLink>
         </li>
-        <li class="nav-item dropdown ms-2 me-1 text-center">
-          <span id="navbardrop" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">{{ t("lang").toUpperCase() }}</span>
+        <li class="nav-item dropdown text-center">
+          <span id="navbardrop" class="dropdown-toggle" data-bs-toggle="dropdown">{{ t("lang").toUpperCase() }}</span>
           <div class="dropdown-menu" role="button">
             <span class="dropdown-item" @click="setLang('es')">ES</span>
             <span class="dropdown-item" @click="setLang('en')">EN</span>
           </div>
         </li>
-        <li class="nav-item align-self-center mx-2">
+        <li class="nav-item align-self-center">
           <div class="form-check form-switch p-0 m-0">
             <input id="flexSwitchCheckChecked" v-model="dark" class="form-check-input p-0 m-0 dark-mode-input" type="checkbox" role="button" @change="toggleTheme()">
             <span class="slider" />

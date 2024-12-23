@@ -44,5 +44,6 @@ export default {
   apis: "APIs",
   server_administration: "Server Administration",
   view: "View",
-  open_source_contributions: "Open Source Contributions"
+  open_source_contributions: "Open Source Contributions",
+  contributions: "Contributions"
 };
