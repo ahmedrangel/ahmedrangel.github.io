@@ -19,7 +19,8 @@ export const SKILLS = [
       { name: "Vue.js", icon: "logos:vue" },
       { name: "React", icon: "logos:react" },
       { name: "PNPM", icon: "logos:pnpm" },
-      { name: "npm", icon: "logos:npm-icon" }
+      { name: "npm", icon: "logos:npm-icon" },
+      { name: "NetSuite", icon: "simple-icons:oracle", color: "#c34231" }
     ]
   },
   {
