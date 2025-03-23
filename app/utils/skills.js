@@ -3,8 +3,8 @@ export const SKILLS = [
     skill_id: "web_design",
     skills: [
       { name: "JavaScript", icon: "logos:javascript" },
-      { name: "HTML5", icon: "logos:html-5" },
-      { name: "CSS3", icon: "logos:css-3" },
+      { name: "HTML5", icon: "vscode-icons:file-type-html" },
+      { name: "CSS", icon: "vscode-icons:file-type-css" },
       { name: "Bootstrap", icon: "logos:bootstrap" },
       { name: "TailwindCSS", icon: "logos:tailwindcss-icon" }
     ]
@@ -17,10 +17,11 @@ export const SKILLS = [
       { name: "Node.js", icon: "logos:nodejs-icon" },
       { name: "Nuxt", icon: "logos:nuxt-icon" },
       { name: "Vue.js", icon: "logos:vue" },
+      { name: "WXT", icon: "vscode-icons:file-type-wxt" },
       { name: "React", icon: "logos:react" },
       { name: "PNPM", icon: "logos:pnpm" },
       { name: "npm", icon: "logos:npm-icon" },
-      { name: "NetSuite", icon: "simple-icons:oracle", color: "#c34231" }
+      { name: "SuiteScript", icon: "simple-icons:oracle", color: "#c34231" }
     ]
   },
   {
