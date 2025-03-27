@@ -310,5 +310,42 @@ export const PROJECTS = [
     desc_li_en: null,
     tags: ["Nuxt", "Vue.js", "TypeScript", "HTML", "CSS", "TailwindCSS", "Cloudflare Pages", "Cloudflare D1"],
     repository: "https://github.com/ahmedrangel/vuetracker"
+  },
+  {
+    id: "netsuite-record-scripts",
+    type: "browser-extension",
+    name: "NetSuite Record Scripts",
+    url: "https://chromewebstore.google.com/detail/netsuite-record-scripts/lcaieahkjgeggeiihblhcjbbjlppgieh",
+    images: ["netsuite-record-scripts-extension.jpg"],
+    desc_es: "¡Vea instantáneamente todos los scripts desplegados en un registro de NetSuite con un solo clic! Con esta extensión, simplemente haga clic mientras está en un registro de NetSuite para ver rápidamente todos los scripts de Evento de Usuario, Cliente y Flujo de Trabajo asociados a él. Obtenga visibilidad instantánea en:",
+    desc_en: "Instantly view all scripts deployed on a NetSuite record with just one click! With this extension, simply click while on a NetSuite record to quickly see all User Event, Client, and Workflow scripts associated to it. Get instant visibility into:",
+    start_month: 3,
+    start_year: 2025,
+    end_month: 13,
+    end_year: null,
+    desc_li_es: [
+      "Una interfaz limpia y fácil de usar",
+      "Tipo de script (Evento de Usuario, Cliente, Flujo de Trabajo) con la cantidad de scripts para cada uno",
+      "Una barra de búsqueda para filtrar scripts fácilmente",
+      "Nombres de scripts clicables para un acceso rápido",
+      "Propietario clickeable",
+      "Abrir editor de scripts",
+      "Funciones utilizadas en cada script",
+      "Estado del script",
+      "Versión de la API de SuiteScript"
+    ],
+    desc_li_en: [
+      "A clean and user-friendly interface",
+      "Script type (User Event, Client, Workflow) with the number of scripts for each one",
+      "A search bar to filter scripts easily",
+      "Clickable script names for quick access",
+      "Clickable owner",
+      "Open script editor",
+      "Functions used in each script",
+      "Script status",
+      "SuiteScript API version"
+    ],
+    tags: ["JavaScript", "TypeScript", "HTML", "CSS", "WTX", "Vue.js", "TailwindCSS", "Browser Extension"],
+    repository: "https://github.com/ahmedrangel/netsuite-record-scripts"
   }
 ];

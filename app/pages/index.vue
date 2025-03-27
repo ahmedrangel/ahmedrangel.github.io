@@ -138,12 +138,14 @@ useHead({
               </div>
             </div>
             <div class="card-body">
-              <NuxtLink :to="projects.url || projects.repository" target="_blank" class="text-primary fw-bold d-inline-block" data-aos="fade-right">
-                <h5 class="m-0 fw-bold">
-                  <Icon v-if="projects.type" class="pb-1" :name="projectTypes.find(el => el.value === projects.type).icon" />
-                  {{ projects.name }}
-                </h5>
-              </NuxtLink>
+              <div class="d-flex align-items-center mb-2 gap-1" data-aos="fade-right">
+                <Icon v-if="projects.type" class="h5 m-0" :name="projectTypes.find(el => el.value === projects.type).icon" height="22" />
+                <NuxtLink :to="projects.url || projects.repository" target="_blank" class="text-primary fw-bold d-inline-block">
+                  <h5 class="m-0 fw-bold">
+                    {{ projects.name }}
+                  </h5>
+                </NuxtLink>
+              </div>
               <p class="m-0 small">{{ t("months")[projects.start_month - 1] }} {{ projects.start_year }} — {{ t("months")[projects.end_month - 1] }} {{ projects.end_year }}</p>
               <div class="my-2" data-aos="fade-left">
                 <!-- eslint-disable-next-line vue/no-v-html, vue/no-v-html -->

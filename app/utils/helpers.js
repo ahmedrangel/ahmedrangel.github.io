@@ -35,7 +35,8 @@ export const cookieMaxAge = { maxAge: 365 * 24 * 60 * 60 };
 export const projectTypes = [
   { value: "web", icon: "twemoji:globe-with-meridians" },
   { value: "node", icon: "logos:nodejs-icon" },
-  { value: "npm", icon: "logos:npm-icon" }
+  { value: "npm", icon: "logos:npm-icon" },
+  { value: "browser-extension", icon: "vscode-icons:file-type-wxt" }
 ];
 
 export const distanceToNowStrict = (date, options = {}) => {
