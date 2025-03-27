@@ -139,7 +139,9 @@ useHead({
             </div>
             <div class="card-body">
               <div class="d-flex align-items-center mb-2 gap-1" data-aos="fade-right">
-                <Icon v-if="projects.type" class="h5 m-0" :name="projectTypes.find(el => el.value === projects.type).icon" height="22" />
+                <span v-if="projects.type" :title="projectTypes.find(el => el.value === projects.type).title" class="d-flex">
+                  <Icon class="h5 m-0" :name="projectTypes.find(el => el.value === projects.type).icon" height="22" />
+                </span>
                 <NuxtLink :to="projects.url || projects.repository" target="_blank" class="text-primary fw-bold d-inline-block">
                   <h5 class="m-0 fw-bold">
                     {{ projects.name }}

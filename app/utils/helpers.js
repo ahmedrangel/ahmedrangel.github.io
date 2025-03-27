@@ -33,10 +33,10 @@ export const sortProjects = (projects) => {
 export const cookieMaxAge = { maxAge: 365 * 24 * 60 * 60 };
 
 export const projectTypes = [
-  { value: "web", icon: "twemoji:globe-with-meridians" },
-  { value: "node", icon: "logos:nodejs-icon" },
-  { value: "npm", icon: "logos:npm-icon" },
-  { value: "browser-extension", icon: "vscode-icons:file-type-wxt" }
+  { value: "web", icon: "twemoji:globe-with-meridians", title: "Website" },
+  { value: "node", icon: "logos:nodejs-icon", title: "Node.js" },
+  { value: "npm", icon: "logos:npm-icon", title: "NPM Package" },
+  { value: "browser-extension", icon: "vscode-icons:file-type-wxt", title: "Browser Extension" }
 ];
 
 export const distanceToNowStrict = (date, options = {}) => {
