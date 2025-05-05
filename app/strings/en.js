@@ -38,7 +38,7 @@ export default {
   operating_systems: "Operating Systems",
   projects: "Projects",
   repository: "Repository",
-  download_resume: "Download Resume",
+  resume: "Resume",
   tools: "Tools",
   cloud: "Cloud",
   apis: "APIs",

@@ -46,6 +46,11 @@ onMounted(() => {
           </NuxtLink>
         </li>
         <li class="nav-item">
+          <NuxtLink to="/#work-experience" @click="collapseNav()">
+            <span>{{ t("work_experience") }}</span>
+          </NuxtLink>
+        </li>
+        <li class="nav-item">
           <NuxtLink to="/#skills" @click="collapseNav()">
             <span>{{ t("skills") }}</span>
           </NuxtLink>
@@ -62,7 +67,7 @@ onMounted(() => {
         </li>
         <li class="nav-item">
           <NuxtLink :to="lang === 'es' ? INFO.resume.es : INFO.resume.en " target="_blank" @click="collapseNav()">
-            <span>{{ t("download_resume") }}</span>
+            <span>{{ t("resume") }}</span>
           </NuxtLink>
         </li>
         <li class="nav-item dropdown text-center">
