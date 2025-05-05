@@ -45,5 +45,6 @@ export default {
   server_administration: "Administración de Servidores",
   view: "Ver",
   open_source_contributions: "Contribuciones Open Source",
-  contributions: "Contribuciones"
+  contributions: "Contribuciones",
+  work_experience: "Experiencia Laboral"
 };
