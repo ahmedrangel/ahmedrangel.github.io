@@ -3,7 +3,7 @@ export const WORK_EXPERIENCE = [
     company: {
       name: "Toyota Panama (Ricardo Pérez S.A.)",
       url: "https://www.toyotarp.com/",
-      linkedin: "https://www.linkedin.com/company/grupo-corporativo-pérez/",
+      linkedin: "https://www.linkedin.com/company/grupo-corporativo-pérez/"
     },
     position: {
       en: "Junior Software Developer",
@@ -31,13 +31,13 @@ export const WORK_EXPERIENCE = [
         "Crear manuales técnicos para cada desarrollo, proporcionando una guía clara para la implementación y el mantenimiento futuro.",
         "Brindar soporte en los procesos de QA y asegurar la validación de los entregables."
       ]
-    },
+    }
   },
   {
     company: {
       name: "Panama Esports Productions",
       url: "https://pesp.gg/",
-      linkedin: "https://www.linkedin.com/company/pesp/",
+      linkedin: "https://www.linkedin.com/company/pesp/"
     },
     position: {
       en: "Full-Stack Developer and Administrator",
@@ -67,6 +67,6 @@ export const WORK_EXPERIENCE = [
         "Implementar formularios web para recopilar datos de los participantes de los torneos utilizando MySQL.",
         "Realizar cualquier otro trabajo de programación o diseño web para clientes que contactan a la empresa buscando un servicio personalizado."
       ]
-    },
+    }
   }
 ];
