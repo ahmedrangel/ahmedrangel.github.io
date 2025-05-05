@@ -103,7 +103,8 @@ export const SKILLS = [
       { name: "Steam", icon: "simple-icons:steam" },
       { name: "GitHub", icon: "simple-icons:github" },
       { name: "Cloudinary", icon: "logos:cloudinary-icon" },
-      { name: "Imgur", icon: "simple-icons:imgur", color: "#1bb76e" }
+      { name: "Imgur", icon: "simple-icons:imgur", color: "#1bb76e" },
+      { name: "Kick", icon: "simple-icons:kick", color: "#00e701" }
     ]
   }
 ];
