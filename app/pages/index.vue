@@ -124,8 +124,8 @@ useHead({
       <MasonryWall :items="projectsOrdered" :ssr-columns="1" :gap="16" :max-columns="2" :column-width="400" data-aos="fade-in">
         <template #default="{ item: projects }">
           <div :id="projects.id" class="card overflow-hidden bg-card shadow border-top border-start border-end">
-            <img v-if="projects?.images?.length === 1" :src="`/images/${projects.images[0]}`" class="card-img-top" alt="" data-aos="fade-in">
-            <div v-else class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <img v-if="projects?.images?.length === 1" :src="`/images/${projects.images[0]}`" class="card-img-top border-bottom border-1" alt="" data-aos="fade-in">
+            <div v-else class="carousel slide carousel-fade border-bottom border-1" data-bs-ride="carousel">
               <div class="carousel-indicators mb-2">
                 <div class="px-2 rounded-1 d-flex bg-indicator">
                   <button v-for="(image, i) of projects.images" :key="i" type="button" class="btn-indicator" :data-bs-target="`#${projects.id} .carousel`" :data-bs-slide-to="i" :class="{ active: !i }" aria-current="true" :aria-label="`${projects.title} ${i + 1}`" />
