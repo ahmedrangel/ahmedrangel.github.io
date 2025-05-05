@@ -18,15 +18,15 @@ useHead({
 <template>
   <main class="mt-5 container-lg">
     <CompAbout />
-    <hr class="my-5">
-    <CompWorkExperience />
-    <hr class="my-5">
-    <CompEducation />
-    <hr class="my-5">
-    <CompSkills />
-    <hr class="my-5">
-    <CompProjects />
-    <hr class="my-5">
-    <CompContributions />
+    <hr class="mt-5 mb-0">
+    <CompWorkExperience class="pt-5" />
+    <hr class="mt-5 mb-0">
+    <CompEducation class="pt-5" />
+    <hr class="mt-5 mb-0">
+    <CompSkills class="pt-5" />
+    <hr class="mt-5 mb-0">
+    <CompProjects class="pt-5" />
+    <hr class="mt-5 mb-0">
+    <CompContributions class="pt-5" />
   </main>
 </template>
