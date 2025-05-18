@@ -298,7 +298,7 @@ export const PROJECTS = [
     id: "vuetracker",
     type: "web",
     name: "VueTracker",
-    url: "https://vuetracker.nuxt.dev",
+    url: "https://vuetracker.pages.dev",
     images: ["vuetracker-website.jpg", "vuetracker-website-2.jpg", "vuetracker-website-3.jpg"],
     desc_es: "Descubre los plugins y tecnologías que potencian aplicaciones web hechas con Vue",
     desc_en: "Discover the plugins and technologies powering websites made with Vue.",
