@@ -72,7 +72,8 @@ export const SKILLS = [
     skills: [
       { name: "Windows", icon: "logos:microsoft-windows-icon" },
       { name: "Linux", icon: "logos:linux-tux" },
-      { name: "Ubuntu", icon: "logos:ubuntu" }
+      { name: "Ubuntu", icon: "logos:ubuntu" },
+      { name: "Debian", icon: "logos:debian" }
     ]
   },
   {
