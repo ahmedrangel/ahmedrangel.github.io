@@ -1,8 +1,7 @@
 import { INFO } from "../app/utils/info.js";
 
 export default defineNuxtConfig({
-  future: { compatibilityVersion: 4 },
-  compatibilityDate: "2024-11-19",
+  compatibilityDate: "2025-07-21",
   css: [
     "bootstrap/dist/css/bootstrap.min.css",
     "~/assets/css/ahmedrangel.css"
@@ -47,6 +46,10 @@ export default defineNuxtConfig({
     }
   },
   sitemap: {
+    urls: [
+      { loc: "/", priority: 1, lastmod: new Date().toISOString() }
+    ],
+    defaults: { priority: 0.8, lastmod: new Date().toISOString() },
     xslColumns: [
       { label: "URL", width: "65%" },
       { label: "Priority", select: "sitemap:priority", width: "12.5%" },
@@ -54,8 +57,6 @@ export default defineNuxtConfig({
     ]
   },
   routeRules: {
-    "/": { sitemap: { priority: 1 } },
-    "/*/**": { sitemap: { priority: 0.8, lastmod: new Date().toISOString() } },
     "/api/_nuxt_icon/**": { cache: { maxAge: 1.577e+7 } }
   },
   fonts: {
