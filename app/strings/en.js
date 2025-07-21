@@ -41,7 +41,7 @@ export default {
   resume: "Resume",
   tools: "Tools",
   cloud: "Cloud",
-  apis: "APIs",
+  api_integration: "API Integration",
   server_administration: "Server Administration",
   view: "View",
   open_source_contributions: "Open Source Contributions",

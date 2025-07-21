@@ -41,7 +41,7 @@ export default {
   resume: "CV",
   tools: "Herramientas",
   cloud: "Cloud",
-  apis: "APIs",
+  api_integration: "Integración de API",
   server_administration: "Administración de Servidores",
   view: "Ver",
   open_source_contributions: "Contribuciones Open Source",

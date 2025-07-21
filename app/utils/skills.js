@@ -35,17 +35,11 @@ export const SKILLS = [
     ]
   },
   {
-    skill_id: "serverless",
-    skills: [
-      { name: "Cloudflare Workers/Pages", icon: "logos:cloudflare-workers-icon" },
-      { name: "Vercel", icon: "logos:vercel-icon" }
-    ]
-  },
-  {
     skill_id: "tools",
     skills: [
       { name: "GitHub", icon: "simple-icons:github" },
       { name: "VSCode", icon: "logos:visual-studio-code" },
+      { name: "Vite", icon: "logos:vitejs" },
       { name: "Git", icon: "logos:git-icon" },
       { name: "JSON", icon: "logos:json" },
       { name: "GraphQL", icon: "logos:graphql" },
@@ -62,9 +56,12 @@ export const SKILLS = [
     skill_id: "cloud",
     skills: [
       { name: "Cloudflare", icon: "logos:cloudflare-icon" },
+      { name: "Vercel", icon: "logos:vercel-icon" },
+      { name: "Netlify", icon: "logos:netlify-icon" },
       { name: "DigitalOcean", icon: "logos:digital-ocean-icon" },
       { name: "AWS", icon: "skill-icons:aws-dark" },
-      { name: "Replit", icon: "logos:replit-icon" }
+      { name: "Replit", icon: "logos:replit-icon" },
+      { name: "Netsuite", icon: "simple-icons:oracle", color: "#36677d" },
     ]
   },
   {
@@ -87,11 +84,12 @@ export const SKILLS = [
       { name: "SSH/SFTP", icon: "ic:baseline-folder" },
       { name: "Redirects", icon: "ic:baseline-next-plan" },
       { name: "WebSockets", icon: "ic:baseline-web-asset" },
-      { name: "Webhooks", icon: "ic:round-webhook" }
+      { name: "Webhooks", icon: "ic:round-webhook" },
+      { name: "OAuth", icon: "ic:round-lock-person" },
     ]
   },
   {
-    skill_id: "apis",
+    skill_id: "api_integration",
     skills: [
       { name: "Cloudflare", icon: "logos:cloudflare-icon" },
       { name: "Twitch", icon: "simple-icons:twitch", color: "#a970ff" },
@@ -105,7 +103,8 @@ export const SKILLS = [
       { name: "GitHub", icon: "simple-icons:github" },
       { name: "Cloudinary", icon: "logos:cloudinary-icon" },
       { name: "Imgur", icon: "simple-icons:imgur", color: "#1bb76e" },
-      { name: "Kick", icon: "simple-icons:kick", color: "#00e701" }
+      { name: "Kick", icon: "simple-icons:kick", color: "#00e701" },
+      { name: "Salesforce", icon: "logos:salesforce" }
     ]
   }
 ];
