@@ -22,10 +22,7 @@ export default defineNuxtConfig({
   modules: ["@nuxt/fonts", "@nuxt/icon", "nuxt-aos", "@nuxt/eslint", "@nuxtjs/sitemap", "@nuxtjs/color-mode"],
   icon: {
     mode: "svg",
-    clientBundle: {
-      scan: true,
-      sizeLimitKb: 2048
-    }
+    serverBundle: "local"
   },
   features: {
     inlineStyles: false
