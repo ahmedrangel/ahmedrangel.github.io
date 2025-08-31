@@ -61,7 +61,7 @@ export const SKILLS = [
       { name: "DigitalOcean", icon: "logos:digital-ocean-icon" },
       { name: "AWS", icon: "skill-icons:aws-dark" },
       { name: "Replit", icon: "logos:replit-icon" },
-      { name: "Netsuite", icon: "simple-icons:oracle", color: "#36677d" },
+      { name: "Netsuite", icon: "simple-icons:oracle", color: "#36677d" }
     ]
   },
   {
@@ -85,7 +85,7 @@ export const SKILLS = [
       { name: "Redirects", icon: "ic:baseline-next-plan" },
       { name: "WebSockets", icon: "ic:baseline-web-asset" },
       { name: "Webhooks", icon: "ic:round-webhook" },
-      { name: "OAuth", icon: "ic:round-lock-person" },
+      { name: "OAuth", icon: "ic:round-lock-person" }
     ]
   },
   {
