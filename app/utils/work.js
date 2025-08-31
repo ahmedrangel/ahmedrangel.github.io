@@ -23,13 +23,15 @@ export const WORK_EXPERIENCE = [
         "Develop scripts and customizations in NetSuite using SuiteScript to achieve project goals, creating solutions that align with the company or each customer's needs.",
         "Work directly with customers to understand their needs and translate requirements into effective technical solutions.",
         "Create technical manuals for each development, providing clear implementation and future maintenance guidance.",
-        "Provide support in QA processes and ensure the validation of deliverables."
+        "Provide support in QA processes and ensure the validation of deliverables.",
+        "Maintain and monitor deployed projects to guarantee proper operation."
       ],
       es: [
         "Desarrollar scripts y personalizaciones en NetSuite utilizando SuiteScript para lograr los objetivos del proyecto, creando soluciones que se alineen con la empresa o las necesidades de cada cliente.",
         "Trabajar directamente con los clientes para comprender sus necesidades y traducir los requisitos en soluciones técnicas efectivas.",
         "Crear manuales técnicos para cada desarrollo, proporcionando una guía clara para la implementación y el mantenimiento futuro.",
-        "Brindar soporte en los procesos de QA y asegurar la validación de los entregables."
+        "Brindar soporte en los procesos de QA y asegurar la validación de los entregables.",
+        "Mantener y monitorear los proyectos implementados para garantizar un funcionamiento adecuado."
       ]
     }
   },
