@@ -76,6 +76,7 @@ export const SKILLS = [
   {
     skill_id: "server_administration",
     skills: [
+      { name: "API", icon: "ic:baseline-settings" }
       { name: "Domain DNS", icon: "ic:round-dns" },
       { name: "Domain SSL", icon: "ic:round-https" },
       { name: "CDN", icon: "ic:baseline-cloud-done" },
