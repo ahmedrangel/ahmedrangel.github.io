@@ -6,7 +6,8 @@ export const SKILLS = [
       { name: "HTML5", icon: "vscode-icons:file-type-html" },
       { name: "CSS", icon: "vscode-icons:file-type-css" },
       { name: "Bootstrap", icon: "logos:bootstrap" },
-      { name: "TailwindCSS", icon: "logos:tailwindcss-icon" }
+      { name: "TailwindCSS", icon: "logos:tailwindcss-icon" },
+      { name: "Vuetify", icon: "logos:vuetifyjs" }
     ]
   },
   {
