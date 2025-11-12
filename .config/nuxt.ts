@@ -15,7 +15,8 @@ export default defineNuxtConfig({
       meta: [
         { name: "robots", content: "index, follow" },
         { name: "darkreader-lock", content: "darkreader" },
-        { property: "og:site_name", content: INFO.name }
+        { property: "og:site_name", content: INFO.name },
+        { name: "google-adsense-account", content: "ca-pub-3695904637857845" }
       ]
     }
   },
