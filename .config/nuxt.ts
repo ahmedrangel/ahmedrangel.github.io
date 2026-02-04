@@ -1,11 +1,8 @@
 import { INFO } from "../app/utils/info.js";
 
 export default defineNuxtConfig({
-  compatibilityDate: "2025-07-21",
-  css: [
-    "bootstrap/dist/css/bootstrap.min.css",
-    "~/assets/css/ahmedrangel.css"
-  ],
+
+  modules: ["@nuxt/fonts", "@nuxt/icon", "nuxt-aos", "@nuxt/eslint", "@nuxtjs/sitemap", "@nuxtjs/color-mode"],
   app: {
     rootId: "app",
     head: {
@@ -15,33 +12,55 @@ export default defineNuxtConfig({
       meta: [
         { name: "robots", content: "index, follow" },
         { name: "darkreader-lock", content: "darkreader" },
-        { property: "og:site_name", content: INFO.name },
-        { name: "google-adsense-account", content: "ca-pub-3695904637857845" }
+        { property: "og:site_name", content: INFO.name }
       ]
     }
   },
-  modules: ["@nuxt/fonts", "@nuxt/icon", "nuxt-aos", "@nuxt/eslint", "@nuxtjs/sitemap", "@nuxtjs/color-mode"],
-  icon: {
-    mode: "svg",
-    serverBundle: "local"
+  css: [
+    "bootstrap/dist/css/bootstrap.min.css",
+    "~/assets/css/ahmedrangel.css"
+  ],
+  site: {
+    url: INFO.url
+  },
+  colorMode: {
+    preference: "dark",
+    fallback: "dark",
+    dataValue: "bs-theme",
+    storageKey: "nuxt-color-mode"
+  },
+  routeRules: {
+    "/api/_nuxt_icon/**": { cache: { maxAge: 1.577e+7 } }
   },
   features: {
     inlineStyles: false
   },
-  site: {
-    url: INFO.url
-  },
+  compatibilityDate: "2026-02-03",
   nitro: {
     prerender: {
       routes: ["/sitemap.xml"]
-    },
-    cloudflare: {
-      pages: {
-        routes: {
-          exclude: ["/images/*"]
-        }
-      }
     }
+  },
+  aos: {
+    easing: "ease-in-sine"
+  },
+  eslint: {
+    config: {
+      autoInit: false,
+      stylistic: true
+    }
+  },
+  fonts: {
+    defaults: {
+      weights: [300, 400, 500, 700]
+    },
+    families: [
+      { name: "Zen Kaku Gothic New", provider: "google" }
+    ]
+  },
+  icon: {
+    mode: "svg",
+    serverBundle: "local"
   },
   sitemap: {
     urls: [
@@ -53,31 +72,5 @@ export default defineNuxtConfig({
       { label: "Priority", select: "sitemap:priority", width: "12.5%" },
       { label: "Last Modified", select: "sitemap:lastmod", width: "35%" }
     ]
-  },
-  routeRules: {
-    "/api/_nuxt_icon/**": { cache: { maxAge: 1.577e+7 } }
-  },
-  fonts: {
-    defaults: {
-      weights: [300, 400, 500, 700]
-    },
-    families: [
-      { name: "Zen Kaku Gothic New", provider: "google" }
-    ]
-  },
-  aos: {
-    easing: "ease-in-sine"
-  },
-  eslint: {
-    config: {
-      autoInit: false,
-      stylistic: true
-    }
-  },
-  colorMode: {
-    preference: "dark",
-    fallback: "dark",
-    dataValue: "bs-theme",
-    storageKey: "nuxt-color-mode"
   }
 });
