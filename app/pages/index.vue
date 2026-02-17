@@ -27,6 +27,6 @@ useHead({
     <hr class="mt-5 mb-0">
     <CompProjects class="pt-5" />
     <hr class="mt-5 mb-0">
-    <CompContributions class="pt-5" />
+    <CompContributions class="py-5" />
   </main>
 </template>

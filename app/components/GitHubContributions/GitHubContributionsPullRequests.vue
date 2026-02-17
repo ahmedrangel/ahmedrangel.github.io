@@ -15,7 +15,7 @@ function mapIcons (state: PullRequest["state"]) {
 </script>
 
 <template>
-  <GitHubContributionsContainer class="pt-4" :data="data">
+  <GitHubContributionsContainer :data="data">
     <Icon
       :name="mapIcons(data.state)"
       :class="{

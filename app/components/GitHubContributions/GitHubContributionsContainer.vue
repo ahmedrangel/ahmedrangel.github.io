@@ -17,7 +17,7 @@ const formatStars = (stars: number) => {
 </script>
 
 <template>
-  <div class="d-flex align-items-center gap-2">
+  <div class="d-flex align-items-center gap-3">
     <NuxtLink
       :to="`https://github.com/${data.repo}`"
       target="_blank"
@@ -27,13 +27,13 @@ const formatStars = (stars: number) => {
       <img :src="`https://github.com/${data.repo.split('/')[0]}.png`" :alt="data.repo" style="max-width: 42px;">
     </NuxtLink>
     <div class="d-flex justify-content-between gap-2 gap-lg-3" style="min-width: 0%; flex: 1 1 0;">
-      <div class="d-flex flex-column gap-1 text-truncate">
+      <div class="d-flex flex-column gap-2 text-truncate">
         <NuxtLink :to="data.url" target="_blank" class="d-flex align-items-center gap-1 h6 m-0">
           <slot />
           <span class="text-truncate">{{ data.title }}</span>
         </NuxtLink>
 
-        <div class="d-flex gap-2 align-items-end">
+        <div class="d-flex gap-3 align-items-end">
           <NuxtLink :to="`https://github.com/${data.repo}`" target="_blank" class="d-inline-flex gap-1 text-decoration-none h6 m-0 fw-normal">
             <span class="opacity-75">{{ data.repo?.split('/')[0] }}</span>
             <span class="opacity-50">/</span>
