@@ -9,7 +9,7 @@ export const ageCalc = (date) => {
 };
 
 export const sortProjects = (projects) => {
-  const presentProjects = projects.filter(project => project.end_month === 13).sort((a, b) => {
+  const presentProjects = projects.filter(project => project.end_month === null).sort((a, b) => {
     if (a.start_year === b.start_year) {
       return b.start_month - a.start_month;
     }
@@ -17,7 +17,7 @@ export const sortProjects = (projects) => {
       return b.start_year - a.start_year;
     }
   });
-  const oldProjects = projects.filter(project => project.end_month !== 13).sort((a, b) => {
+  const oldProjects = projects.filter(project => project.end_month !== null).sort((a, b) => {
     if (a.end_year === b.end_year) {
       return b.end_month - a.end_month;
     }
@@ -58,4 +58,8 @@ export const distanceToNowStrict = (date, options = {}) => {
     })();
   }
   return formatDistanceToNowStrict(date, options);
+};
+
+export const getMonth = (monthNumber) => {
+  return t("months")[(monthNumber || 13) - 1];
 };

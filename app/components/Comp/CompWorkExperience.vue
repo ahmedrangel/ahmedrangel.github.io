@@ -19,10 +19,9 @@ const lang = useState("lang");
           </NuxtLink>
         </div>
         <p class="m-0">{{ work.location[lang] }}</p>
-        <p class="m-0 text-muted">{{ t("months")[work.start_month - 1] }} {{ work.start_year }} — {{ !work.active ? `${t("months")[work.end_month - 1]} ${work.end_year}` : t("months")[12] }}</p>
+        <p class="m-0 text-muted">{{ getMonth(work.start_month) }} {{ work.start_year }} — {{ getMonth(work.end_month) }} {{ work.end_year }}</p>
         <ul class="m-0">
           <li v-for="(desc, index2) of work.description[lang]" :key="index2" class="m-0">
-            <!-- eslint-disable-next-line vue/no-v-html, vue/no-v-html -->
             <span v-html="desc" />
           </li>
         </ul>

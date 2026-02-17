@@ -13,7 +13,7 @@ const lang = useState("lang");
           <span class="text-primary fw-bold">{{ lang === 'en' ? education.institution_en : education.institution_es }}</span>
         </div>
         <p class="m-0">{{ lang == 'en' ? education.location_en : education.location_es }}</p>
-        <p class="m-0">{{ t("months")[education.start_month - 1] }} {{ education.start_year }} — {{ t("months")[education.end_month - 1] }} {{ education.end_year }}</p>
+        <p class="m-0">{{ getMonth(education.start_month) }} {{ education.start_year }} — {{ getMonth(education.end_month) }} {{ education.end_year }}</p>
       </div>
     </div>
     <!-- Languages -->

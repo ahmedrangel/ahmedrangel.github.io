@@ -36,13 +36,11 @@ const lang = useState("lang");
                 </h5>
               </NuxtLink>
             </div>
-            <p class="m-0 small">{{ t("months")[projects.start_month - 1] }} {{ projects.start_year }} — {{ t("months")[projects.end_month - 1] }} {{ projects.end_year }}</p>
+            <p class="m-0 small">{{ getMonth(projects.start_month) }} {{ projects.start_year }} — {{ getMonth(projects.end_month) }} {{ projects.end_year }}</p>
             <div class="my-2" data-aos="fade-left">
-              <!-- eslint-disable-next-line vue/no-v-html, vue/no-v-html -->
               <p v-html="lang === 'en' ? projects.desc_en : projects.desc_es" />
               <ul v-if="projects?.desc_li_en?.length || projects?.desc_li_es?.length">
                 <li v-for="(li, index2) of lang === 'en' ? projects.desc_li_en : projects.desc_li_es" :key="index2">
-                  <!-- eslint-disable-next-line vue/no-v-html, vue/no-v-html -->
                   <span v-html="li" />
                 </li>
               </ul>

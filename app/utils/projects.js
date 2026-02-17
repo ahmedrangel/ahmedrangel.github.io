@@ -34,11 +34,11 @@ export const PROJECTS = [
     images: ["anime-website.jpg", "anime-website-2.jpg", "anime-website-3.jpg", "anime-website-4.jpg"],
     start_month: 2,
     start_year: 2024,
-    end_month: 13,
+    end_month: null,
     end_year: null,
     desc_li_es: null,
     desc_li_en: null,
-    tags: ["Nuxt", "Vue.js", "JavaScript", "TypeScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages", "GraphQL", "AniList API"],
+    tags: ["Nuxt", "Vue.js", "JavaScript", "TypeScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Workers", "GraphQL", "AniList API"],
     repository: "https://github.com/ahmedrangel/animed"
   },
   {
@@ -90,14 +90,14 @@ export const PROJECTS = [
     url: "https://kickclips.ahmedrangel.com",
     desc_es: "Herramienta en línea gratuita para descargar clips MP4 de kick.com.",
     desc_en: "Free online tool for downloading MP4 clips from kick.com.",
-    images: ["kickclips-website.jpg"],
+    images: ["kickclips-website.png", "kickclips-website-2.png"],
     start_month: 6,
     start_year: 2023,
-    end_month: 13,
+    end_month: null,
     end_year: null,
     desc_li_es: null,
     desc_li_en: null,
-    tags: ["Nuxt", "Vue.js", "JavaScript", "TypeScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages"],
+    tags: ["Nuxt", "Vue.js", "JavaScript", "TypeScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Workers"],
     repository: "https://github.com/ahmedrangel/kickclips"
   },
   {
@@ -140,23 +140,23 @@ export const PROJECTS = [
     images: ["pespgg-website.jpg"],
     start_month: 9,
     start_year: 2021,
-    end_month: 13,
+    end_month: null,
     end_year: null,
     desc_li_es: [
-      "El proyecto se desarrolló inicialmente utilizando PHP alojado en AWS EC2 y luego migró a Nuxt alojado en Cloudflare Pages.",
-      "Desarrolló un proyecto de sitio web de deportes electrónicos utilizando Nuxt alojado en Cloudflare Pages.",
+      "El proyecto se desarrolló inicialmente utilizando PHP alojado en AWS EC2 y luego migró a Nuxt alojado en Cloudflare Workers.",
+      "Desarrolló un proyecto de sitio web de deportes electrónicos utilizando Nuxt alojado en Cloudflare Workers.",
       "Implementó un panel para administrar las publicaciones del sitio web y ver estadísticas.",
       "Diseñó una Base de Datos para las publicaciones del sitio web usando SQLite en desarrollo y Cloudflare D1 en producción usando Drizzle-ORM para consultas SQL.",
       "Implementó un sistema de almacenamiento de contenido html de imágenes y publicaciones usando Cloudflare R2."
     ],
     desc_li_en: [
-      "The project was initially developed using PHP hosted on AWS EC2, then migrated to Nuxt hosted on Cloudflare Pages.",
-      "Developed an Esports website project using Nuxt hosted on Cloudflare Pages.",
+      "The project was initially developed using PHP hosted on AWS EC2, then migrated to Nuxt hosted on Cloudflare Workers.",
+      "Developed an Esports website project using Nuxt hosted on Cloudflare Workers.",
       "Implemented an admin dashboard to manage the website's posts and see statistics.",
       "Designed a Database for the website's posts using SQLite in development and Cloudflare D1 in production using Drizzle-ORM for SQL queries.",
       "Implemented an images and posts html content storage system using Cloudflare R2."
     ],
-    tags: ["Cloudflare D1", "Cloudflare R2", "Nuxt", "Vue.js", "JavaScript", "TypeScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages"],
+    tags: ["Cloudflare D1", "Cloudflare R2", "Nuxt", "Vue.js", "JavaScript", "TypeScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Workers"],
     repository: "https://github.com/yizack/pesp.gg"
   },
   {
@@ -169,7 +169,7 @@ export const PROJECTS = [
     images: ["bayza-website.jpg"],
     start_month: 1,
     start_year: 2020,
-    end_month: 13,
+    end_month: null,
     end_year: null,
     desc_li_es: [
       "Diseñó un sitio web enfocado a exhibir la colección completa de canciones del artista,su biografía, videos, detalles e hipervínculos relevantes.",
@@ -207,31 +207,6 @@ export const PROJECTS = [
     tags: ["Nuxt", "Vue.js", "JavaScript", "TypeScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages", "Cloudflare D1"]
   },
   {
-    id: "streamers-queue",
-    type: "web",
-    name: "Streamers Queue",
-    url: "https://streamersqueue.ahmedrangel.com",
-    desc_es: "Sitio web que recopila datos de partidas clasificatorias de League of Legends utilizando cuentas de streamers para mostrar distintas estadísticas y tablas de calsificación.",
-    desc_en: "Website that collects data from League of Legends ranked matches using streamer accounts to display different statistics and ranking tables.",
-    images: ["streamersqueue-website.jpg", "streamersqueue-website-2.jpg", "streamersqueue-website-3.jpg"],
-    start_month: 4,
-    start_year: 2024,
-    end_month: 13,
-    end_year: null,
-    desc_li_es: [
-      "Desarrolló distintas tablas de estadísticas y de clasificación tomando en cuenta la región de pertenencia agregando una lista de streamers con sus respectivas cuentas de juego y redes sociales. Usando Nuxt alojado en Cloudflare Pages.",
-      "Diseñó una base de datos que guarda información sobre Twitch y League of Legends de cada streamer para ser mostradas directamente de manera visual en el sitio web.",
-      "Implementó algunos cron triggers que actualizan periódicamente la información correspondiente a cada streamer para mantener actualizado el sitio web. Usando Cloudflare Workers junto con las API de Riot Games y Twitch."
-    ],
-    desc_li_en: [
-      "Developed different statistics and ranking tables taking into account the region of belonging, adding a list of streamers with their respective game accounts and social media. Using Nuxt hosted on Cloudflare Pages.",
-      "Designed a database that stores information about Twitch and League of Legends of each streamer account to be displayed directly on the website.",
-      "Implemented some cron triggers that update periodically the information corresponding to each streamer and region to keep the website updated. Using Cloudflare Workers along with Riot Games API and Twitch API."
-    ],
-    tags: ["Nuxt", "Vue.js", "JavaScript", "TypeScript", "Node.js", "HTML", "CSS", "Bootstrap 5", "Cloudflare Pages", "Cloudflare Workers", "Cloudflare D1", "Cron Triggers", "Riot Games API", "Twitch API"],
-    repository: "https://github.com/ahmedrangel/streamersqueue"
-  },
-  {
     id: "snapsasve-media-downloader",
     type: "npm",
     name: "snapsasve-media-downloader",
@@ -240,7 +215,7 @@ export const PROJECTS = [
     desc_en: "Download Instagram, Facebook and TikTok media using snapsave.app downloader",
     start_month: 4,
     start_year: 2024,
-    end_month: 13,
+    end_month: null,
     end_year: null,
     desc_li_es: null,
     desc_li_en: null,
@@ -256,7 +231,7 @@ export const PROJECTS = [
     desc_en: "This is an optimized fork of <a href='https://github.com/atulmy/gql-query-builder' target='_blank'>gql-query-builder</a> with extra features for generating GraphQL payloads using plain JavaScript Objects (JSON).",
     start_month: 8,
     start_year: 2024,
-    end_month: 13,
+    end_month: null,
     end_year: null,
     desc_li_es: null,
     desc_li_en: null,
@@ -271,7 +246,7 @@ export const PROJECTS = [
     desc_en: "A Tetris bot capable of automatically playing custom multiplayer matches in TETR.IO. It uses a modified version of ElTetris to analyze the current board for optimal moves and the @haelp/teto library to interact with main game API.",
     start_month: 9,
     start_year: 2024,
-    end_month: 13,
+    end_month: null,
     end_year: null,
     desc_li_es: null,
     desc_li_en: null,
@@ -287,7 +262,7 @@ export const PROJECTS = [
     desc_en: "Add simple ripple animation effects to your elements.",
     start_month: 11,
     start_year: 2024,
-    end_month: 13,
+    end_month: null,
     end_year: null,
     desc_li_es: null,
     desc_li_en: null,
@@ -296,20 +271,20 @@ export const PROJECTS = [
   },
   {
     id: "vuetracker",
-    type: "web",
+    type: "browser-extension",
     name: "VueTracker",
-    url: "https://vuetracker.pages.dev",
-    images: ["vuetracker-website.jpg", "vuetracker-website-2.jpg", "vuetracker-website-3.jpg"],
+    url: "https://chromewebstore.google.com/detail/vuetracker/gmocfknjllodfiomnljmaehcplnekhlo",
+    images: ["vuetracker-extension.png", "vuetracker-extension-2.png", "vuetracker-extension-3.png"],
     desc_es: "Descubre los plugins y tecnologías que potencian aplicaciones web hechas con Vue",
     desc_en: "Discover the plugins and technologies powering websites made with Vue.",
-    start_month: 12,
-    start_year: 2024,
-    end_month: 13,
+    start_month: 4,
+    start_year: 2025,
+    end_month: null,
     end_year: null,
     desc_li_es: null,
     desc_li_en: null,
-    tags: ["Nuxt", "Vue.js", "TypeScript", "HTML", "CSS", "TailwindCSS", "Cloudflare Pages", "Cloudflare D1"],
-    repository: "https://github.com/ahmedrangel/vuetracker"
+    tags: ["JavaScript", "TypeScript", "HTML", "CSS", "WTX", "Vue.js", "TailwindCSS", "Browser Extension"],
+    repository: "https://github.com/ahmedrangel/vuetracker-extension"
   },
   {
     id: "netsuite-record-scripts",
@@ -321,7 +296,7 @@ export const PROJECTS = [
     desc_en: "Instantly view all scripts deployed on a NetSuite record with just one click! With this extension, simply click while on a NetSuite record to quickly see all User Event, Client, and Workflow scripts associated to it. Get instant visibility into:",
     start_month: 3,
     start_year: 2025,
-    end_month: 13,
+    end_month: null,
     end_year: null,
     desc_li_es: [
       "Una interfaz limpia y fácil de usar",
@@ -347,5 +322,32 @@ export const PROJECTS = [
     ],
     tags: ["JavaScript", "TypeScript", "HTML", "CSS", "WTX", "Vue.js", "TailwindCSS", "Browser Extension"],
     repository: "https://github.com/ahmedrangel/netsuite-record-scripts"
+  },
+  {
+    id: "comunidad-jimtracker",
+    type: "web",
+    name: "Comunidad JimTracker",
+    url: "https://comunidad.jimtracker.com",
+    images: ["comunidad-jimtracker.png", "comunidad-jimtracker-2.png", "comunidad-jimtracker-3.png", "comunidad-jimtracker-4.png"],
+    desc_es: "Tabla de clasificación multirregional de League of Legends para la comunidad de Twitch de JimRsng, con tecnologías full-stack serverless.",
+    desc_en: "A full-stack serverless League of Legends multi-regional leaderboard tracker for JimRsng's Twitch community.",
+    start_month: 1,
+    start_year: 2026,
+    end_month: null,
+    end_year: null,
+    desc_li_es: [
+      "Implementó un sistema de inicio de sesión utilizando Twitch OAuth App",
+      "Integró la API de Riot Games para obtener y mostrar estadísticas de jugadores en múltiples regiones",
+      "Utilizó Riot Games OAuth para vincular cuentas de jugadores",
+      "Configuró tareas programadas usando Cloudflare Workers Cron Triggers para actualizar periódicamente los datos de jugadores y usuarios"
+    ],
+    desc_li_en: [
+      "Implemented a login system using Twitch OAuth App",
+      "Integrated Riot Games API to fetch and display player statistics across multiple regions",
+      "Utilized Riot Games OAuth to link player accounts",
+      "Configured scheduled tasks using Cloudflare Workers Cron Triggers to update player and users data periodically"
+    ],
+    tags: ["Nuxt", "Vue.js", "JavaScript", "TypeScript", "HTML", "CSS", "Cloudflare Workers", "Cloudflare D1", "Cron Triggers", "OAuth", "Riot Games API", "Twitch API"],
+    repository: "https://github.com/ahmedrangel/comunidad-jimtracker"
   }
 ];
