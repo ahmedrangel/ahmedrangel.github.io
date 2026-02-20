@@ -5,7 +5,7 @@
       <div class="col-12 col-md-3 pb-3">
         <div class="ps-0 pe-3">
           <div class="position-relative" data-aos="fade-in" data-aos-duration="900">
-            <img class="img-fluid w-100" src="/images/ar-profile.jpg">
+            <img class="img-fluid w-100" src="https://avatars.githubusercontent.com/u/50090595?v=4">
             <div class="profile-image position-absolute w-100 h-100 border" />
           </div>
         </div>

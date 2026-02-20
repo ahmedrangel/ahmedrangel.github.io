@@ -13,6 +13,9 @@ export default defineNuxtConfig({
         { name: "robots", content: "index, follow" },
         { name: "darkreader-lock", content: "darkreader" },
         { property: "og:site_name", content: INFO.name }
+      ],
+      link: [
+        { rel: "preconnect", href: "https://avatars.githubusercontent.com" }
       ]
     }
   },
