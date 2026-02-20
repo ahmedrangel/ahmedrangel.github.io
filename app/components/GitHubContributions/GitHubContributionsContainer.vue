@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import { enUS, es } from "date-fns/locale";
+import { useTimeAgoIntl } from "@vueuse/core";
 
-const lang = useState("lang");
-const locale = computed(() => (lang.value === "es" ? es : enUS));
+const lang = useState<string>("lang");
 
 defineProps<{
   data: Contributions["issues" | "prs"][number];
@@ -57,7 +56,7 @@ const formatStars = (stars: number) => {
           #{{ data.number }}
         </NuxtLink>
 
-        <time :datatime="data.created_at" class="small text-muted text-nowrap">{{ distanceToNowStrict(new Date(data.created_at), { locale, addSuffix: true }) }}</time>
+        <time :datatime="data.created_at" class="small text-muted text-nowrap">{{ useTimeAgoIntl(data.created_at, { locale: lang, relativeTimeFormatOptions: { style: "long" } }) }}</time>
       </div>
     </div>
   </div>
