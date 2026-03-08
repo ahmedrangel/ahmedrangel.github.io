@@ -348,6 +348,6 @@ export const PROJECTS = [
       "Configured scheduled tasks using Cloudflare Workers Cron Triggers to update player and users data periodically"
     ],
     tags: ["Nuxt", "Vue.js", "JavaScript", "TypeScript", "HTML", "CSS", "Cloudflare Workers", "Cloudflare D1", "Cron Triggers", "OAuth", "Riot Games API", "Twitch API"],
-    repository: "https://github.com/ahmedrangel/comunidad-jimtracker"
+    repository: "https://github.com/JimRsng/comunidad"
   }
 ];
