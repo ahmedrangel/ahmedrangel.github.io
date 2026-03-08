@@ -1,4 +1,6 @@
 <script setup>
+import { MasonryWall } from "@yeger/vue-masonry-wall";
+
 const projectsOrdered = computed(() => {
   return sortProjects(PROJECTS);
 });
