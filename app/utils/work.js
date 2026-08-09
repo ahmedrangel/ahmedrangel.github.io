@@ -20,18 +20,16 @@ export const WORK_EXPERIENCE = [
     },
     description: {
       en: [
-        "Develop scripts and customizations in NetSuite using SuiteScript to achieve project goals, creating solutions that align with the company or each customer's needs.",
-        "Work directly with customers to understand their needs and translate requirements into effective technical solutions.",
-        "Create technical manuals for each development, providing clear implementation and future maintenance guidance.",
-        "Provide support in QA processes and ensure the validation of deliverables.",
-        "Maintain and monitor deployed projects to guarantee proper operation."
+        "Develop and customize solutions across NetSuite and Salesforce to address business requirements and customer needs.",
+        "Work within a Scrum-based Agile environment, collaborating with Product Owners and QA throughout the software development lifecycle.",
+        "Create technical documentation and manuals for each development, providing clear guidance for implementation, maintenance, and future enhancements.",
+        "Monitor and maintain deployed solutions to ensure system stability, reliability, and proper operation in production environments."
       ],
       es: [
-        "Desarrollar scripts y personalizaciones en NetSuite utilizando SuiteScript para lograr los objetivos del proyecto, creando soluciones que se alineen con la empresa o las necesidades de cada cliente.",
-        "Trabajar directamente con los clientes para comprender sus necesidades y traducir los requisitos en soluciones técnicas efectivas.",
-        "Crear manuales técnicos para cada desarrollo, proporcionando una guía clara para la implementación y el mantenimiento futuro.",
-        "Brindar soporte en los procesos de QA y asegurar la validación de los entregables.",
-        "Mantener y monitorear los proyectos implementados para garantizar un funcionamiento adecuado."
+        "Desarrollar y personalizar soluciones en NetSuite y Salesforce para abordar los requisitos comerciales y las necesidades de los clientes.",
+        "Trabajar dentro de un entorno ágil basado en Scrum, colaborando con Product Owners y QA a lo largo del ciclo de vida del desarrollo de software.",
+        "Crear documentación técnica y manuales para cada desarrollo, proporcionando una guía clara para la implementación, el mantenimiento y las mejoras futuras.",
+        "Monitorear y mantener las soluciones implementadas para garantizar la estabilidad, confiabilidad y correcto funcionamiento del sistema en entornos de producción."
       ]
     }
   },
