@@ -38,7 +38,7 @@ export default defineNuxtConfig({
   features: {
     inlineStyles: false
   },
-  compatibilityDate: "2026-02-03",
+  compatibilityDate: "2026-09-05",
   nitro: {
     prerender: {
       routes: ["/sitemap.xml"]

@@ -39,6 +39,7 @@ export const SKILLS = [
     skill_id: "tools",
     skills: [
       { name: "GitHub", icon: "simple-icons:github" },
+      { name: "Bitbucket", icon: "logos:bitbucket" },
       { name: "VSCode", icon: "logos:visual-studio-code" },
       { name: "Vite", icon: "logos:vitejs" },
       { name: "Git", icon: "logos:git-icon" },
@@ -62,7 +63,8 @@ export const SKILLS = [
       { name: "DigitalOcean", icon: "logos:digital-ocean-icon" },
       { name: "AWS", icon: "skill-icons:aws-dark" },
       { name: "Replit", icon: "logos:replit-icon" },
-      { name: "Netsuite", icon: "simple-icons:oracle", color: "#36677d" }
+      { name: "Netsuite", icon: "simple-icons:oracle", color: "#36677d" },
+      { name: "Salesforce", icon: "logos:salesforce" }
     ]
   },
   {

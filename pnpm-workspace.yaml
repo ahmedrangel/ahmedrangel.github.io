@@ -1,2 +1,8 @@
+minimumReleaseAge: 0
 shamefullyHoist: true
 strictPeerDependencies: false
+
+allowBuilds:
+  '@parcel/watcher': false
+  esbuild: false
+  unrs-resolver: false
