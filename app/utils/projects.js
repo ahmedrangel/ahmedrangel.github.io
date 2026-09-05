@@ -262,8 +262,8 @@ export const PROJECTS = [
     desc_en: "Add simple ripple animation effects to your elements.",
     start_month: 11,
     start_year: 2024,
-    end_month: null,
-    end_year: null,
+    end_month: 12,
+    end_year: 2024,
     desc_li_es: null,
     desc_li_en: null,
     tags: ["Nuxt", "Vue.js", "TypeScript", "Node.js"],
@@ -349,5 +349,26 @@ export const PROJECTS = [
     ],
     tags: ["Nuxt", "Vue.js", "JavaScript", "TypeScript", "HTML", "CSS", "Cloudflare Workers", "Cloudflare D1", "Cron Triggers", "OAuth", "Riot Games API", "Twitch API"],
     repository: "https://github.com/JimRsng/comunidad"
+  },
+  {
+    id: "media-scraper",
+    type: "npm",
+    name: "media-scraper",
+    url: "https://www.npmjs.com/package/media-scraper",
+    images: ["media-scraper.png"],
+    desc_es: "A TypeScript-first, multi-platform social media scraping library with no API keys, authentication, browser automation, or cookies required.",
+    desc_en: "Librería de scraping de redes sociales multiplataforma, desarrollada con TypeScript, sin necesidad de claves de API, autenticación, automatización de navegador ni cookies.",
+    start_month: 7,
+    start_year: 2025,
+    end_month: null,
+    end_year: null,
+    desc_li_es: [
+      "Supported platforms: Facebook, Instagram, Reddit, Threads, Tiktok, Twitch, X (formerly Twitter)"
+    ],
+    desc_li_en: [
+      "Plataformas compatibles: Facebook, Instagram, Reddit, Threads, Tiktok, Twitch, X (anteriormente Twitter)"
+    ],
+    tags: ["TypeScript", "Node.js", "NPM"],
+    repository: "https://github.com/ahmedrangel/media-scraper"
   }
 ];
